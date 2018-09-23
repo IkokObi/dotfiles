@@ -65,3 +65,4 @@ inoremap {<Enter> {}<Left><CR><ESC><S-o>
 set history=10000
 set pumheight=10
 
+

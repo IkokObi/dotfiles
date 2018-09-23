@@ -1,3 +1,4 @@
+
 " プラグインが実際にインストールされるディレクトリ
 let s:dein_dir = expand('~/.cache/dein')
 " dein.vim 本体
@@ -10,6 +11,7 @@ if &runtimepath !~# '/dein.vim'
   endif
   execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
 endif
+
 
 " 設定開始
 if dein#load_state(s:dein_dir)
@@ -34,4 +36,5 @@ endif
 if dein#check_install()
   call dein#install()
 endif
+
 
