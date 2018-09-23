@@ -17,7 +17,7 @@ vimrcの設定のみ利用したい場合には ".bash_profile"
 
 
 ### 配置の仕方 
-ホームディレクトリにこの"dotfiles"ディレクトリを配置し、dotfilesに入って
+ホームディレクトリにこのdotfilesディレクトリを配置し、dotfilesに入って
 ```sh:title
 $ bash link.sh
 ```
@@ -25,14 +25,14 @@ $ bash link.sh
 
 
 ### それぞれのファイルの内容
-#### vimrc
+#### .vimrc
 vimの設定を読み込む元ファイル。詳細な設定は"source"で各々読み込む。
 #### basic.vim
 vimの基本設定。これだけあれば割と使える。
 #### neobundle.vim
 pluginの管理をするneobundleの基本設定。deinに移行したのでコメントアウトされています。
 #### dein.vim
-pluginの管理をするdeinの基本設定。読み込むpluginは"toml-files"に設定する。プラグインが不要の場合にはコメントアウトしてください。
+pluginの管理をするdeinの基本設定。読み込むpluginはtoml-filesに設定する。プラグインが不要の場合にはコメントアウトしてください。
 #### plugin.vim
 pluginの個別の設定。プラグインをインストールしない場合にはコメントアウトしてください。
 #### init.vim
