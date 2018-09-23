@@ -25,8 +25,8 @@ repo = 'thinca/vim-quickrun'
 [[plugins]]
 repo = 'tyru/caw.vim'
 
-#[[plugins]]
-#repo = 'mattn/emmet-vim'
+[[plugins]]
+repo = 'mattn/emmet-vim'
 
 [[plugins]]
 repo = 'pangloss/vim-javascript'
