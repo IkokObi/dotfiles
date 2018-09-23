@@ -38,9 +38,15 @@ pluginの管理をするdeinの基本設定。読み込むpluginは"toml-files"�
 #### plugin.vim
 pluginの個別の設定。
 プラグインをインストールしない場合にはコメントアウトしてください。
+#### init.vim
+vimrcで最初に設定する内容が書かれている
+#### post.vim
+vimrcで最後に設定する内容が書かれている
 #### toml-files
 toml形式で記述するファイル。
 dein.tomlは毎回読み込まれ、dein_lazy.tomlは特定の条件で読み込まれる
 
 ### 追記
-deinからプラグインを読み込むとcaw.vimが動作しないので、とりあえずのところneobundleを使うようにしている
+
+~~deinからプラグインを読み込むとcaw.vimが動作しないので、とりあえずのところneobundleを使うようにしている~~<br>
+&rarr; filetypeの設定をしたらdeinで動くようになった
