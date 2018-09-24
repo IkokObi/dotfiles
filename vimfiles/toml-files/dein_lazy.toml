@@ -2,6 +2,7 @@
 repo = 'cespare/vim-toml'
 on_ft = ['toml']
 
+
 [[plugins]]
 repo = 'lervag/vimtex'
 on_ft = ['tex']
@@ -29,21 +30,26 @@ let g:vimtex_compiler_latexmk['callback'] = 0 "callbackの警告を表示しな�
 if !exists('g:neocomplete#sources#omni#input_patterns')
 	let g:neocomplete#sources#omni#input_patterns = {}
 endif
+" 以下エラーが出る
 " let g:neocomplete#sources#omni#input_patterns.tex = g:vimtex#re#neocomplete
 '''
+
 
 [[plugins]]
 repo = 'othree/yajs.vim'
 on_ft = ['javascript']
 
+
 [[plugins]]
 repo = 'mattn/emmet-vim'
 on_ft = ['css', 'html', 'javascript']
+
 
 [[plugins]]
 repo = 'marijnh/tern_for_vim'
 on_ft = ['javascript']
 # npm installの必要あり
+
 
 # [[plugins]]
 # repo = 'pangloss/vim-javascript'
@@ -52,9 +58,11 @@ on_ft = ['javascript']
 # let g:javascript_plugin_flow = 1
 # '''
 
+
 [[plugins]]
 repo = 'plasticboy/vim-markdown'
 on_ft = ['md', 'markdown']
+
 
 [[plugins]]
 repo = 'kannokanno/previm'
@@ -66,18 +74,22 @@ let g:vim_markdown_folding_disabled=1
 let g:previm_enable_realtime = 1
 '''
 
+
 # ===== Games =====
 [[plugins]]
 repo = 'rbtnn/game_engine.vim'
 on_ft = ['text']
 
+
 [[plugins]]
 repo = 'rbtnn/puyo.vim'
 on_ft = ['text']
 
+
 [[plugins]]
 repo = 'rbtnn/mario.vim'
 on_ft = ['text']
+
 
 [[plugins]]
 repo = 'vim-scripts/TeTrIs.vim'
