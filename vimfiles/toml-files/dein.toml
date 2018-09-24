@@ -24,6 +24,14 @@ repo = 'thinca/vim-quickrun'
 
 [[plugins]]
 repo = 'tyru/caw.vim'
+hook_add = '''
+" 行の最初の文字の前にコメント文字をトグル
+nmap <C-i> <Plug>(caw:hatpos:toggle)
+vmap <C-i> <Plug>(caw:hatpos:toggle)
+" 行頭にコメントをトグル
+nmap <Leader>c <Plug>(caw:zeropos:toggle)
+vmap <Leader>c <Plug>(caw:zeropos:toggle)
+'''
 
 [[plugins]]
 repo = 'mattn/emmet-vim'
@@ -40,12 +48,17 @@ repo = 'kannokanno/previm'
 [[plugins]]
 repo = 'tyru/open-browser.vim'
 
-#[[plugins]]
-#repo = 'ctrlpvim/ctrlp.vim'
+# [[plugins]]
+# repo = 'ctrlpvim/ctrlp.vim'
 
-#[[plugins]]
-#repo = 'scrooloose/syntastic'
+# [[plugins]]
+# repo = 'scrooloose/syntastic'
+# hook_add = '''
+# "let g:syntastic_python_checkers = ['pyflakes', 'pep8']
+# "let g:syntastic_python_checkers = ['flake8']
+# '''
 
-#[[plugins]]
-#repo = 'davidhalter/jedi-vim'
+
+# [[plugins]]
+# repo = 'davidhalter/jedi-vim'
 

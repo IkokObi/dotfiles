@@ -5,20 +5,6 @@ let g:quickrun_config = {
 nnoremap <expr><silent> <C-c> quickrun#is_running() ? quickrun#sweep_sessions() : "\<C-c>"
 
 
-"===== pep8の設定 =====
-"let g:syntastic_python_checkers = ['pyflakes', 'pep8']
-"let g:syntastic_python_checkers = ['flake8']
-
-
-"===== caw.vim コメントアウトの設定 =====
-" 行の最初の文字の前にコメント文字をトグル
-nmap <C-i> <Plug>(caw:hatpos:toggle)
-vmap <C-i> <Plug>(caw:hatpos:toggle)
-" 行頭にコメントをトグル
-nmap <Leader>c <Plug>(caw:zeropos:toggle)
-vmap <Leader>c <Plug>(caw:zeropos:toggle)
-
-
 "===== MarkDown =====
 autocmd BufRead,BufNewFile *.mkd  set filetype=markdown
 autocmd BufRead,BufNewFile *.md  set filetype=markdown
@@ -69,19 +55,32 @@ if !exists('g:neocomplete#sources#omni#input_patterns')
 endif
 let g:neocomplete#sources#omni#input_patterns.tex = g:vimtex#re#neocomplete
 
-
-"===== vimtexの設定=====
-" vimtex
-let g:tex_flavor='latex'
-let g:vimtex_latexmk_options = '-pdfdvi'
-let g:tex_conceal = ''
-let g:vimtex_imaps_enabled = 0
-" viewer
-let g:vimtex_view_general_viewer
-\ = '/Applications/Skim.app/Contents/SharedSupport/displayline'
-let g:vimtex_view_general_options = '@line @pdf @tex'
-autocmd FileType tex syntax spell toplevel
-
 "===== NERDTreeの設定=====
 nnoremap <silent><Space>f :NERDTreeToggle<CR>
+
+" vimtex
+let g:vimtex_compiler_latexmk_engines = { '_' : '-pdfdvi' }
+let g:vimtex_compiler_latexmk = {
+      \ 'background': 1,
+      \ 'build_dir': '',
+      \ 'continuous': 1,
+      \ 'options': [
+      \    '-pdfdvi', 
+      \    '-verbose',
+      \    '-file-line-error',
+      \    '-synctex=1',
+      \    '-interaction=nonstopmode',
+      \],
+      \}
+
+let g:vimtex_view_general_viewer
+      \ = '/Applications/Skim.app/Contents/SharedSupport/displayline'
+let g:vimtex_view_general_options = '-r @line @pdf @tex'
+autocmd FileType tex syntax spell toplevel
+let g:vimtex_compiler_latexmk['callback'] = 0 "callbackの警告を表示しない
+
+if !exists('g:neocomplete#sources#omni#input_patterns')
+	let g:neocomplete#sources#omni#input_patterns = {}
+endif
+let g:neocomplete#sources#omni#input_patterns.tex = g:vimtex#re#neocomplete
 
