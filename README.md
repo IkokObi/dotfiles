@@ -9,6 +9,7 @@ vimrcの設定のみ利用したい場合には ".bash_profile"
 - link.sh
 - .vimrc
 - .bash_profile
+- .latexmkrc
 
 ## Vimの設定
 ### 使い方
@@ -33,8 +34,8 @@ vimの基本設定。これだけあれば割と使える。
 pluginの管理をするneobundleの基本設定。deinに移行したのでコメントアウトされています。
 #### dein.vim
 pluginの管理をするdeinの基本設定。読み込むpluginはtoml-filesに設定する。プラグインが不要の場合にはコメントアウトしてください。
-#### plugin.vim
-pluginの個別の設定。プラグインをインストールしない場合にはコメントアウトしてください。
+#### filetype.vim
+ファイルタイプごとの設定。
 #### init.vim
 vimrcで最初に設定する内容が書かれている
 #### post.vim
