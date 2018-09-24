@@ -21,6 +21,12 @@ repo = 'lervag/vimtex'
 
 [[plugins]]
 repo = 'thinca/vim-quickrun'
+hook_add = '''
+let g:quickrun_config = {
+\   'outputter/buffer/split': ':right 1sp'
+\ }
+nnoremap <expr><silent> <C-c> quickrun#is_running() ? quickrun#sweep_sessions() : "\<C-c>"
+'''
 
 [[plugins]]
 repo = 'tyru/caw.vim'
@@ -34,20 +40,10 @@ vmap <Leader>c <Plug>(caw:zeropos:toggle)
 '''
 
 [[plugins]]
-repo = 'mattn/emmet-vim'
-
-[[plugins]]
-repo = 'pangloss/vim-javascript'
-
-[[plugins]]
-repo = 'marijnh/tern_for_vim'
-
-[[plugins]]
-repo = 'kannokanno/previm'
-
-[[plugins]]
 repo = 'tyru/open-browser.vim'
 
+
+# ===== 不要になったプラグイン =====
 # [[plugins]]
 # repo = 'ctrlpvim/ctrlp.vim'
 

@@ -1,19 +1,12 @@
-"===== quickrunの設定 =====
-let g:quickrun_config = {
-\   'outputter/buffer/split': ':right 1sp'
-\ }
-nnoremap <expr><silent> <C-c> quickrun#is_running() ? quickrun#sweep_sessions() : "\<C-c>"
-
-
 "===== MarkDown =====
 autocmd BufRead,BufNewFile *.mkd  set filetype=markdown
 autocmd BufRead,BufNewFile *.md  set filetype=markdown
 
-" Need: kannokanno/previm
-nnoremap <silent> <C-o> :PrevimOpen<CR> " Ctrl-oでプレビュー
-" 自動で折りたたまないようにする
-let g:vim_markdown_folding_disabled=1
-let g:previm_enable_realtime = 1
+" " Need: kannokanno/previm
+" nnoremap <silent> <C-o> :PrevimOpen<CR> " Ctrl-oでプレビュー
+" " 自動で折りたたまないようにする
+" let g:vim_markdown_folding_disabled=1
+" let g:previm_enable_realtime = 1
 
 
 "===== JavaScriptの設定 =====
