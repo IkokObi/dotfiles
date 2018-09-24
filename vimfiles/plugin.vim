@@ -2,12 +2,6 @@
 autocmd BufRead,BufNewFile *.mkd  set filetype=markdown
 autocmd BufRead,BufNewFile *.md  set filetype=markdown
 
-" " Need: kannokanno/previm
-" nnoremap <silent> <C-o> :PrevimOpen<CR> " Ctrl-oでプレビュー
-" " 自動で折りたたまないようにする
-" let g:vim_markdown_folding_disabled=1
-" let g:previm_enable_realtime = 1
-
 
 "===== JavaScriptの設定 =====
 let g:javascript_plugin_flow = 1
@@ -48,8 +42,6 @@ if !exists('g:neocomplete#sources#omni#input_patterns')
 endif
 let g:neocomplete#sources#omni#input_patterns.tex = g:vimtex#re#neocomplete
 
-"===== NERDTreeの設定=====
-nnoremap <silent><Space>f :NERDTreeToggle<CR>
 
 " vimtex
 let g:vimtex_compiler_latexmk_engines = { '_' : '-pdfdvi' }

@@ -15,6 +15,9 @@ repo = 'tpope/vim-fugitive'
 
 [[plugins]]
 repo = 'scrooloose/nerdtree'
+hook_add = '''
+nnoremap <silent><Space>f :NERDTreeToggle<CR>
+'''
 
 [[plugins]]
 repo = 'lervag/vimtex'
