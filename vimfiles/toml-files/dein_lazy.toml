@@ -32,6 +32,8 @@ if !exists('g:neocomplete#sources#omni#input_patterns')
 endif
 " 以下エラーが出る
 " let g:neocomplete#sources#omni#input_patterns.tex = g:vimtex#re#neocomplete
+"let g:neocomplete#sources#omni#input_patterns.tex =
+"        \ g:vimtex#re#neocomplete
 '''
 
 
