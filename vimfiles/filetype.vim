@@ -10,9 +10,10 @@ autocmd BufRead,BufNewFile *.md  set filetype=markdown
 " autocmd FileType javascript setl tabstop=8 expandtab shiftwidth=2 softtabstop=2 
 " 必要ならコメントアウト外す
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
-
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 
+
+" ===== Python =====
 " docstringは表示しない
 autocmd FileType python setlocal completeopt-=preview
 
