@@ -4,8 +4,7 @@ autocmd BufRead,BufNewFile *.md  set filetype=markdown
 
 
 "===== JavaScriptの設定 =====
-let g:javascript_plugin_flow = 1
-"autocmd FileType html setlocal indentexpr=""
+" autocmd FileType html setlocal indentexpr=""
 " autocmd FileType javascript setl autoindent 
 " autocmd FileType javascript setl smartindent 
 " autocmd FileType javascript setl tabstop=8 expandtab shiftwidth=2 softtabstop=2 

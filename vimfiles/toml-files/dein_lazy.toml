@@ -18,7 +18,9 @@ on_ft = ['javascript']
 # [[plugins]]
 # repo = 'pangloss/vim-javascript'
 # on_ft = ['javascript']
-
+# hook_add = '''
+# let g:javascript_plugin_flow = 1
+# '''
 
 [[plugins]]
 repo = 'plasticboy/vim-markdown'

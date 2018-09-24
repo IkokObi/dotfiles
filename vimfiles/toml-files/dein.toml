@@ -44,7 +44,10 @@ vmap <Leader>c <Plug>(caw:zeropos:toggle)
 
 [[plugins]]
 repo = 'tyru/open-browser.vim'
-
+hook_add = '''
+nmap gl <Plug>(openbrowser-smart-search)
+vmap gl <Plug>(openbrowser-smart-search)
+'''
 
 # ===== 不要になったプラグイン =====
 # [[plugins]]
