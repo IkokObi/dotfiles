@@ -30,9 +30,33 @@ let g:vimtex_compiler_latexmk['callback'] = 0 "callbackの警告を表示しな�
 if !exists('g:neocomplete#sources#omni#input_patterns')
 	let g:neocomplete#sources#omni#input_patterns = {}
 endif
-" 以下エラーが出る
+" ===== 以下エラーが出る =====
 " let g:neocomplete#sources#omni#input_patterns.tex =
 " 	\ g:vimtex#re#neocomplete
+" エラーログ
+" [dein] Error occurred while executing hook: vimtex
+" [dein] Vim(let):E121: Undefined variable: g:vimtex#re#neocomplete
+" ============================
+"
+" ---> 愚直な対処をした(vimtex#re#neocompleteの中身を貼り付けた)
+let g:neocomplete#sources#omni#input_patterns.tex =
+      \ '\v\\%('
+      \ .  '\a*cite\a*%(\s*\[[^]]*\]){0,2}\s*\{[^}]*'
+      \ . '|%(text|block)cquote\*?%(\s*\[[^]]*\]){0,2}\s*\{[^}]*'
+      \ . '|%(for|hy)\w*cquote\*?\{[^}]*}%(\s*\[[^]]*\]){0,2}\s*\{[^}]*'
+      \ . '|\a*ref%(\s*\{[^}]*|range\s*\{[^,}]*%(}\{)?)'
+      \ . '|hyperref\s*\[[^]]*'
+      \ . '|includegraphics\*?%(\s*\[[^]]*\]){0,2}\s*\{[^}]*'
+      \ . '|%(include%(only)?|input|subfile)\s*\{[^}]*'
+      \ . '|\a*(gls|Gls|GLS)(pl)?\a*%(\s*\[[^]]*\]){0,2}\s*\{[^}]*'
+      \ . '|includepdf%(\s*\[[^]]*\])?\s*\{[^}]*'
+      \ . '|includestandalone%(\s*\[[^]]*\])?\s*\{[^}]*'
+      \ . '|%(usepackage|RequirePackage|PassOptionsToPackage)%(\s*\[[^]]*\])?\s*\{[^}]*'
+      \ . '|documentclass%(\s*\[[^]]*\])?\s*\{[^}]*'
+      \ . '|begin%(\s*\[[^]]*\])?\s*\{[^}]*'
+      \ . '|end%(\s*\[[^]]*\])?\s*\{[^}]*'
+      \ . '|\a*'
+      \ . ')'
 '''
 
 
