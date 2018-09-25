@@ -26,7 +26,8 @@ let g:vimtex_view_general_viewer
 let g:vimtex_view_general_options = '-r @line @pdf @tex'
 autocmd FileType tex syntax spell toplevel
 let g:vimtex_compiler_latexmk['callback'] = 0 "callbackの警告を表示しない
-let g:vimtex_motion_matchparen = 0 "syntax highlighting of matching parenthesis --> off
+" let g:vimtex_motion_matchparen = 0 "syntax highlighting of matching parenthesis --> off
+" let g:matchup_matchparen_deferred = 1
 
 if !exists('g:neocomplete#sources#omni#input_patterns')
 	let g:neocomplete#sources#omni#input_patterns = {}
