@@ -14,6 +14,7 @@ syntax on "コードに色をつける
 "カラースキーム, 行番号の色等
 autocmd ColorScheme * highlight LineNr ctermfg=211
 colorscheme slate
+set background=dark
 set cursorline "カーソルラインを表示
 hi clear CursorLine "下線を消去, この2行はこの位置に
 hi CursorLineNr term=bold cterm=bold ctermfg=0 ctermbg=15
