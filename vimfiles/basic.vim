@@ -66,6 +66,7 @@ inoremap <silent> っj <Esc>
 "{}の自動補完
 inoremap { {}<Left>
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
+inoremap \{ \{\}<Left><Left>
 
 "===== その他 =====
 set history=10000 "履歴を10000件保存
