@@ -18,3 +18,8 @@ autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal completeopt-=preview
 
 
+" ===== TeX =====
+" 移動に時間がかかるのでcursorlineをoffにする
+autocmd BufRead,BufNewFile *.tex set nocursorline
+
+
