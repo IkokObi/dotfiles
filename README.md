@@ -34,11 +34,11 @@ vimの基本設定。これだけあれば割と使える。
 pluginの管理をするneobundleの基本設定。deinに移行したのでコメントアウトされています。
 #### dein.vim
 pluginの管理をするdeinの基本設定。読み込むpluginはtoml-filesに設定する。プラグインが不要の場合にはコメントアウトしてください。
-#### filetype.vim
+#### ft_set.vim
 ファイルタイプごとの設定。
-#### init.vim
+#### set_start.vim
 vimrcで最初に設定する内容が書かれている
-#### post.vim
+#### set_end.vim
 vimrcで最後に設定する内容が書かれている
 #### toml-files
 toml形式で記述するファイル。dein.tomlは毎回読み込まれ、dein_lazy.tomlは特定の条件で読み込まれる
