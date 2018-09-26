@@ -44,6 +44,7 @@ nnoremap <Up>   gk
 "^, $のキーマッピング
 noremap <Space>h  ^
 noremap <Space>l  $
+noremap <Space>p  %
 
 "===== 検索設定 =====
 set ignorecase "大文字、小文字の区別をしない
