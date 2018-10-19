@@ -110,4 +110,15 @@ let g:previm_enable_realtime = 1
 '''
 # 数式を表示するためにソースに追加書き込みが必要
 
+#
+# [[plugins]]
+# repo = 'davidhalter/jedi-vim'
+# on_ft = ['python']
+#
+# [[plugins]]
+# repo = 'lambdalisue/vim-pyenv'
+# on_ft = ['python']
+
+
+
 
