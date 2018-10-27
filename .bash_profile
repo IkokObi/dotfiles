@@ -11,9 +11,9 @@ if [ -f ~/.bashrc ]; then
     . ~/.bashrc
 fi
 
-# ikokproの場合はコメントアウト
 # jumanpp
-export PATH=$PATH:/Users/koki/Downloads/jumanpp-2.0.0-rc2/bin
+# Homebrewでjumanをインストールした場合はコメントアウト
+# export PATH=$PATH:/Users/koki/Downloads/jumanpp-2.0.0-rc2/bin
 
 
 
