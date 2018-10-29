@@ -16,6 +16,9 @@ autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 " ===== Python =====
 " docstringは表示しない
 autocmd FileType python setlocal completeopt-=preview
+" autocmd BufNewFile *.py 0r ~/dotfiles/vimfiles/template/python.txt
+autocmd BufNewFile *.py 0r !sed -e "s;CREATED_DATE;`date +'\%Y/\%m/\%d \%H:\%M:\%S \%Z'`;" ~/dotfiles/vimfiles/template/python.txt 
+
 
 
 " ===== TeX =====

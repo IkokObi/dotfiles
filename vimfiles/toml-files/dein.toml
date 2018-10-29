@@ -76,7 +76,17 @@ nmap gl <Plug>(openbrowser-smart-search)
 vmap gl <Plug>(openbrowser-smart-search)
 '''
 
+# [[plugins]]
+repo = 'vim-scripts/autodate.vim'
+hook_add = '''
+let g:autodate_format="%Y/%m/%d %H:%M:%S %Z"
+'''
 
+# [[plugins]]
+# repo = 'vim-scripts/timestamp.vim'
+# hook_add = '''
+# let g:timestamp_rep='%Y/%m/%d %H:%M:%S.'
+# '''
 
 
 # ===== 使わなくなったプラグイン =====
