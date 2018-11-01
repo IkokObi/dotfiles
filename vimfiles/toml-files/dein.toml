@@ -76,17 +76,11 @@ nmap gl <Plug>(openbrowser-smart-search)
 vmap gl <Plug>(openbrowser-smart-search)
 '''
 
-# [[plugins]]
+[[plugins]]
 repo = 'vim-scripts/autodate.vim'
 hook_add = '''
 let g:autodate_format="%Y/%m/%d %H:%M:%S %Z"
 '''
-
-# [[plugins]]
-# repo = 'vim-scripts/timestamp.vim'
-# hook_add = '''
-# let g:timestamp_rep='%Y/%m/%d %H:%M:%S.'
-# '''
 
 
 # ===== 使わなくなったプラグイン =====
@@ -106,8 +100,9 @@ let g:autodate_format="%Y/%m/%d %H:%M:%S %Z"
 # "let g:syntastic_python_checkers = ['flake8']
 # '''
 #
-#
 # [[plugins]]
-# # pythonの補完, 動作が重い
-# repo = 'davidhalter/jedi-vim'
+# repo = 'vim-scripts/timestamp.vim'
+# hook_add = '''
+# let g:timestamp_rep='%Y/%m/%d %H:%M:%S.'
+# '''
 
