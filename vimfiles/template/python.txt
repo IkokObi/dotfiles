@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on : CREATED_DATE.
-Last Change: . 
+Last Change: .
 
 @author: Koki Obinata
 """
