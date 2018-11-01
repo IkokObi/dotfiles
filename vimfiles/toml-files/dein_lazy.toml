@@ -61,7 +61,7 @@ endif
 "        \ . '|\a*'
 "        \ . ')'
 "
-" 以下にあるようにhook_sourceで一応解決した
+" ---> 以下にあるようにhook_sourceで一応解決した
 '''
 # hook_post_sourceだとエラーは出ないけれど補完もされなかった
 # hook_sourceでうまく動いた
@@ -86,14 +86,6 @@ on_ft = ['javascript']
 # npm installの必要あり
 
 
-# [[plugins]]
-# repo = 'pangloss/vim-javascript'
-# on_ft = ['javascript']
-# hook_add = '''
-# let g:javascript_plugin_flow = 1
-# '''
-
-
 [[plugins]]
 repo = 'plasticboy/vim-markdown'
 on_ft = ['md', 'markdown']
@@ -110,15 +102,28 @@ let g:previm_enable_realtime = 1
 '''
 # 数式を表示するためにソースに追加書き込みが必要
 
-#
+
+[[plugins]]
+repo = 'w0rp/ale'
+on_ft = ['python']
+
+
+
+# ===== 使わなくなったプラグイン =====
 # [[plugins]]
+# # pythonの補完, 動作が重い
 # repo = 'davidhalter/jedi-vim'
 # on_ft = ['python']
 #
 # [[plugins]]
 # repo = 'lambdalisue/vim-pyenv'
 # on_ft = ['python']
-
-
+#
+# [[plugins]]
+# repo = 'pangloss/vim-javascript'
+# on_ft = ['javascript']
+# hook_add = '''
+# let g:javascript_plugin_flow = 1
+# '''
 
 
