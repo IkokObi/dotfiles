@@ -1,3 +1,7 @@
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-export PATH=$PATH:$HOME/.nodebrew/current/bin
+
+# prompt config
+PYENV_VERSION_NAME="py:"$(pyenv version-name)
+PS1="\[\033[32m\]\t (${PYENV_VERSION_NAME}) \u@\h:\w\[\033[0m\]\n$ "
+
+# alias
 
