@@ -60,14 +60,20 @@ nnoremap <expr><silent> <C-c> quickrun#is_running()
 [[plugins]]
 repo = 'tyru/caw.vim'
 hook_add = '''
-" 行の最初の文字の前にコメント文字をトグル
+" ファイルタイプの自動検出を一旦offにする
+" deinを使ったときにcaw.vimがうまく機能しなかったときにこれで直った
+" (参考URL) http://d.hatena.ne.jp/wiredool/20120618/1340019962
 filetype off
 filetype plugin indent off
+
+" 行の最初の文字の前にコメント文字をトグル
 nmap <C-i> <Plug>(caw:hatpos:toggle)
 vmap <C-i> <Plug>(caw:hatpos:toggle)
 " 行頭にコメントをトグル
 nmap <Leader>c <Plug>(caw:zeropos:toggle)
 vmap <Leader>c <Plug>(caw:zeropos:toggle)
+
+" ファイルタイプの自動検出を有効にする
 filetype plugin indent on
 '''
 
