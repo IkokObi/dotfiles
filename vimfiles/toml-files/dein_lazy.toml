@@ -90,6 +90,9 @@ on_ft = ['javascript']
 repo = 'plasticboy/vim-markdown'
 on_ft = ['md', 'markdown']
 hook_add = '''
+" リストの末尾で改行(Enter)したときにリスト化しない
+" let g:vim_markdown_auto_insert_bullets = 0
+" Shift-o でinsertモードに入ったときに自動インデントしない
 let g:vim_markdown_new_list_item_indent = 0
 '''
 
@@ -109,7 +112,7 @@ let g:previm_enable_realtime = 1
 [[plugins]]
 repo = 'w0rp/ale'
 on_ft = ['python']
-hook_source = '''
+hook_add = '''
 nnoremap <silent> <Space>m :ALEPrevious<CR>
 nnoremap <silent> <Space>n :ALENext<CR>
 '''
