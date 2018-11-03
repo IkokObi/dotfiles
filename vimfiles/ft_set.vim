@@ -1,9 +1,13 @@
 "===== MarkDown =====
-autocmd BufRead,BufNewFile *.mkd  set filetype=markdown
 autocmd BufRead,BufNewFile *.md  set filetype=markdown
+autocmd BufRead,BufNewFile *.mkd  set filetype=markdown
+autocmd FileType markdown inoremap <Tab> <Esc>>>
+autocmd FileType markdown  inoremap <S-Tab> <Esc><<
+autocmd FileType markdown  noremap <Tab> >>
+autocmd FileType markdown  noremap <S-Tab> <<
 
 
-"===== JavaScriptの設定 =====
+" ===== JavaScriptの設定 =====
 " autocmd FileType html setlocal indentexpr=""
 " autocmd FileType javascript setl autoindent 
 " autocmd FileType javascript setl smartindent 

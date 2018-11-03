@@ -89,6 +89,9 @@ on_ft = ['javascript']
 [[plugins]]
 repo = 'plasticboy/vim-markdown'
 on_ft = ['md', 'markdown']
+hook_add = '''
+let g:vim_markdown_new_list_item_indent = 0
+'''
 
 
 [[plugins]]
@@ -106,6 +109,10 @@ let g:previm_enable_realtime = 1
 [[plugins]]
 repo = 'w0rp/ale'
 on_ft = ['python']
+hook_source = '''
+nnoremap <silent> <Space>m :ALEPrevious<CR>
+nnoremap <silent> <Space>n :ALENext<CR>
+'''
 
 
 
@@ -125,5 +132,8 @@ on_ft = ['python']
 # hook_add = '''
 # let g:javascript_plugin_flow = 1
 # '''
-
-
+#
+# [[plugins]]
+# repo = 'gabrielelana/vim-markdown'
+# on_ft = ['md', 'markdown']
+#
