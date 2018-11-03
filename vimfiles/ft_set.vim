@@ -1,10 +1,10 @@
-"===== MarkDown =====
-autocmd BufRead,BufNewFile *.md  set filetype=markdown
+" ===== MarkDown =====
 autocmd BufRead,BufNewFile *.mkd  set filetype=markdown
+autocmd BufRead,BufNewFile *.md  set filetype=markdown
 autocmd FileType markdown inoremap <Tab> <Esc>>>
-autocmd FileType markdown  inoremap <S-Tab> <Esc><<
-autocmd FileType markdown  noremap <Tab> >>
-autocmd FileType markdown  noremap <S-Tab> <<
+autocmd FileType markdown inoremap <S-Tab> <Esc><<
+autocmd FileType markdown nnoremap <Tab> >>
+autocmd FileType markdown nnoremap <S-Tab> <<
 
 
 " ===== JavaScriptの設定 =====
