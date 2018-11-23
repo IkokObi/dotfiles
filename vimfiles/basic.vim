@@ -16,8 +16,12 @@ autocmd ColorScheme * highlight LineNr ctermfg=211
 colorscheme slate
 set background=dark
 set cursorline "カーソルラインを表示
-hi clear CursorLine "下線を消去, この2行はこの位置に
+hi clear CursorLine "下線を消去, ここと直上の2行はこの位置に
 hi CursorLineNr term=bold cterm=bold ctermfg=0 ctermbg=15
+
+"インサート時に行ハイライト
+autocmd InsertEnter * highlight CursorLine ctermbg=233 
+autocmd InsertLeave * hi clear CursorLine
 
 
 "===== 文字、カーソル設定 =====
@@ -33,7 +37,7 @@ set wildmenu "コマンドモードの補完
 set cmdheight=1 "メッセージ表示欄の行数
 set foldmethod=indent
 let &t_ti.="\e[1 q" "カーソル表示設定
-let &t_SI.="\e[5 q"
+let &t_SI.="\e[1 q"
 let &t_EI.="\e[1 q"
 let &t_te.="\e[0 q"
 "表示行単位で移動
