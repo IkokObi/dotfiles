@@ -29,5 +29,8 @@ autocmd BufNewFile *.py 0r !sed -e
 " ===== TeX =====
 " 移動に時間がかかるのでcursorlineをoffにする
 autocmd BufRead,BufNewFile *.tex set nocursorline
-
+autocmd InsertEnter * set cursorline
+autocmd InsertEnter * hi clear CursorLine
+autocmd InsertEnter * highlight CursorLine ctermbg=233 
+autocmd InsertLeave * set nocursorline
 
