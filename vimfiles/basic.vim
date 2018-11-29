@@ -80,6 +80,3 @@ inoremap \{ \{\}<Left><Left>
 set history=10000 "履歴を10000件保存
 set pumheight=10 "変換候補で一度に表示される数
 
-"===== スペルチェック =====
-set spell
-set spelllang=en,cjk
