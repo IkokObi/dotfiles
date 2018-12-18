@@ -71,14 +71,8 @@ set clipboard=unnamed,autoselect "クリップボードへのコピー
 inoremap <silent> jj <Esc>
 inoremap <silent> っj <Esc>
 
-"カッコ等の自動補完
-inoremap { {}<Left>
-" inoremap {<Enter> {}<Left><CR><ESC><S-o>
-inoremap ( ()<Left>
-inoremap [ []<Left>
-inoremap \{ \{\}<Left><Left>
-inoremap " ""<Left>
-inoremap ' ''<Left>
+"カッコ等の自動補完 ---> lexima.vimにした
+
 
 "===== その他 =====
 set history=10000 "履歴を10000件保存
