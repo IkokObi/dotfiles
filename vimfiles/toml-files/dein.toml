@@ -96,17 +96,13 @@ let g:autodate_format="%Y/%m/%d %H:%M:%S %Z"
 [[plugins]]
 repo = 'cohama/lexima.vim'
 hook_add = '''
-call lexima#add_rule({
-	\ 'at': '\%#.*[-0-9a-zA-Z_,:]', 'char': '{', 'input': '{'})
-call lexima#add_rule({
-	\ 'at': '\%#.*[-0-9a-zA-Z_,:]', 'char': '(', 'input': '('})
-call lexima#add_rule({
-	\ 'at': '\%#.*[-0-9a-zA-Z_,:]', 'char': '[', 'input': '['})
-call lexima#add_rule({'char': '$', 'input_after': '$', 'filetype': 'tex'})
+call lexima#add_rule({'char': '(', 'at': '\%#.*[-0-9a-zA-Z_,:]',
+	\ 'input': '('})
+call lexima#add_rule({'char': '[', 'at': '\%#.*[-0-9a-zA-Z_,:]',
+	\ 'input': '['})
+call lexima#add_rule({'char': '{', 'at': '\%#.*[-0-9a-zA-Z_,:]',
+	\ 'input': '{'})
 '''
-# 参考URL
-# http://www.axlight.com/mt/sundayhacking/2015/02/vimautoclose.html
-
 
 
 # ===== 使わなくなったプラグイン =====
@@ -131,3 +127,7 @@ call lexima#add_rule({'char': '$', 'input_after': '$', 'filetype': 'tex'})
 # hook_add = '''
 # let g:timestamp_rep='%Y/%m/%d %H:%M:%S.'
 # '''
+#
+# [[plugins]]
+# repo = 'Townk/vim-autoclose'
+#
