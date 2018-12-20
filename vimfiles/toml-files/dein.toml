@@ -93,18 +93,6 @@ let g:autodate_format="%Y/%m/%d %H:%M:%S %Z"
 '''
 
 
-[[plugins]]
-repo = 'cohama/lexima.vim'
-hook_add = '''
-call lexima#add_rule({'char': '(', 'at': '\%#.*[-0-9a-zA-Z_,:]',
-	\ 'input': '('})
-call lexima#add_rule({'char': '[', 'at': '\%#.*[-0-9a-zA-Z_,:]',
-	\ 'input': '['})
-call lexima#add_rule({'char': '{', 'at': '\%#.*[-0-9a-zA-Z_,:]',
-	\ 'input': '{'})
-'''
-
-
 # ===== 使わなくなったプラグイン =====
 # [[plugins]]
 # # CtrlP ファイル検索
@@ -127,6 +115,14 @@ call lexima#add_rule({'char': '{', 'at': '\%#.*[-0-9a-zA-Z_,:]',
 # hook_add = '''
 # let g:timestamp_rep='%Y/%m/%d %H:%M:%S.'
 # '''
+#
+#
+# [[plugins]]
+# repo = 'jiangmiao/auto-pairs'
+# hook_add = '''
+# let g:AutoPairs['<']='>'
+# '''
+#
 #
 # [[plugins]]
 # repo = 'Townk/vim-autoclose'
