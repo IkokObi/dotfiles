@@ -124,7 +124,7 @@ nnoremap <silent> <Space>n :ALENext<CR>
 
 [[plugins]]
 repo = 'cohama/lexima.vim'
-on_event = 'VimEnter'
+on_event = 'InsertEnter'
 hook_post_source = '''
 call lexima#add_rule({'char': '(', 'at': '\%#[0-9a-zA-Z_]',
 	\ 'input': '('})
