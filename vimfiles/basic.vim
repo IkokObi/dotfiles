@@ -31,10 +31,14 @@ autocmd InsertLeave * hi clear CursorLine
 "===== 文字、カーソル設定 =====
 set fenc=utf-8 "文字コードを指定
 set virtualedit=onemore "カーソルを行末の一つ先まで移動可能にする
-set autoindent "自動インデント
+" set autoindent "自動インデント
 set smartindent "オートインデント
-set tabstop=4 "インデントをスペース4つ分に設定
+" set tabstop=4 "インデントをスペース4つ分に設定
+set softtabstop=4 "タブが置き換わるスペースの数
 set shiftwidth=4 "自動的に入力されたインデントの空白を4つ分に設定
+set smarttab
+set list "不可視文字の可視化
+set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:% "可視化設定
 set whichwrap=b,s,h,l,<,>,[,],~ "行頭、行末で行のカーソル移動を可能にする
 set backspace=indent,eol,start "バックスペースでの行移動を可能にする
 set wildmenu "コマンドモードの補完
