@@ -9,6 +9,11 @@ set visualbell "ビープ音を視覚表示
 set laststatus=2 "ステータスを表示
 set ruler "カーソル位置を表示
 set ambiwidth=double  "全角記号を全角で表示
+set list "不可視文字の可視化
+set listchars=tab:»-,trail:-,extends:»,precedes:«,nbsp:% "可視化設定 eol:↲,
+" 全角スペースの背景を白に変更
+autocmd Colorscheme * highlight FullWidthSpace ctermbg=white
+autocmd VimEnter * match FullWidthSpace /　/
 syntax on "コードに色をつける
 
 "カラースキーム, 行番号の色等
@@ -37,8 +42,6 @@ set smartindent "オートインデント
 set softtabstop=4 "タブが置き換わるスペースの数
 set shiftwidth=4 "自動的に入力されたインデントの空白を4つ分に設定
 set smarttab
-set list "不可視文字の可視化
-set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:% "可視化設定
 set whichwrap=b,s,h,l,<,>,[,],~ "行頭、行末で行のカーソル移動を可能にする
 set backspace=indent,eol,start "バックスペースでの行移動を可能にする
 set wildmenu "コマンドモードの補完
