@@ -93,6 +93,10 @@ let g:autodate_format="%Y/%m/%d %H:%M:%S %Z"
 '''
 
 
+
+
+
+
 # ===== 使わなくなったプラグイン =====
 # [[plugins]]
 # # CtrlP ファイル検索
@@ -126,4 +130,10 @@ let g:autodate_format="%Y/%m/%d %H:%M:%S %Z"
 #
 # [[plugins]]
 # repo = 'Townk/vim-autoclose'
+# pythonでうまく動かない
 #
+#
+# [[plugins]]
+# repo = 'kana/vim-smartinput'
+# on_event = 'InsertEnter'
+# 削除がうまく機能しない
