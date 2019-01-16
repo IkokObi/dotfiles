@@ -25,6 +25,12 @@ autocmd BufNewFile *.py 0r !sed -e
 	\ ~/dotfiles/vimfiles/template/python.txt 
 
 
+" ===== C++ =====
+set smartindent "オートインデント
+set softtabstop=4 "タブが置き換わるスペースの数
+set shiftwidth=4 "自動的に入力されたインデントの空白を4つ分に設定
+set smarttab
+
 
 " ===== TeX =====
 autocmd BufRead,BufNewFile *.tex set spell
@@ -35,3 +41,4 @@ autocmd InsertEnter * set cursorline
 autocmd InsertEnter * hi clear CursorLine
 autocmd InsertEnter * highlight CursorLine ctermbg=233 
 autocmd InsertLeave * set nocursorline
+inoremap $ $$<Left>
