@@ -122,23 +122,25 @@ nnoremap <silent> <Space>n :ALENext<CR>
 '''
 
 
-[[plugins]]
-repo = 'cohama/lexima.vim'
-on_event = 'InsertEnter'
-hook_post_source = '''
-call lexima#add_rule({'char': '(', 'at': '\%#[0-9a-zA-Z_]',
-	\ 'input': '('})
-call lexima#add_rule({'char': '[', 'at': '\%#[0-9a-zA-Z_]',
-	\ 'input': '['})
-call lexima#add_rule({'char': '{', 'at': '\%#[0-9a-zA-Z_]',
-	\ 'input': '{'})
-call lexima#add_rule({'char': '$', 'input_after': '$',
-	\ 'filetype': 'tex'})
-call lexima#add_rule({'char': '$', 'at': '\%#\$', 'leave': 1,
-	\ 'filetype': 'tex'})
-call lexima#add_rule({'char': '<BS>', 'at': '\$\%#\$', 'delete': 1,
-	\ 'filetype': 'tex'})
-'''
+# [[plugins]]
+# repo = 'cohama/lexima.vim'
+# on_event = 'InsertEnter'
+# hook_post_source = '''
+# call lexima#add_rule({'char': '(', 'at': '\%#[0-9a-zA-Z_]',
+# 	\ 'input': '('})
+# call lexima#add_rule({'char': '[', 'at': '\%#[0-9a-zA-Z_]',
+# 	\ 'input': '['})
+# call lexima#add_rule({'char': '{', 'at': '\%#[0-9a-zA-Z_]',
+# 	\ 'input': '{'})
+# call lexima#add_rule({'char': '$', 'input_after': '$',
+# 	\ 'filetype': 'tex'})
+# call lexima#add_rule({'char': '$', 'at': '\%#\$', 'leave': 1,
+# 	\ 'filetype': 'tex'})
+# call lexima#add_rule({'char': '<BS>', 'at': '\$\%#\$', 'delete': 1,
+# 	\ 'filetype': 'tex'})
+# '''
+# neocompleteとの相性が悪い
+# スニペットが効かない
 
 
 
@@ -162,4 +164,3 @@ call lexima#add_rule({'char': '<BS>', 'at': '\$\%#\$', 'delete': 1,
 # [[plugins]]
 # repo = 'gabrielelana/vim-markdown'
 # on_ft = ['md', 'markdown']
-#

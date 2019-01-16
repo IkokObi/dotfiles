@@ -9,7 +9,7 @@ set visualbell "ビープ音を視覚表示
 set laststatus=2 "ステータスを表示
 set ruler "カーソル位置を表示
 set ambiwidth=double  "全角記号を全角で表示
-set list "不可視文字の可視化
+" set list "不可視文字の可視化
 set listchars=tab:»-,trail:-,extends:»,precedes:«,nbsp:% "可視化設定 eol:↲,
 " 全角スペースの背景を白に変更
 autocmd Colorscheme * highlight FullWidthSpace ctermbg=white
@@ -23,7 +23,7 @@ set background=dark
 set cursorline "カーソルラインを表示
 hi clear CursorLine "下線を消去, ここと直上の2行はこの位置に
 hi CursorLineNr term=bold cterm=bold ctermfg=0 ctermbg=15
-hi Constant ctermfg=208 
+hi Constant ctermfg=208
 hi Special ctermfg=208
 hi ModeMsg ctermfg=208
 hi Function ctermfg=208
@@ -38,10 +38,10 @@ set fenc=utf-8 "文字コードを指定
 set virtualedit=onemore "カーソルを行末の一つ先まで移動可能にする
 " set autoindent "自動インデント
 set smartindent "オートインデント
+set smarttab
 " set tabstop=4 "インデントをスペース4つ分に設定
 set softtabstop=4 "タブが置き換わるスペースの数
 set shiftwidth=4 "自動的に入力されたインデントの空白を4つ分に設定
-set smarttab
 set whichwrap=b,s,h,l,<,>,[,],~ "行頭、行末で行のカーソル移動を可能にする
 set backspace=indent,eol,start "バックスペースでの行移動を可能にする
 set wildmenu "コマンドモードの補完
@@ -77,9 +77,16 @@ set clipboard=unnamed,autoselect "クリップボードへのコピー
 "jキーを二度押しでESCキー
 inoremap <silent> jj <Esc>
 inoremap <silent> っj <Esc>
+inoremap <silent> <C-u> <Esc>u
+
 
 "カッコ等の自動補完 ---> lexima.vimにした
-
+"微妙だった
+inoremap { {}<Left>
+inoremap ( ()<Left>
+inoremap [ []<Left>
+inoremap ' ''<Left>
+inoremap " ""<Left>
 
 "===== その他 =====
 set history=10000 "履歴を10000件保存
