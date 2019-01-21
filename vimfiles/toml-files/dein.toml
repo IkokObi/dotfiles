@@ -99,8 +99,7 @@ hook_add='''
 let g:AutoClosePairs = "() {} [] \" \'"
 let g:AutoCloseProtectedRegions = ["String", "Character"]
 '''
-# pythonでうまく動かない?
-
+# pythonで' "がうまく動かない?
 
 
 
