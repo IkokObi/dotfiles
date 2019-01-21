@@ -23,6 +23,7 @@ autocmd FileType python setlocal completeopt-=preview
 autocmd BufNewFile *.py 0r !sed -e
 	\ "s;CREATED_DATE;`date +'\%Y/\%m/\%d \%H:\%M:\%S \%Z'`;"
 	\ ~/dotfiles/vimfiles/template/python.txt 
+autocmd FileType python inoremap <Leader>c """"""<Left><Left><Left>
 
 
 " ===== C++ =====
@@ -36,9 +37,10 @@ set smarttab
 autocmd BufRead,BufNewFile *.tex set spell
 autocmd BufRead,BufNewFile *.tex set spelllang=en,cjk
 " 移動に時間がかかるのでcursorlineをoffにする
-autocmd BufRead,BufNewFile *.tex set nocursorline
-autocmd InsertEnter * set cursorline
-autocmd InsertEnter * hi clear CursorLine
-autocmd InsertEnter * highlight CursorLine ctermbg=233 
-autocmd InsertLeave * set nocursorline
-inoremap $ $$<Left>
+" autocmd BufRead,BufNewFile *.tex set nocursorline
+" autocmd InsertEnter * set cursorline
+" autocmd InsertEnter * hi clear CursorLine
+" autocmd InsertEnter * highlight CursorLine ctermbg=233 
+" autocmd InsertLeave * set nocursorline
+autocmd BufRead,BufNewFile *.tex
+	    \ let g:AutoClosePairs = "() {} [] $ \" \'"
