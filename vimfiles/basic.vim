@@ -82,11 +82,10 @@ inoremap <silent> <C-u> <Esc>u
 
 "カッコ等の自動補完 ---> lexima.vimにした
 "微妙だった
-inoremap { {}<Left>
-inoremap ( ()<Left>
-inoremap [ []<Left>
-inoremap ' ''<Left>
-inoremap " ""<Left>
+" inoremap { {}<Left>
+" inoremap ( ()<Left>
+" inoremap [ []<Left>
+" inoremap ' ''<Left>
 
 "===== その他 =====
 set history=10000 "履歴を10000件保存

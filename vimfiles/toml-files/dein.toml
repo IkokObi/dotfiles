@@ -31,6 +31,7 @@ imap <expr><TAB> pumvisible() ?
 '''
 
 
+
 [[plugins]]
 repo = 'Shougo/neosnippet.vim'
 
@@ -92,7 +93,13 @@ hook_add = '''
 let g:autodate_format="%Y/%m/%d %H:%M:%S %Z"
 '''
 
-
+[[plugins]]
+repo = 'Townk/vim-autoclose'
+hook_add='''
+let g:AutoClosePairs = "() {} [] \" \'"
+let g:AutoCloseProtectedRegions = ["String", "Character"]
+'''
+# pythonでうまく動かない?
 
 
 
@@ -126,11 +133,6 @@ let g:autodate_format="%Y/%m/%d %H:%M:%S %Z"
 # hook_add = '''
 # let g:AutoPairs['<']='>'
 # '''
-#
-#
-# [[plugins]]
-# repo = 'Townk/vim-autoclose'
-# pythonでうまく動かない
 #
 #
 # [[plugins]]
