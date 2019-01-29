@@ -97,8 +97,8 @@ let g:autodate_format="%Y/%m/%d %H:%M:%S %Z"
 repo = 'Townk/vim-autoclose'
 hook_add='''
 let g:AutoClosePairs = "() {} [] \" \'"
-let g:AutoCloseProtectedRegions = ["String", "Character"]
 '''
+# let g:AutoCloseProtectedRegions = ["String", "Character"]
 # pythonで' "がうまく動かない?
 
 
