@@ -40,8 +40,8 @@ set virtualedit=onemore "カーソルを行末の一つ先まで移動可能に�
 set smartindent "オートインデント
 set smarttab
 " set tabstop=4 "インデントをスペース4つ分に設定
-set softtabstop=4 "タブが置き換わるスペースの数
-set shiftwidth=4 "自動的に入力されたインデントの空白を4つ分に設定
+" set softtabstop=4 "タブが置き換わるスペースの数
+" set shiftwidth=4 "自動的に入力されたインデントの空白を4つ分に設定
 set whichwrap=b,s,h,l,<,>,[,],~ "行頭、行末で行のカーソル移動を可能にする
 set backspace=indent,eol,start "バックスペースでの行移動を可能にする
 set wildmenu "コマンドモードの補完
