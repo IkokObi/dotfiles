@@ -89,9 +89,10 @@ inoremap <silent> <C-u> <Esc>u
 vnoremap [ di[]<esc><left>p
 vnoremap { di{}<esc><left>p
 vnoremap ( di()<esc><left>p
-vnoremap < di<><esc><left>p
+" vnoremap < di<><esc><left>p " インデントと競合する
 vnoremap $ di$$<esc><left>p
 vnoremap " di""<esc><left>p
+vnoremap ' di''<esc><left>p
 
 
 "===== その他 =====
