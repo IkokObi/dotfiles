@@ -46,7 +46,7 @@ set whichwrap=b,s,h,l,<,>,[,],~ "行頭、行末で行のカーソル移動を�
 set backspace=indent,eol,start "バックスペースでの行移動を可能にする
 set wildmenu "コマンドモードの補完
 set cmdheight=1 "メッセージ表示欄の行数
-set foldmethod=indent
+set foldmethod=manual
 let &t_ti.="\e[1 q" "カーソル表示設定
 let &t_SI.="\e[1 q"
 let &t_EI.="\e[1 q"
