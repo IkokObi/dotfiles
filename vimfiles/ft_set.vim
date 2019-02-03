@@ -21,16 +21,16 @@ autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd BufNewFile *.py 0r !sed -e
 	\ "s;CREATED_DATE;`date +'\%Y/\%m/\%d \%H:\%M:\%S \%Z'`;"
 	\ ~/dotfiles/vimfiles/template/python.txt 
-autocmd FileType python inoremap <Leader>c """"""<Left><Left><Left>
-autocmd FileType python set softtabstop=4
-autocmd FileType python set shiftwidth=4
+autocmd FileType python inoremap <Leader>c """  """<Left><Left><Left><Left>
+autocmd FileType python set softtabstop=4 "タブが置き換わるスペースの数
+autocmd FileType python set shiftwidth=4 "自動的に入力されたインデントの空白を4つ分に設定
 " docstringは表示しない
 autocmd FileType python setlocal completeopt-=preview
 
 
 " ===== C++ =====
-autocmd FileType cpp set softtabstop=4 "タブが置き換わるスペースの数
-autocmd FileType cpp set shiftwidth=4 "自動的に入力されたインデントの空白を4つ分に設定
+autocmd FileType cpp set softtabstop=4 
+autocmd FileType cpp set shiftwidth=4
 
 
 " ===== TeX =====
@@ -44,6 +44,8 @@ autocmd BufRead,BufNewFile *.tex set spelllang=en,cjk
 " autocmd InsertLeave * set nocursorline
 autocmd BufRead,BufNewFile *.tex
 	    \ let g:AutoClosePairs = "() {} [] $ \" \'"
+autocmd BufRead,BufNewFile *.tex set softtabstop=2
+autocmd BufRead,BufNewFile *.tex set shiftwidth=2
 
 " ===== JSON =====
 autocmd BufRead,BufNewFile *.json set softtabstop=2
