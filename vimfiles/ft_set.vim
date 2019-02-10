@@ -5,6 +5,8 @@ autocmd FileType markdown inoremap <Leader><Tab> <Esc>>>
 autocmd FileType markdown inoremap <Leader><S-Tab> <Esc><<
 autocmd FileType markdown nnoremap <Leader><Tab> >>
 autocmd FileType markdown nnoremap <Leader><S-Tab> <<
+autocmd FileType markdown set softtabstop=2
+autocmd FileType markdown set shiftwidth=2
 
 
 " ===== JavaScriptの設定 =====
@@ -15,6 +17,13 @@ autocmd FileType markdown nnoremap <Leader><S-Tab> <<
 " 必要ならコメントアウト外す
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType javascript set softtabstop=2
+autocmd FileType javascript set shiftwidth=2
+
+
+" ===== JavaScriptの設定 =====
+autocmd FileType html set softtabstop=2
+autocmd FileType html set shiftwidth=2
 
 
 " ===== Python =====
