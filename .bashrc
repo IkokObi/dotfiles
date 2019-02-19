@@ -10,6 +10,9 @@ alias s2u='iconv -f cp932 -t UTF-8 '
 alias jopen='jupyter-notebook > .jupyterlog 2>&1 &'
 alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 
+# git
+source /usr/local/etc/bash_completion.d/git-prompt.sh
+source /usr/local/etc/bash_completion.d/git-completion.bash
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
