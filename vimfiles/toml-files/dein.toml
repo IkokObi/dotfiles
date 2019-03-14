@@ -96,10 +96,10 @@ let g:autodate_format="%Y/%m/%d %H:%M:%S %Z"
 [[plugins]]
 repo = 'Townk/vim-autoclose'
 hook_add='''
-let g:AutoClosePairs = "() {} [] \" \'"
+let g:AutoCloseProtectedRegions = ["Character"]
 '''
-# let g:AutoCloseProtectedRegions = ["String", "Character"]
 # pythonで' "がうまく動かない?
+# let g:AutoClosePairs = "() {} [] \" \'"
 
 [[plugins]]
 repo = 'tpope/vim-fugitive'
