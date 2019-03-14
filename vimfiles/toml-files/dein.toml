@@ -101,6 +101,8 @@ let g:AutoClosePairs = "() {} [] \" \'"
 # let g:AutoCloseProtectedRegions = ["String", "Character"]
 # pythonで' "がうまく動かない?
 
+[[plugins]]
+repo = 'tpope/vim-fugitive'
 
 
 # ===== 使わなくなったプラグイン =====
@@ -108,9 +110,6 @@ let g:AutoClosePairs = "() {} [] \" \'"
 # # CtrlP ファイル検索
 # repo = 'ctrlpvim/ctrlp.vim'
 #
-# [[plugins]]
-# # git操作
-# repo = 'tpope/vim-fugitive'
 #
 # [[plugins]]
 # # 文法check, 動作が重い
@@ -119,6 +118,7 @@ let g:AutoClosePairs = "() {} [] \" \'"
 # "let g:syntastic_python_checkers = ['pyflakes', 'pep8']
 # "let g:syntastic_python_checkers = ['flake8']
 # '''
+#
 #
 # [[plugins]]
 # repo = 'vim-scripts/timestamp.vim'
