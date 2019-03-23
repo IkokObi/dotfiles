@@ -57,9 +57,8 @@ nnoremap k gk
 nnoremap <Down> gj
 nnoremap <Up>   gk
 "^, $のキーマッピング
-noremap <Space>h  ^
-noremap <Space>l  $
-noremap <Space>p  %
+nnoremap <Space>h  ^
+nnoremap <Space>l  $
 
 "===== 検索設定 =====
 set ignorecase "大文字、小文字の区別をしない
@@ -81,11 +80,13 @@ inoremap <silent> <C-u> <Esc>u
 
 
 "カッコ等の自動補完 ---> lexima.vimにした
-"微妙だった
 " inoremap { {}<left>
 " inoremap ( ()<left>
 " inoremap [ []<left>
 " inoremap ' ''<left>
+
+" visual-mode時にカッコ等で囲む
+" hogeをvisual文字選択, [を入力 ---> [hoge]
 vnoremap [ di[]<esc><left>p
 vnoremap { di{}<esc><left>p
 vnoremap ( di()<esc><left>p
@@ -93,6 +94,9 @@ vnoremap ( di()<esc><left>p
 vnoremap $ di$$<esc><left>p
 vnoremap " di""<esc><left>p
 vnoremap ' di''<esc><left>p
+
+" pwdをクリップボードにコピー
+nnoremap <Space>p opwd<esc>v2<left>:!sh<Enter>dd
 
 
 "===== その他 =====
