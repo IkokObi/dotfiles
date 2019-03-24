@@ -57,8 +57,8 @@ nnoremap k gk
 nnoremap <Down> gj
 nnoremap <Up>   gk
 "^, $のキーマッピング
-nnoremap <Space>h  ^
-nnoremap <Space>l  $
+noremap <Space>h  ^
+noremap <Space>l  $
 
 "===== 検索設定 =====
 set ignorecase "大文字、小文字の区別をしない
@@ -96,7 +96,7 @@ vnoremap " di""<esc><left>p
 vnoremap ' di''<esc><left>p
 
 " pwdをクリップボードにコピー
-nnoremap <Space>p opwd<esc>v2<left>:!sh<Enter>dd
+noremap <silent> <Space>p :!pwd\|pbcopy<Enter><Enter>
 
 
 "===== その他 =====
