@@ -100,28 +100,34 @@ let g:AutoCloseProtectedRegions = ["Character"]
 '''
 # pythonで' "がうまく動かない?
 # let g:AutoClosePairs = "() {} [] \" \'"
+#
+
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+depends = ['vim-airline-themes']
+hook_add = '''
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#default#layout = [
+\ ['a', 'b', 'c'],
+\ ['x', 'y', 'z']
+\ ]
+let g:airline_theme = 'jellybeans'
+nmap <C-p> <Plug>AirlineSelectPrevTab
+nmap <C-n> <Plug>AirlineSelectNextTab
+'''
+
+
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+
 
 [[plugins]]
 repo = 'tpope/vim-fugitive'
+# vim-airlineのために残す
 
-[[plugins]]
-repo = 'Lokaltog/vim-easymotion'
-hook_add='''
-" <Leader>f{char} to move to {char}
-" map  <Leader>f <Plug>(easymotion-bd-f)
-" nmap <Leader>f <Plug>(easymotion-overwin-f)
-
-" s{char}{char} to move to {char}{char}
-nmap s <Plug>(easymotion-overwin-f2)
-
-" Move to line
-" map <Leader>L <Plug>(easymotion-bd-jk)
-" nmap <Leader>L <Plug>(easymotion-overwin-line)
-
-" Move to word
-map  <Space>w <Plug>(easymotion-bd-w)
-nmap <Space>w <Plug>(easymotion-overwin-w)
-'''
 
 
 # ===== 使わなくなったプラグイン =====
@@ -157,3 +163,24 @@ nmap <Space>w <Plug>(easymotion-overwin-w)
 # repo = 'kana/vim-smartinput'
 # on_event = 'InsertEnter'
 # 削除がうまく機能しない
+#
+#
+#
+# [[plugins]]
+# repo = 'Lokaltog/vim-easymotion'
+# hook_add='''
+# " <Leader>f{char} to move to {char}
+# " map  <Leader>f <Plug>(easymotion-bd-f)
+# " nmap <Leader>f <Plug>(easymotion-overwin-f)
+#
+# " s{char}{char} to move to {char}{char}
+# nmap s <Plug>(easymotion-overwin-f2)
+#
+# " Move to line
+# " map <Leader>L <Plug>(easymotion-bd-jk)
+# " nmap <Leader>L <Plug>(easymotion-overwin-line)
+#
+# " Move to word
+# map  <Space>w <Plug>(easymotion-bd-w)
+# nmap <Space>w <Plug>(easymotion-overwin-w)
+# '''
