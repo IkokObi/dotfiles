@@ -114,8 +114,8 @@ repo = 'w0rp/ale'
 on_ft = ['python']
 hook_add = '''
 let g:ale_linters = {
-\	'python': ['flake8'],
-\	}
+\ 'python': ['flake8'],
+\ }
 let g:ale_sign_column_always = 1
 nnoremap <silent> <Space>m :ALEPrevious<CR>
 nnoremap <silent> <Space>n :ALENext<CR>
