@@ -5,8 +5,8 @@ autocmd FileType markdown inoremap <Leader><Tab> <Esc>>>
 autocmd FileType markdown inoremap <Leader><S-Tab> <Esc><<
 autocmd FileType markdown nnoremap <Leader><Tab> >>
 autocmd FileType markdown nnoremap <Leader><S-Tab> <<
-autocmd FileType markdown set softtabstop=2
-autocmd FileType markdown set shiftwidth=2
+autocmd FileType markdown set softtabstop=4
+autocmd FileType markdown set shiftwidth=4
 
 
 " ===== JavaScriptの設定 =====
