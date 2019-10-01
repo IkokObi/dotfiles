@@ -15,6 +15,7 @@ set listchars=tab:»-,trail:-,extends:»,precedes:«,nbsp:% "可視化設定 eol
 autocmd Colorscheme * highlight FullWidthSpace ctermbg=white
 autocmd VimEnter * match FullWidthSpace /　/
 syntax on "コードに色をつける
+language messages en_IE.UTF-8
 
 "カラースキーム, 行番号の色等
 autocmd ColorScheme * highlight LineNr ctermfg=211
