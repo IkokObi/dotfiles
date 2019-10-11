@@ -1,10 +1,6 @@
 " ===== MarkDown =====
 autocmd BufRead,BufNewFile *.mkd  set filetype=markdown
 autocmd BufRead,BufNewFile *.md  set filetype=markdown
-autocmd FileType markdown inoremap <Leader><Tab> <Esc>>>
-autocmd FileType markdown inoremap <Leader><S-Tab> <Esc><<
-autocmd FileType markdown nnoremap <Leader><Tab> >>
-autocmd FileType markdown nnoremap <Leader><S-Tab> <<
 autocmd FileType markdown set softtabstop=4
 autocmd FileType markdown set shiftwidth=4
 
