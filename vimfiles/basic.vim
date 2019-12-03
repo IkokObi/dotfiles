@@ -81,8 +81,10 @@ inoremap <silent> <C-a> <Esc>^i
 inoremap <silent> <C-e> <Esc>$a
 inoremap <silent> <C-d> <Del>
 inoremap <silent> <C-k> <Esc>ld$i
+inoremap <silent> <C-u> <Esc>ld^i
 inoremap <silent> <C-b> <C-d>
 inoremap <silent> <C-f> <C-t>
+inoremap <silent> <C-y> <C-r>"
 
 
 "カッコ等の自動補完 ---> lexima.vimにした
