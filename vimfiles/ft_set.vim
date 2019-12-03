@@ -2,8 +2,8 @@
 autocmd BufRead,BufNewFile *.mkd  set filetype=markdown
 autocmd BufRead,BufNewFile *.md  set filetype=markdown
 autocmd FileType markdown set softtabstop=4
+autocmd FileType markdown set tabstop=4
 autocmd FileType markdown set shiftwidth=4
-
 
 " ===== JavaScriptの設定 =====
 " autocmd FileType html setlocal indentexpr=""
