@@ -77,6 +77,12 @@ set clipboard=unnamed,autoselect "クリップボードへのコピー
 "jキーを二度押しでESCキー
 inoremap <silent> jj <Esc>
 inoremap <silent> っj <Esc>
+inoremap <silent> <C-a> <Esc>^i
+inoremap <silent> <C-e> <Esc>$a
+inoremap <silent> <C-d> <Del>
+inoremap <silent> <C-k> <Esc>ld$i
+inoremap <silent> <C-b> <C-d>
+inoremap <silent> <C-f> <C-t>
 
 
 "カッコ等の自動補完 ---> lexima.vimにした
