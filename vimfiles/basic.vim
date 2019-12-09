@@ -76,15 +76,16 @@ set ttymouse=xterm2 "ドラッグを可能にする
 set clipboard=unnamed,autoselect "クリップボードへのコピー
 "jキーを二度押しでESCキー
 inoremap <silent> jj <Esc>
-inoremap <silent> っj <Esc>
 inoremap <silent> <C-a> <Esc>^i
 inoremap <silent> <C-e> <Esc>$a
+inoremap <silent> <C-f> <right>
+inoremap <silent> <C-b> <left>
 inoremap <silent> <C-d> <Del>
 inoremap <silent> <C-k> <Esc>ld$i
 inoremap <silent> <C-u> <Esc>ld^i
-inoremap <silent> <C-b> <C-d>
-inoremap <silent> <C-f> <C-t>
 inoremap <silent> <C-y> <C-r>"
+inoremap <silent> <C-l> <C-t>
+inoremap <silent> <C-j> <C-d>
 
 
 "カッコ等の自動補完 ---> lexima.vimにした
