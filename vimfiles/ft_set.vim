@@ -53,6 +53,7 @@ autocmd BufRead,BufNewFile *.tex
 autocmd BufRead,BufNewFile *.tex set softtabstop=2
 autocmd BufRead,BufNewFile *.tex set shiftwidth=2
 autocmd BufRead,BufNewFile *.tex let g:tex_comment_nospell=1
+autocmd BufRead,BufNewFile *.tex let g:tex_conceal=''
 
 " ===== JSON =====
 autocmd BufRead,BufNewFile *.json set softtabstop=2
