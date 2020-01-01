@@ -151,6 +151,14 @@ repo = 'tpope/vim-fugitive'
 # vim-airlineのために残す
 
 
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+hook_add = '''
+let g:indentLine_color_term = 111
+let g:indentLine_char = '¦'
+'''
+
+
 # ===== 使わなくなったプラグイン =====
 # [[plugins]]
 # # CtrlP ファイル検索
