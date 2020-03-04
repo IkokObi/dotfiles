@@ -1,0 +1,45 @@
+
+
+
+
+# ===== Messages =====
+#
+# ===== Format =====
+# Message: Subject
+#
+# Commit body...
+#
+# ===== Message list =====
+# add    新規 ファイル・機能 追加
+# update 機能修正・改善（バグではない)
+# fix    バグ修正
+# clean  リファクタリング
+# chore  他に影響を与えない簡単な修正
+# remove 削除
+# rename ファイル名変更
+
+
+
+# ===== Emojis =====
+#
+# ===== Format =====
+# :emoji: Subject
+#
+# Commit body...
+#
+# ===== Emoji list =====
+# 🎉  :tada: 初めてのコミット（Initial Commit）
+# 💫  :dizzy: 新機能（New Feature）
+# ✨  :sparkles: 機能改善（Feature Improvements）
+# 🐛  :bug: バグ修正（Bagfix）
+# 🔧  :wrench: 些末な修正 (Minor Fix)
+# 🎨  :art: リファクタリング (Refactoring)
+# 📚  :books: ドキュメント（Documentation）
+# 📝  :memo: コメント (Comment)
+# 🗑️  :wastebasket: 削除（Removal）
+# 🚀  :rocket: パフォーマンス改善 (Performance)
+# 🚧  :construction: WIP(Work In Progress)
+# 🔖  :bookmark: バージョンタグ（Version Tag）
+# 🚨  :rotating_light: テスト（Tests）
+# 💩  :hankey: 非推奨追加（Deprecation）
+
