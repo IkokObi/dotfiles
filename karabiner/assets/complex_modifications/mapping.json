@@ -1,0 +1,337 @@
+{
+  "title": "custom",
+  "rules": [
+    {
+      "description": "set vk2 is 1 when command is down",
+      "manipulators": [
+	{
+	  "type": "basic",
+	  "from": {
+	    "key_code": "left_gui",
+	    "modifiers": {
+	      "optional": [
+		"any"
+	      ]
+	    }
+	  },
+	  "to": [
+	    {
+	      "set_variable": {"name": "vk2", "value": 1}
+	    }
+	  ],
+	  "to_after_key_up": [
+	    {
+	      "set_variable": {"name": "vk2", "value": 0}
+	    }
+	  ],
+	  "to_if_alone": [
+	    {
+	      "key_code": "left_gui"
+	    }
+	  ]
+	}
+      ]
+    },
+    {
+      "description": "set vk2 is 1 when lang2 is down",
+      "manipulators": [
+	{
+	  "type": "basic",
+	  "from": {
+	    "key_code": "lang2",
+	    "modifiers": {
+	      "optional": [
+		"any"
+	      ]
+	    }
+	  },
+	  "to": [
+	    {
+	      "set_variable": {"name": "vk2", "value": 1}
+	    }
+	  ],
+	  "to_after_key_up": [
+	    {
+	      "set_variable": {"name": "vk2", "value": 0}
+	    }
+	  ],
+	  "to_if_alone": [
+	    {
+	      "key_code": "lang2"
+	    }
+	  ]
+	}
+      ]
+    },
+    {
+      "description": "set h to left when vk2 is 1",
+      "manipulators": [
+	{
+	  "type": "basic",
+	  "conditions": [
+	    {
+	      "type": "variable_if", "name": "vk2", "value": 1
+	    }
+	  ],
+	  "from": {
+	    "key_code": "h",
+	    "modifiers": {
+	      "optional": [
+		"any"
+	      ]
+	    }
+	  },
+	  "to": [
+	    {
+	      "key_code": "left_arrow"
+	    }
+	  ]
+	}
+      ]
+    },
+    {
+      "description": "set j to down when vk2 is 1",
+      "manipulators": [
+	{
+	  "type": "basic",
+	  "conditions": [
+	    {
+	      "type": "variable_if", "name": "vk2", "value": 1
+	    }
+	  ],
+	  "from": {
+	    "key_code": "j",
+	    "modifiers": {
+	      "optional": [
+		"any"
+	      ]
+	    }
+	  },
+	  "to": [
+	    {
+	      "key_code": "down_arrow"
+	    }
+	  ]
+	}
+      ]
+    },
+    {
+      "description": "set k to up when vk2 is 1",
+      "manipulators": [
+	{
+	  "type": "basic",
+	  "conditions": [
+	    {
+	      "type": "variable_if", "name": "vk2", "value": 1
+	    }
+	  ],
+	  "from": {
+	    "key_code": "k",
+	    "modifiers": {
+	      "optional": [
+		"any"
+	      ]
+	    }
+	  },
+	  "to": [
+	    {
+	      "key_code": "up_arrow"
+	    }
+	  ]
+	}
+      ]
+    },
+    {
+      "description": "set l to right when vk2 is 1",
+      "manipulators": [
+	{
+	  "type": "basic",
+	  "conditions": [
+	    {
+	      "type": "variable_if", "name": "vk2", "value": 1
+	    }
+	  ],
+	  "from": {
+	    "key_code": "l",
+	    "modifiers": {
+	      "optional": [
+		"any"
+	      ]
+	    }
+	  },
+	  "to": [
+	    {
+	      "key_code": "right_arrow"
+	    }
+	  ]
+	}
+      ]
+    },
+    {
+      "description": "command+h to left",
+      "manipulators": [
+	{
+	  "type": "basic",
+	  "from": {
+	    "key_code": "h",
+	    "modifiers": {
+	      "mandatory": [
+		"left_gui"
+	      ]
+	    }
+	  },
+	  "to": [
+	    {
+	      "key_code": "left_arrow"
+	    }
+	  ]
+	}
+      ]
+    },
+    {
+      "description": "command+j to left",
+      "manipulators": [
+	{
+	  "type": "basic",
+	  "from": {
+	    "key_code": "j",
+	    "modifiers": {
+	      "mandatory": [
+		"left_gui"
+	      ]
+	    }
+	  },
+	  "to": [
+	    {
+	      "key_code": "down_arrow"
+	    }
+	  ]
+	}
+      ]
+    },
+    {
+      "description": "command+k to left",
+      "manipulators": [
+	{
+	  "type": "basic",
+	  "from": {
+	    "key_code": "k",
+	    "modifiers": {
+	      "mandatory": [
+		"left_gui"
+	      ]
+	    }
+	  },
+	  "to": [
+	    {
+	      "key_code": "up_arrow"
+	    }
+	  ]
+	}
+      ]
+    },
+    {
+      "description": "command+l to left",
+      "manipulators": [
+	{
+	  "type": "basic",
+	  "from": {
+	    "key_code": "l",
+	    "modifiers": {
+	      "mandatory": [
+		"left_gui"
+	      ]
+	    }
+	  },
+	  "to": [
+	    {
+	      "key_code": "right_arrow"
+	    }
+	  ]
+	}
+      ]
+    },
+    {
+      "description": "control+command to command",
+      "manipulators": [
+	{
+	  "type": "basic",
+	  "from": {
+	    "key_code": "left_gui",
+	    "modifiers": {
+	      "mandatory": [
+		"control"
+	      ]
+	    }
+	  },
+	  "to": [
+	    {
+	      "key_code": "left_gui"
+	    }
+	  ]
+	}
+      ]
+    },
+    {
+      "description": "control+space to command",
+      "manipulators": [
+	{
+	  "type": "basic",
+	  "from": {
+	    "key_code": "spacebar",
+	    "modifiers": {
+	      "mandatory": [
+		"control"
+	      ]
+	    }
+	  },
+	  "to": [
+	    {
+	      "key_code": "left_gui"
+	    }
+	  ]
+	}
+      ]
+    },
+    {
+      "description": "yen symbol to backslach",
+      "manipulators": [
+	{
+	  "type": "basic",
+	  "from": {
+	    "key_code": "international3"
+	  },
+	  "to": [
+	    {
+	      "key_code": "international3",
+	      "modifiers": [
+		"option"
+	      ]
+	    }
+	  ]
+	}
+      ]
+    },
+    {
+      "description": "backslach to yen mark",
+      "manipulators": [
+	{
+	  "type": "basic",
+	  "from": {
+	    "key_code": "international3",
+	    "modifiers": {
+	      "mandatory": [
+		"option"
+	      ]
+	    }
+	  },
+	  "to": [
+	    {
+	      "key_code": "international3"
+	    }
+	  ]
+	}
+      ]
+    }
+  ]
+}
