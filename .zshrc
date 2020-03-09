@@ -44,6 +44,7 @@ alias jopen='jupyter-notebook > .jupyterlog 2>&1 &'
 alias gib='git branch'
 alias gis='git status'
 
+# for vim path
 export PATH="/usr/local/bin:$PATH"
 
 # pyenv settings
