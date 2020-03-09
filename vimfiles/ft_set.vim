@@ -4,6 +4,7 @@ autocmd BufRead,BufNewFile *.md  set filetype=markdown
 autocmd FileType markdown set softtabstop=4
 autocmd FileType markdown set tabstop=4
 autocmd FileType markdown set shiftwidth=4
+autocmd FileType markdown set conceallevel=0
 
 " ===== JavaScriptの設定 =====
 " autocmd FileType html setlocal indentexpr=""
@@ -58,3 +59,9 @@ autocmd BufRead,BufNewFile *.tex let g:tex_conceal=''
 " ===== JSON =====
 autocmd BufRead,BufNewFile *.json set softtabstop=2
 autocmd BufRead,BufNewFile *.json set shiftwidth=2
+
+" ===== yaml =====
+autocmd BufRead,BufNewFile *.yaml set softtabstop=2
+autocmd BufRead,BufNewFile *.yml set softtabstop=2
+autocmd BufRead,BufNewFile *.yaml set shiftwidth=2
+autocmd BufRead,BufNewFile *.yml set shiftwidth=2
