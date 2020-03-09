@@ -94,6 +94,7 @@ hook_add = '''
 " let g:vim_markdown_auto_insert_bullets = 0
 " Shift-o でinsertモードに入ったときに自動インデントしない
 let g:vim_markdown_new_list_item_indent = 0
+let g:vim_markdown_conceal = 0
 '''
 
 
@@ -120,6 +121,15 @@ let g:vim_json_syntax_conceal = 0
 [[plugins]]
 repo = 'leafgarland/typescript-vim'
 on_ft = ['typescript']
+
+
+[[plugins]]
+repo = 'hashivim/vim-terraform'
+on_ft = ['tf', 'terraform']
+hook_add = '''
+let g:terraform_align=1
+let g:terraform_fmt_on_save=1
+'''
 
 
 
