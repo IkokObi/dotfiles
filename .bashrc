@@ -21,8 +21,6 @@ source /usr/local/etc/bash_completion.d/git-prompt.sh
 source /usr/local/etc/bash_completion.d/git-completion.bash
 
 # prompt config
-export GIT_PS1_SHOWUNTRACKEDFILES=1
-GIT_PS1_SHOWCOLORHINTS=true
 GIT_PS1_SHOWUNTRACKEDFILES=1
 GIT_PS1_SHOWDIRTYSTATE=1
 p_color_s1='\[\033[36m\]'
@@ -30,7 +28,7 @@ p_color_e='\[\033[0m\]'
 p_time='\t '
 p_py='(py:$(pyenv version-name)) '
 p_user_host_dir='\u@\h:\w'
-p_git='\n$(__git_ps1 "(%s)")'
+p_git='\n$(__git_ps1 "[%s]")'
 p_exec='$ '
 PS1=$p_color_s1$p_time$p_py$p_user_host_dir$p_git$p_color_e$p_exec
 
