@@ -1,24 +1,29 @@
-# for git completion
+# basic settings
+## for git completion
 fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
 
-# 補完機能
+## completion for lower and upper case
 autoload -U compinit
 compinit -u
-# 大文字小文字を無視（大文字を入力した際は小文字の候補を表示しない）
+## 大文字小文字を無視（大文字を入力した際は小文字の候補を表示しない）
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}'
 
-# ベル無し
+## ベル無し
 setopt no_beep
 
-# prompt
-# cf: show all colors
-#   for c in {000..255}; do echo -n "\e[38;5;${c}m $c" ; [ $(($c%16)) -eq 15 ] && echo;done;echo
+## Ctrl-wの範囲変更
+WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
+
+
+# Prompt
+## cf: show all colors
+##   for c in {000..255}; do echo -n "\e[38;5;${c}m $c" ; [ $(($c%16)) -eq 15 ] && echo;done;echo
 local p_time=$'%F{044}%*%f '  # hh:mm:ss
 local p_user_host=$'%F{044}%n@%m%f '  # user@host
 local p_dir=$'%F{044}[%~]%f\n'  # [directory]
 local p_exec=$'> '  # last execution line
 
-# prompt git info
+## prompt git info
 autoload -Uz vcs_info
 setopt prompt_subst
 zstyle ':vcs_info:git:*' check-for-changes true
@@ -29,10 +34,11 @@ zstyle ':vcs_info:*' actionformats '[%b|%a] '
 precmd () { vcs_info }
 local p_git='$vcs_info_msg_0_'
 
-# Total prompt
+## Total prompt
 PROMPT=$p_time$p_user_host$p_dir$p_git$p_exec
 
-# alias
+
+# Aliases
 alias ls='ls -FG'
 alias la='ls -aFG'
 alias ll='ls -l'
@@ -44,10 +50,12 @@ alias jopen='jupyter-notebook > .jupyterlog 2>&1 &'
 alias gib='git branch'
 alias gis='git status'
 
-# for vim path
+
+# Path settings
+## path for vim
 export PATH="/usr/local/bin:$PATH"
 
-# pyenv settings
+## pyenv settings
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
