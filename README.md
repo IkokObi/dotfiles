@@ -7,9 +7,26 @@ vimrcの設定のみ利用したい場合には ".bash_profile"
 
 ## List
 - link.sh
-- .vimrc
+
+### zsh
+- .zshrc
+- .zprofile
+
+### bash
 - .bash_profile
+- .bashrc
+- .inputrc
+
+### git
+- .git_commit_template
+- .gitconfig
+- .gitignore_global
+
+### others
+- .ctags
 - .latexmkrc
+- .vimrc
+
 
 ## Vimの設定
 ### 使い方
