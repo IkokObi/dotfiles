@@ -14,8 +14,8 @@ DOT_DIRECTORY="${HOME}/dotfiles"
 
 
 ## === git ===
+## NOTE: Please set .gitconfig by yourself
 # ln -snfv ${DOT_DIRECTORY}/.git_commit_template ${HOME}/.git_commit_template
-# ln -snfv ${DOT_DIRECTORY}/.gitconfig ${HOME}/.gitconfig
 # ln -snfv ${DOT_DIRECTORY}/.gitignore_global ${HOME}/.gitignore_global
 
 
