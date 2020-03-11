@@ -1,4 +1,4 @@
-# basic settings
+# Basic and package settings
 ## for git completion
 fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
 
@@ -13,6 +13,16 @@ setopt no_beep
 
 ## Ctrl-wの範囲変更
 WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
+
+## path for vim
+export PATH="/usr/local/bin:$PATH"
+
+## pyenv settings
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
 
 
 # Prompt
@@ -49,15 +59,4 @@ alias s2u='iconv -f cp932 -t UTF-8 '
 alias jopen='jupyter-notebook > .jupyterlog 2>&1 &'
 alias gib='git branch'
 alias gis='git status'
-
-
-# Path settings
-## path for vim
-export PATH="/usr/local/bin:$PATH"
-
-## pyenv settings
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
+alias pcp="pwd | tr -d '\n' | pbcopy"
