@@ -1,0 +1,4 @@
+[core]
+	excludesfile = /Users/ikokpro/.gitignore_global
+[commit]
+	template = /Users/ikokpro/.git_commit_template
