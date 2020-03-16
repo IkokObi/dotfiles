@@ -60,3 +60,7 @@ alias jopen='jupyter-notebook > .jupyterlog 2>&1 &'
 alias gib='git branch'
 alias gis='git status'
 alias pcp="pwd | tr -d '\n' | pbcopy"
+
+# path for fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
