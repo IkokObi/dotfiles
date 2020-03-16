@@ -48,3 +48,6 @@ if [ -f '/Users/ikokpro/Private/gcp/google-cloud-sdk/path.bash.inc' ]; then . '/
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/ikokpro/Private/gcp/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/ikokpro/Private/gcp/google-cloud-sdk/completion.bash.inc'; fi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
