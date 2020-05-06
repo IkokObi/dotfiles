@@ -14,6 +14,10 @@ export PATH=$PATH:$HOME/.nodebrew/current/bin
 # Homebrewでjumanをインストールした場合はコメントアウト
 # export PATH=$PATH:/Users/koki/Downloads/jumanpp-2.0.0-rc2/bin
 
+# gcp
+export CLOUDSDK_PYTHON=python3
+
+
 if [ -f ~/.bashrc ]; then
     . ~/.bashrc
 fi
