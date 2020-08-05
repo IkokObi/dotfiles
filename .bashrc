@@ -32,8 +32,8 @@ alias la='ls -aFG'
 alias ll='ls -l'
 alias coa='conda activate'
 ### how to use: u2s (-c) spam.csv > spam-cp.csv
-alias u2s='iconv -f UTF-8 -t cp932 ' # UTF-8 --> cp932(Microsoft Shift_JIS)
-alias s2u='iconv -f cp932 -t UTF-8 '
+alias u2s='/usr/bin/iconv -f UTF-8 -t cp932 ' # UTF-8 --> cp932(Microsoft Shift_JIS)
+alias s2u='/usr/bin/iconv -f cp932 -t UTF-8 '
 alias jopen='jupyter-notebook > .jupyterlog 2>&1 &'
 alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 alias simple_timer='open ~/Github/simple_timer/index.html'
