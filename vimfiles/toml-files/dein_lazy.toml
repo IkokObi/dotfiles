@@ -3,7 +3,6 @@ repo = 'cespare/vim-toml'
 on_ft = ['toml']
 
 
-
 [[plugins]]
 repo = 'plasticboy/vim-markdown'
 on_ft = ['md', 'markdown']
@@ -34,18 +33,3 @@ on_ft = ['json']
 hook_add = '''
 let g:vim_json_syntax_conceal = 0
 '''
-
-# [[plugins]]
-# repo = 'ryanolsonx/vim-lsp-python'
-# on_ft = ['python']
-# hook_add = '''
-# " registar pyls to vim-lsp
-# let s:pyls_path = '~/Settings/python-settings/complete/bin/pyls'
-# if (executable(expand(s:pyls_path)))
-#     au User lsp_setup call lsp#register_server({
-#     \ 'name': 'pyls',
-#     \ 'cmd': {server_info->[expand(s:pyls_path)]},
-#     \ 'whitelist': ['python']
-#     \ })
-# endif
-# '''

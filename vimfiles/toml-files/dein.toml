@@ -22,7 +22,6 @@ inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
 repo = 'prabirshrestha/asyncomplete-lsp.vim'
 
 
-
 [[plugins]]
 repo = 'scrooloose/nerdtree'
 hook_add = '''
