@@ -16,6 +16,7 @@ autocmd Colorscheme * highlight FullWidthSpace ctermbg=white
 autocmd VimEnter * match FullWidthSpace /　/
 syntax on "コードに色をつける
 language messages en_IE.UTF-8
+set termwinsize=7x0
 
 " カラースキーム, 行番号の色等
 autocmd ColorScheme * highlight LineNr ctermfg=211
