@@ -23,6 +23,30 @@ repo = 'prabirshrestha/asyncomplete-lsp.vim'
 
 
 [[plugins]]
+repo = 'prabirshrestha/async.vim'
+
+
+[[plugins]]
+repo = 'SirVer/ultisnips'
+
+
+[[plugins]]
+repo = 'honza/vim-snippets'
+
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-ultisnips.vim'
+hook_add = '''
+let g:UltiSnipsExpandTrigger="<CR>"
+call asyncomplete#register_source(asyncomplete#sources#ultisnips#get_source_options({
+  \ 'name': 'ultisnips',
+  \ 'whitelist': ['*'],
+  \ 'completor': function('asyncomplete#sources#ultisnips#completor'),
+  \ }))
+'''
+
+
+[[plugins]]
 repo = 'scrooloose/nerdtree'
 hook_add = '''
 nnoremap <silent><Space>f :NERDTreeToggle<CR>
