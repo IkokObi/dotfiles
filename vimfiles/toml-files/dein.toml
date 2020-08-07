@@ -3,6 +3,26 @@ repo = 'Shougo/dein.vim'
 
 
 [[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+hook_add = '''
+let g:lsp_diagnostics_enabled = 0
+'''
+
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete.vim'
+hook_add = '''
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
+'''
+
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-lsp.vim'
+
+
+[[plugins]]
 repo = 'scrooloose/nerdtree'
 hook_add = '''
 nnoremap <silent><Space>f :NERDTreeToggle<CR>
@@ -69,8 +89,11 @@ let g:ale_sign_column_always = 1
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 0
 let g:ale_fix_on_save = 1
+<<<<<<< HEAD
 let g:ale_python_isort_options = '-l 88 --multi_line 3 --trailing-comma'
 let g:ale_python_black_options = '-l 88'
+=======
+>>>>>>> origin/user/macbook_air-2017
 nnoremap <silent> <Space>m :ALEPrevious<CR>
 nnoremap <silent> <Space>n :ALENext<CR>
 let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']

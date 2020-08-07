@@ -1,10 +1,7 @@
 " ===== MarkDown =====
 autocmd BufRead,BufNewFile *.mkd  set filetype=markdown
 autocmd BufRead,BufNewFile *.md  set filetype=markdown
-autocmd FileType markdown set softtabstop=4
-autocmd FileType markdown set tabstop=4
-autocmd FileType markdown set shiftwidth=4
-autocmd FileType markdown set conceallevel=0
+autocmd Filetype markdown source <sfile>:h/ftplugins/markdown.vim
 
 " ===== JavaScriptの設定 =====
 " autocmd FileType html setlocal indentexpr=""
@@ -24,11 +21,7 @@ autocmd FileType html set shiftwidth=2
 
 
 " ===== Python =====
-autocmd FileType python inoremap <Leader>c """  """<Left><Left><Left><Left>
-autocmd FileType python set softtabstop=4 "タブが置き換わるスペースの数
-autocmd FileType python set shiftwidth=4 "自動的に入力されたインデントの空白を4つ分に設定
-" docstringは表示しない
-autocmd FileType python setlocal completeopt-=preview
+autocmd Filetype python source <sfile>:h/ftplugins/python.vim
 
 
 " ===== C++ =====
@@ -54,11 +47,7 @@ autocmd BufRead,BufNewFile *.tex let g:tex_comment_nospell=1
 autocmd BufRead,BufNewFile *.tex let g:tex_conceal=''
 
 " ===== JSON =====
-autocmd BufRead,BufNewFile *.json set softtabstop=2
-autocmd BufRead,BufNewFile *.json set shiftwidth=2
+autocmd Filetype json source <sfile>:h/ftplugins/json.vim
 
 " ===== yaml =====
-autocmd BufRead,BufNewFile *.yaml set softtabstop=2
-autocmd BufRead,BufNewFile *.yml set softtabstop=2
-autocmd BufRead,BufNewFile *.yaml set shiftwidth=2
-autocmd BufRead,BufNewFile *.yml set shiftwidth=2
+autocmd Filetype yaml source <sfile>:h/ftplugins/yaml.vim

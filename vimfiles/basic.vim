@@ -33,7 +33,7 @@ let &colorcolumn=join(range(80,999),",")
 hi ColorColumn ctermbg=234
 
 " インサート時に行ハイライト
-autocmd InsertEnter * highlight CursorLine ctermbg=17 
+autocmd InsertEnter * highlight CursorLine ctermbg=17
 autocmd InsertLeave * hi clear CursorLine
 
 
