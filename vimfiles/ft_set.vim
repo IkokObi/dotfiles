@@ -24,9 +24,6 @@ autocmd FileType html set shiftwidth=2
 
 
 " ===== Python =====
-autocmd BufNewFile *.py 0r !sed -e
-	\ "s;CREATED_DATE;`date +'\%Y/\%m/\%d \%H:\%M:\%S \%Z'`;"
-	\ ~/dotfiles/vimfiles/template/python.txt 
 autocmd FileType python inoremap <Leader>c """  """<Left><Left><Left><Left>
 autocmd FileType python set softtabstop=4 "タブが置き換わるスペースの数
 autocmd FileType python set shiftwidth=4 "自動的に入力されたインデントの空白を4つ分に設定

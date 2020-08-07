@@ -64,3 +64,4 @@ alias pcp="pwd | tr -d '\n' | pbcopy"
 # path for fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
+. /Users/obi-research/.pyenv/versions/anaconda3-5.3.0/etc/profile.d/conda.sh

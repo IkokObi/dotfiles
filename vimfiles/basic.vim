@@ -16,6 +16,7 @@ autocmd Colorscheme * highlight FullWidthSpace ctermbg=white
 autocmd VimEnter * match FullWidthSpace /　/
 syntax on "コードに色をつける
 language messages en_IE.UTF-8
+set termwinsize=7x0
 
 " カラースキーム, 行番号の色等
 autocmd ColorScheme * highlight LineNr ctermfg=211
@@ -29,10 +30,10 @@ hi Special ctermfg=208
 hi ModeMsg ctermfg=208
 hi Function ctermfg=208
 let &colorcolumn=join(range(80,999),",")
-hi ColorColumn ctermbg=17
+hi ColorColumn ctermbg=234
 
 " インサート時に行ハイライト
-autocmd InsertEnter * highlight CursorLine ctermbg=233 
+autocmd InsertEnter * highlight CursorLine ctermbg=17 
 autocmd InsertLeave * hi clear CursorLine
 
 
@@ -51,7 +52,7 @@ set wildmenu "コマンドモードの補完
 set cmdheight=1 "メッセージ表示欄の行数
 set foldmethod=manual
 let &t_ti.="\e[1 q" "カーソル表示設定
-let &t_SI.="\e[1 q"
+let &t_SI.="\e[6 q"
 let &t_EI.="\e[1 q"
 let &t_te.="\e[0 q"
 " 表示行単位で移動
