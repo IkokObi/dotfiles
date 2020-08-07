@@ -7,6 +7,7 @@ autoload -U compinit
 compinit -u
 ## 大文字小文字を無視（大文字を入力した際は小文字の候補を表示しない）
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}'
+zstyle ':completion:*' special-dirs true
 
 ## ベル無し
 setopt no_beep
