@@ -3,41 +3,24 @@ repo = 'Shougo/dein.vim'
 
 
 [[plugins]]
-repo = 'Shougo/neocomplete.vim'
+repo = 'prabirshrestha/vim-lsp'
 hook_add = '''
-" Vim起動時にneocompleteを有効にする
-let g:neocomplete#enable_at_startup = 1
-" smartcase有効化. 大文字が入力されるまで大文字小文字の区別を無視する
-let g:neocomplete#enable_smart_case = 1
-" 3文字以上の単語に対して補完を有効にする
-let g:neocomplete#min_keyword_length = 2
-" 区切り文字まで補完する
-let g:neocomplete#enable_auto_delimiter = 1
-" 1文字目の入力から補完のポップアップを表示
-let g:neocomplete#auto_completion_start_length = 1
-" バックスペースで補完のポップアップを閉じる
-inoremap <expr><BS> neocomplete#smart_close_popup()."<C-h>"
-
-" エンターキーで補完候補の確定. スニペットの展開もエンターキーで確定
-imap <expr><CR> neosnippet#expandable() ?
-	\ "<Plug>(neosnippet_expand_or_jump)" :
-	\ pumvisible() ? "<C-y>" : "<CR>"
-" タブキーで補完候補の選択. スニペット内のジャンプもタブキーでジャンプ
-imap <expr><TAB> pumvisible() ?
-	\ "<C-n>" : 
-	\ neosnippet#jumpable() ?
-	\ "<Plug>(neosnippet_expand_or_jump)" :
-	\ "<TAB>"
+let g:lsp_diagnostics_enabled = 0
 '''
 
 
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete.vim'
+hook_add = '''
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
+'''
+
 
 [[plugins]]
-repo = 'Shougo/neosnippet.vim'
+repo = 'prabirshrestha/asyncomplete-lsp.vim'
 
-
-[[plugins]]
-repo = 'Shougo/neosnippet-snippets'
 
 
 [[plugins]]
@@ -88,12 +71,6 @@ vmap gl <Plug>(openbrowser-smart-search)
 
 
 [[plugins]]
-repo = 'vim-scripts/autodate.vim'
-hook_add = '''
-let g:autodate_format="%Y/%m/%d %H:%M:%S %Z"
-'''
-
-[[plugins]]
 repo = 'Townk/vim-autoclose'
 hook_add='''
 let g:AutoCloseProtectedRegions = ["Character"]
@@ -109,9 +86,13 @@ hook_add = '''
 let g:ale_linters = {
 \ 'python': ['flake8'],
 \ }
+let g:ale_fixers = {
+\ 'python': ['isort', 'black'],
+\ }
 let g:ale_sign_column_always = 1
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 0
+let g:ale_fix_on_save = 1
 nnoremap <silent> <Space>m :ALEPrevious<CR>
 nnoremap <silent> <Space>n :ALENext<CR>
 let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
@@ -168,59 +149,3 @@ merged = 0
 [[plugins]]
 repo = 'junegunn/fzf.vim'
 depends = ['fzf']
-
-
-# ===== 使わなくなったプラグイン =====
-# [[plugins]]
-# # CtrlP ファイル検索
-# repo = 'ctrlpvim/ctrlp.vim'
-#
-#
-# [[plugins]]
-# # 文法check, 動作が重い
-# repo = 'scrooloose/syntastic'
-# hook_add = '''
-# "let g:syntastic_python_checkers = ['pyflakes', 'pep8']
-# "let g:syntastic_python_checkers = ['flake8']
-# '''
-#
-#
-# [[plugins]]
-# repo = 'vim-scripts/timestamp.vim'
-# hook_add = '''
-# let g:timestamp_rep='%Y/%m/%d %H:%M:%S.'
-# '''
-#
-#
-# [[plugins]]
-# repo = 'jiangmiao/auto-pairs'
-# hook_add = '''
-# let g:AutoPairs['<']='>'
-# '''
-#
-#
-# [[plugins]]
-# repo = 'kana/vim-smartinput'
-# on_event = 'InsertEnter'
-# 削除がうまく機能しない
-#
-#
-#
-# [[plugins]]
-# repo = 'Lokaltog/vim-easymotion'
-# hook_add='''
-# " <Leader>f{char} to move to {char}
-# " map  <Leader>f <Plug>(easymotion-bd-f)
-# " nmap <Leader>f <Plug>(easymotion-overwin-f)
-#
-# " s{char}{char} to move to {char}{char}
-# nmap s <Plug>(easymotion-overwin-f2)
-#
-# " Move to line
-# " map <Leader>L <Plug>(easymotion-bd-jk)
-# " nmap <Leader>L <Plug>(easymotion-overwin-line)
-#
-# " Move to word
-# map  <Space>w <Plug>(easymotion-bd-w)
-# nmap <Space>w <Plug>(easymotion-overwin-w)
-# '''
