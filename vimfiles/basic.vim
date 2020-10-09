@@ -88,7 +88,7 @@ inoremap <silent> <C-b> <left>
 inoremap <silent> <C-d> <Del>
 inoremap <silent> <C-k> <Esc>ld$i
 inoremap <silent> <C-u> <Esc>ld^i
-inoremap <silent> <C-y> <C-r>"
+" inoremap <silent> <C-y> <C-r>" "保管の決定と競合する
 inoremap <silent> <C-l> <C-t>
 inoremap <silent> <C-j> <C-d>
 
@@ -116,6 +116,7 @@ noremap <silent> <Space>p :!pwd\|pbcopy<Enter><Enter>
 " ===== その他 =====
 set history=10000 "履歴を10000件保存
 set pumheight=10 "変換候補で一度に表示される数
+set splitright
 
 " ===== ctags =====
 set tags=tags;$HOME

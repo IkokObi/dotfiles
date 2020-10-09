@@ -6,7 +6,9 @@ fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
 autoload -U compinit
 compinit -u
 ## 大文字小文字を無視（大文字を入力した際は小文字の候補を表示しない）
+zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}'
+zstyle ':completion:*' special-dirs true
 
 ## ベル無し
 setopt no_beep
@@ -64,3 +66,13 @@ alias pcp="pwd | tr -d '\n' | pbcopy"
 # path for fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
+
+# Python
+source ~/Settings/python/default/bin/activate
+export PIPENV_IGNORE_VIRTUALENVS=1
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/ikokpro/Settings/gcloud/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ikokpro/Settings/gcloud/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/ikokpro/Settings/gcloud/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ikokpro/Settings/gcloud/google-cloud-sdk/completion.zsh.inc'; fi

@@ -44,3 +44,8 @@ export CPPFLAGS="-I/usr/local/opt/llvm/include"
 
 . /Users/ikokpro/.pyenv/versions/anaconda3-5.3.0/etc/profile.d/conda.sh
 # conda activate normal
+source ~/Settings/python/default/bin/activate
+export PIPENV_IGNORE_VIRTUALENVS=1
+
+export PATH="$HOME/.poetry/bin:$PATH"
+export PATH="/usr/local/opt/gettext/bin:$PATH"

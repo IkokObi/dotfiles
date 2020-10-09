@@ -132,6 +132,11 @@ let g:terraform_fmt_on_save=1
 '''
 
 
+[[plugins]]
+repo = 'mattn/vim-corona-stats'
+on_ft = ['txt']
+
+
 
 # [[plugins]]
 # repo = 'cohama/lexima.vim'
