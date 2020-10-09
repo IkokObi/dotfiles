@@ -85,11 +85,11 @@ inoremap <silent> <C-e> <Esc>$a
 inoremap <silent> <C-f> <right>
 inoremap <silent> <C-b> <left>
 inoremap <silent> <C-d> <Del>
-inoremap <silent> <C-k> <Esc>ld$i
-inoremap <silent> <C-u> <Esc>ld^i
-inoremap <silent> <C-y> <C-r>"
-inoremap <silent> <C-l> <C-t>
-inoremap <silent> <C-j> <C-d>
+inoremap <silent> <C-k> <right><Esc>d$i
+inoremap <silent> <C-u> <Esc><right>d^i
+" inoremap <silent> <C-y> <C-r>"
+" inoremap <silent> <C-l> <C-t>
+" inoremap <silent> <C-j> <C-d>
 
 
 " カッコ等の自動補完 ---> lexima.vimにした
