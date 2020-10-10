@@ -86,11 +86,11 @@ inoremap <silent> <C-e> <Esc>$a
 inoremap <silent> <C-f> <right>
 inoremap <silent> <C-b> <left>
 inoremap <silent> <C-d> <Del>
-inoremap <silent> <C-k> <Esc>ld$i
-inoremap <silent> <C-u> <Esc>ld^i
+inoremap <silent> <C-k> <right><Esc>d$i
+inoremap <silent> <C-u> <Esc><right>d^i
 " inoremap <silent> <C-y> <C-r>" "保管の決定と競合する
-inoremap <silent> <C-l> <C-t>
-inoremap <silent> <C-j> <C-d>
+" inoremap <silent> <C-l> <C-t>
+" inoremap <silent> <C-j> <C-d>
 
 
 " カッコ等の自動補完 ---> lexima.vimにした
@@ -117,6 +117,3 @@ noremap <silent> <Space>p :!pwd\|pbcopy<Enter><Enter>
 set history=10000 "履歴を10000件保存
 set pumheight=10 "変換候補で一度に表示される数
 set splitright
-
-" ===== ctags =====
-set tags=tags;$HOME
