@@ -3,87 +3,71 @@ repo = 'cespare/vim-toml'
 on_ft = ['toml']
 
 
-[[plugins]]
-repo = 'lervag/vimtex'
-on_ft = ['tex']
-hook_add = '''
-let g:vimtex_compiler_latexmk_engines = { '_' : '-pdfdvi' }
-let g:vimtex_compiler_latexmk = {
-     \ 'background': 1,
-     \ 'build_dir': '',
-     \ 'continuous': 1,
-     \ 'options': [
-     \    '-pdfdvi', 
-     \    '-verbose',
-     \    '-file-line-error',
-     \    '-synctex=1',
-     \    '-interaction=nonstopmode',
-     \],
-     \}
-
-let g:vimtex_view_general_viewer
-     \ = '/Applications/Skim.app/Contents/SharedSupport/displayline'
-let g:vimtex_view_general_options = '-r @line @pdf @tex'
-autocmd FileType tex syntax spell toplevel
-let g:vimtex_compiler_latexmk['callback'] = 0 "callbackの警告を表示しない
-" let g:vimtex_motion_matchparen = 0 "syntax highlighting of matching parenthesis --> off
-" let g:matchup_matchparen_deferred = 1
-
-if !exists('g:neocomplete#sources#omni#input_patterns')
-	let g:neocomplete#sources#omni#input_patterns = {}
-endif
-
-" ===== 以下エラーが出る =====
-" let g:neocomplete#sources#omni#input_patterns.tex =
-"	\ g:vimtex#re#neocomplete
-" エラーログ
-" [dein] Error occurred while executing hook: vimtex
-" [dein] Vim(let):E121: Undefined variable: g:vimtex#re#neocomplete
-" ============================
-"
-" ---> 愚直な対処をした(vimtex#re#neocompleteの中身を貼り付けた)
-" let g:neocomplete#sources#omni#input_patterns.tex =
-"        \ '\v\\%('
-"        \ .  '\a*cite\a*%(\s*\[[^]]*\]){0,2}\s*\{[^}]*'
-"        \ . '|%(text|block)cquote\*?%(\s*\[[^]]*\]){0,2}\s*\{[^}]*'
-"        \ . '|%(for|hy)\w*cquote\*?\{[^}]*}%(\s*\[[^]]*\]){0,2}\s*\{[^}]*'
-"        \ . '|\a*ref%(\s*\{[^}]*|range\s*\{[^,}]*%(}\{)?)'
-"        \ . '|hyperref\s*\[[^]]*'
-"        \ . '|includegraphics\*?%(\s*\[[^]]*\]){0,2}\s*\{[^}]*'
-"        \ . '|%(include%(only)?|input|subfile)\s*\{[^}]*'
-"        \ . '|\a*(gls|Gls|GLS)(pl)?\a*%(\s*\[[^]]*\]){0,2}\s*\{[^}]*'
-"        \ . '|includepdf%(\s*\[[^]]*\])?\s*\{[^}]*'
-"        \ . '|includestandalone%(\s*\[[^]]*\])?\s*\{[^}]*'
-"        \ . '|%(usepackage|RequirePackage|PassOptionsToPackage)%(\s*\[[^]]*\])?\s*\{[^}]*'
-"        \ . '|documentclass%(\s*\[[^]]*\])?\s*\{[^}]*'
-"        \ . '|begin%(\s*\[[^]]*\])?\s*\{[^}]*'
-"        \ . '|end%(\s*\[[^]]*\])?\s*\{[^}]*'
-"        \ . '|\a*'
-"        \ . ')'
-"
-" ---> 以下にあるようにhook_sourceで一応解決した
-'''
-# hook_post_sourceだとエラーは出ないけれど補完もされなかった
-# hook_sourceでうまく動いた
-hook_source = '''
-let g:neocomplete#sources#omni#input_patterns.tex = g:vimtex#re#neocomplete
-'''
-
-
-[[plugins]]
-repo = 'othree/yajs.vim'
-on_ft = ['javascript']
-
-
-[[plugins]]
-repo = 'mattn/emmet-vim'
-on_ft = ['css', 'html', 'javascript']
-
-
-[[plugins]]
-repo = 'marijnh/tern_for_vim'
-on_ft = ['javascript']
-# npm installの必要あり
+# [[plugins]]
+# repo = 'lervag/vimtex'
+# on_ft = ['tex']
+# hook_add = '''
+# let g:vimtex_compiler_latexmk_engines = { '_' : '-pdfdvi' }
+# let g:vimtex_compiler_latexmk = {
+#      \ 'background': 1,
+#      \ 'build_dir': '',
+#      \ 'continuous': 1,
+#      \ 'options': [
+#      \    '-pdfdvi', 
+#      \    '-verbose',
+#      \    '-file-line-error',
+#      \    '-synctex=1',
+#      \    '-interaction=nonstopmode',
+#      \],
+#      \}
+# 
+# let g:vimtex_view_general_viewer
+#      \ = '/Applications/Skim.app/Contents/SharedSupport/displayline'
+# let g:vimtex_view_general_options = '-r @line @pdf @tex'
+# autocmd FileType tex syntax spell toplevel
+# let g:vimtex_compiler_latexmk['callback'] = 0 "callbackの警告を表示しない
+# " let g:vimtex_motion_matchparen = 0 "syntax highlighting of matching parenthesis --> off
+# " let g:matchup_matchparen_deferred = 1
+# 
+# if !exists('g:neocomplete#sources#omni#input_patterns')
+# 	let g:neocomplete#sources#omni#input_patterns = {}
+# endif
+# 
+# " ===== 以下エラーが出る =====
+# " let g:neocomplete#sources#omni#input_patterns.tex =
+# "	\ g:vimtex#re#neocomplete
+# " エラーログ
+# " [dein] Error occurred while executing hook: vimtex
+# " [dein] Vim(let):E121: Undefined variable: g:vimtex#re#neocomplete
+# " ============================
+# "
+# " ---> 愚直な対処をした(vimtex#re#neocompleteの中身を貼り付けた)
+# " let g:neocomplete#sources#omni#input_patterns.tex =
+# "        \ '\v\\%('
+# "        \ .  '\a*cite\a*%(\s*\[[^]]*\]){0,2}\s*\{[^}]*'
+# "        \ . '|%(text|block)cquote\*?%(\s*\[[^]]*\]){0,2}\s*\{[^}]*'
+# "        \ . '|%(for|hy)\w*cquote\*?\{[^}]*}%(\s*\[[^]]*\]){0,2}\s*\{[^}]*'
+# "        \ . '|\a*ref%(\s*\{[^}]*|range\s*\{[^,}]*%(}\{)?)'
+# "        \ . '|hyperref\s*\[[^]]*'
+# "        \ . '|includegraphics\*?%(\s*\[[^]]*\]){0,2}\s*\{[^}]*'
+# "        \ . '|%(include%(only)?|input|subfile)\s*\{[^}]*'
+# "        \ . '|\a*(gls|Gls|GLS)(pl)?\a*%(\s*\[[^]]*\]){0,2}\s*\{[^}]*'
+# "        \ . '|includepdf%(\s*\[[^]]*\])?\s*\{[^}]*'
+# "        \ . '|includestandalone%(\s*\[[^]]*\])?\s*\{[^}]*'
+# "        \ . '|%(usepackage|RequirePackage|PassOptionsToPackage)%(\s*\[[^]]*\])?\s*\{[^}]*'
+# "        \ . '|documentclass%(\s*\[[^]]*\])?\s*\{[^}]*'
+# "        \ . '|begin%(\s*\[[^]]*\])?\s*\{[^}]*'
+# "        \ . '|end%(\s*\[[^]]*\])?\s*\{[^}]*'
+# "        \ . '|\a*'
+# "        \ . ')'
+# "
+# " ---> 以下にあるようにhook_sourceで一応解決した
+# '''
+# # hook_post_sourceだとエラーは出ないけれど補完もされなかった
+# # hook_sourceでうまく動いた
+# hook_source = '''
+# let g:neocomplete#sources#omni#input_patterns.tex = g:vimtex#re#neocomplete
+# '''
 
 
 [[plugins]]
@@ -119,11 +103,6 @@ let g:vim_json_syntax_conceal = 0
 
 
 [[plugins]]
-repo = 'leafgarland/typescript-vim'
-on_ft = ['typescript']
-
-
-[[plugins]]
 repo = 'hashivim/vim-terraform'
 on_ft = ['tf', 'terraform']
 hook_add = '''
@@ -135,48 +114,3 @@ let g:terraform_fmt_on_save=1
 [[plugins]]
 repo = 'mattn/vim-corona-stats'
 on_ft = ['txt']
-
-
-
-# [[plugins]]
-# repo = 'cohama/lexima.vim'
-# on_event = 'InsertEnter'
-# hook_post_source = '''
-# call lexima#add_rule({'char': '(', 'at': '\%#[0-9a-zA-Z_]',
-# 	\ 'input': '('})
-# call lexima#add_rule({'char': '[', 'at': '\%#[0-9a-zA-Z_]',
-# 	\ 'input': '['})
-# call lexima#add_rule({'char': '{', 'at': '\%#[0-9a-zA-Z_]',
-# 	\ 'input': '{'})
-# call lexima#add_rule({'char': '$', 'input_after': '$',
-# 	\ 'filetype': 'tex'})
-# call lexima#add_rule({'char': '$', 'at': '\%#\$', 'leave': 1,
-# 	\ 'filetype': 'tex'})
-# call lexima#add_rule({'char': '<BS>', 'at': '\$\%#\$', 'delete': 1,
-# 	\ 'filetype': 'tex'})
-# '''
-# neocompleteとの相性が悪い
-# スニペットが効かない
-
-
-
-# ===== 使わなくなったプラグイン =====
-# [[plugins]]
-# # pythonの補完, 動作が重い
-# repo = 'davidhalter/jedi-vim'
-# on_ft = ['python']
-#
-# [[plugins]]
-# repo = 'lambdalisue/vim-pyenv'
-# on_ft = ['python']
-#
-# [[plugins]]
-# repo = 'pangloss/vim-javascript'
-# on_ft = ['javascript']
-# hook_add = '''
-# let g:javascript_plugin_flow = 1
-# '''
-#
-# [[plugins]]
-# repo = 'gabrielelana/vim-markdown'
-# on_ft = ['md', 'markdown']
