@@ -8,6 +8,14 @@ hook_add = '''
 let g:lsp_diagnostics_enabled = 0
 " let g:lsp_log_verbose = 1
 " let g:lsp_log_file = expand('~/vim-lsp.log')
+nmap <silent> gd <plug>(lsp-definition)
+" nmap <buffer> gr <plug>(lsp-references)
+" nmap <buffer> gi <plug>(lsp-implementation)
+" nmap <buffer> gt <plug>(lsp-type-definition)
+" nmap <buffer> <leader>rn <plug>(lsp-rename)
+" nmap <buffer> [g <Plug>(lsp-previous-diagnostic)
+" nmap <buffer> ]g <Plug>(lsp-next-diagnostic)
+nmap <silent> K <plug>(lsp-hover)
 '''
 
 
