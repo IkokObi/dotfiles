@@ -11,6 +11,7 @@ set ruler "カーソル位置を表示
 set ambiwidth=double  "全角記号を全角で表示
 " set list "不可視文字の可視化
 " set listchars=tab:»-,trail:-,extends:»,precedes:«,nbsp:% "不可視文字の可視化設定 eol:↲,
+" set listchars=tab:>-,space:-
 " 全角スペースの背景を白に変更
 autocmd Colorscheme * highlight FullWidthSpace ctermbg=white
 autocmd VimEnter * match FullWidthSpace /　/
@@ -64,6 +65,9 @@ nnoremap <Up>   gk
 " ^, $のキーマッピング
 noremap <Space>h  ^
 noremap <Space>l  $
+nnoremap c_ ct_
+nnoremap d_ dt_
+set timeoutlen=1000 ttimeoutlen=0
 
 " ===== 検索設定 =====
 set ignorecase "大文字、小文字の区別をしない
@@ -80,11 +84,14 @@ set ttymouse=xterm2 "ドラッグを可能にする
 set clipboard=unnamed,autoselect "クリップボードへのコピー
 " jキーを二度押しでESCキー
 inoremap <silent> jj <Esc>
+inoremap <silent> jJ j<Esc>
 " emacs-like key mappings
 inoremap <silent> <C-a> <Esc>^i
 inoremap <silent> <C-e> <Esc>$a
 inoremap <silent> <C-f> <right>
 inoremap <silent> <C-b> <left>
+inoremap <silent> <C-t><C-t> <C-t>
+inoremap <silent> <C-t><C-d> <C-d>
 inoremap <silent> <C-d> <Del>
 inoremap <silent> <C-k> <right><Esc>d$i
 inoremap <silent> <C-u> <Esc><right>d^i
@@ -108,6 +115,7 @@ vnoremap ( di()<esc><left>p
 vnoremap $ di$$<esc><left>p
 vnoremap " di""<esc><left>p
 vnoremap ' di''<esc><left>p
+vnoremap ` di``<esc><left>p
 
 " pwdをクリップボードにコピー
 noremap <silent> <Space>p :!pwd\|pbcopy<Enter><Enter>
@@ -117,3 +125,8 @@ noremap <silent> <Space>p :!pwd\|pbcopy<Enter><Enter>
 set history=10000 "履歴を10000件保存
 set pumheight=10 "変換候補で一度に表示される数
 set splitright
+
+if has("persistent_undo")
+    set undodir=~/.vimundo
+    set undofile
+endif
