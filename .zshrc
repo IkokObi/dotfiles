@@ -19,12 +19,7 @@ WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 ## path for vim
 export PATH="/usr/local/bin:$PATH"
 
-## pyenv settings
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
+## pyenv settings => .zprofile
 
 
 # Prompt
@@ -33,7 +28,7 @@ fi
 local p_time=$'%F{044}%*%f '  # hh:mm:ss
 local p_user_host=$'%F{044}%n@%m%f '  # user@host
 local p_dir=$'%F{044}[%~]%f\n'  # [directory]
-local p_exec=$'> '  # last execution line
+local p_exec=$'$ '  # last execution line
 
 ## prompt git info
 autoload -Uz vcs_info
@@ -41,7 +36,7 @@ setopt prompt_subst
 zstyle ':vcs_info:git:*' check-for-changes true
 zstyle ':vcs_info:git:*' stagedstr "%F{yellow}!"
 zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
-zstyle ':vcs_info:*' formats "%F{044}%c%u[%b]%f "
+zstyle ':vcs_info:*' formats "%F{044}%c%u[%b]%f"
 zstyle ':vcs_info:*' actionformats '[%b|%a] '
 precmd () { vcs_info }
 local p_git='$vcs_info_msg_0_'
@@ -51,6 +46,9 @@ PROMPT=$p_time$p_user_host$p_dir$p_git$p_exec
 
 
 # Aliases
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
 alias ls='ls -FG'
 alias la='ls -aFG'
 alias ll='ls -l'
@@ -62,17 +60,30 @@ alias jopen='jupyter-notebook > .jupyterlog 2>&1 &'
 alias gib='git branch'
 alias gis='git status'
 alias pcp="pwd | tr -d '\n' | pbcopy"
+alias note="vim `date +%Y%m%d`.md"
 
 # path for fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
-
-# Python
-source ~/Settings/python/default/bin/activate
-export PIPENV_IGNORE_VIRTUALENVS=1
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/ikokpro/Settings/gcloud/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ikokpro/Settings/gcloud/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/ikokpro/Settings/gcloud/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ikokpro/Settings/gcloud/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Istio
+export PATH=$PATH:$HOME/.istioctl/bin
+
+# mtr
+# sudo /usr/local/Cellar/mtr/0.94/sbin/mtr -rw google.com
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+# misc
+curl "wttr.in/Tokyo?lang=ja&format=v2"
+
+export PATH="$HOME/.poetry/bin:$PATH"
+
+# Python
+source ~/Settings/python/default/bin/activate
+export PIPENV_IGNORE_VIRTUALENVS=1
