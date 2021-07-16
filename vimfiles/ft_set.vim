@@ -9,9 +9,10 @@ autocmd Filetype markdown source <sfile>:h/ftplugins/markdown.vim
 " autocmd FileType javascript setl smartindent 
 " autocmd FileType javascript setl tabstop=8 expandtab shiftwidth=2 softtabstop=2 
 " 必要ならコメントアウト外す
-autocmd BufRead,BufNewFile *.es6 setfiletype javascript
+autocmd BufRead,BufNewFile *.es6, *.js setfiletype javascript
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType javascript set softtabstop=2
+autocmd FileType javascript set expandtab
 autocmd FileType javascript set shiftwidth=2
 
 
@@ -51,3 +52,11 @@ autocmd Filetype json source <sfile>:h/ftplugins/json.vim
 
 " ===== yaml =====
 autocmd Filetype yaml source <sfile>:h/ftplugins/yaml.vim
+
+" ===== CSV =====
+autocmd BufRead,BufNewFile *.csv  set filetype=csv
+autocmd FileType csv let g:enable_spelunker_vim = 0
+
+" ===== txt =====
+" autocmd BufRead,BufNewFile *.txt  set filetype=text
+autocmd FileType text let g:enable_spelunker_vim = 0

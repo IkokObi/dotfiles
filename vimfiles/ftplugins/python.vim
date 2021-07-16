@@ -24,7 +24,7 @@ let g:ale_python_flake8_executable = 'flake8'
 let g:ale_python_isort_executable = 'isort'
 let g:ale_python_black_executable = 'black'
 let g:ale_python_flake8_options = '--max-line-length 88 --ignore=E203,W503'
-let g:ale_python_isort_options = '-l 88 --multi_line 3 --trailing-comma'
+let g:ale_python_isort_options = '-l 88 --multi-line 3 --trailing-comma'
 let g:ale_python_black_options = '-l 88'
 
 

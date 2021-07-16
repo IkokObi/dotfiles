@@ -152,6 +152,7 @@ vmap gl <Plug>(openbrowser-smart-search)
 repo = 'Townk/vim-autoclose'
 hook_add='''
 let g:AutoCloseProtectedRegions = ["Character"]
+let g:AutoCloseExpandSpace = 0
 '''
 # pythonで' "がうまく動かない?
 # let g:AutoClosePairs = "() {} [] \" \'"
@@ -215,6 +216,8 @@ repo = 'Yggdroot/indentLine'
 hook_add = '''
 let g:indentLine_color_term = 111
 let g:indentLine_char = '¦'
+
+autocmd BufRead,BufNewFile *.md let g:indentLine_conceallevel = 0
 '''
 
 
@@ -231,3 +234,11 @@ depends = ['fzf']
 
 [[plugins]]
 repo = 'wakatime/vim-wakatime'
+
+
+[[plugins]]
+repo = 'mattn/benchvimrc-vim'
+
+
+[[plugins]]
+repo = 'kamykn/spelunker.vim'
