@@ -21,7 +21,7 @@ DOT_DIRECTORY="${HOME}/dotfiles"
 
 ## === others ===
 # ln -snfv ${DOT_DIRECTORY}/.ctags ${HOME}/.ctags
-# ln -snfv ${DOT_DIRECTORY}/.latexmkrc ${HOME}/.latexmkrc
+# ln -snfv ${DOT_DIRECTORY}/tex/.latexmkrc ${HOME}/.latexmkrc
 # ln -snfv ${DOT_DIRECTORY}/.vimrc ${HOME}/.vimrc
 
 
