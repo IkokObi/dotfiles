@@ -22,7 +22,7 @@ DOT_DIRECTORY="${HOME}/dotfiles"
 ## === others ===
 # ln -snfv ${DOT_DIRECTORY}/.ctags ${HOME}/.ctags
 # ln -snfv ${DOT_DIRECTORY}/tex/.latexmkrc ${HOME}/.latexmkrc
-# ln -snfv ${DOT_DIRECTORY}/.vimrc ${HOME}/.vimrc
+ln -snfv ${DOT_DIRECTORY}/vim/.vimrc ${HOME}/.vimrc
 
 
 echo $(tput setaf 2)Deploy dotfiles complete!. $(tput sgr0)

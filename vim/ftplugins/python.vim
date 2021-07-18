@@ -1,7 +1,7 @@
 " " autodate settins
 " autocmd BufNewFile *.py 0r !sed -e
 "	\ "s;CREATED_DATE;`date +'\%Y/\%m/\%d \%H:\%M:\%S \%Z'`;"
-"	\ ~/dotfiles/vimfiles/template/python.txt 
+"	\ ~/dotfiles/vim/template/python.txt 
 
 inoremap <Leader>c """  """<Left><Left><Left><Left>
 set softtabstop=4 "タブが置き換わるスペースの数
