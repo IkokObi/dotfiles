@@ -12,6 +12,7 @@ alias s2u='iconv -f cp932 -t UTF-8 '
 
 alias gib='git branch'
 alias gis='git status'
+alias gic='git commit'
 alias gil='git log'
 
 alias jopen='jupyter-notebook > .jupyterlog 2>&1 &'
