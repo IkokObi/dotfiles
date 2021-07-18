@@ -8,9 +8,9 @@ DOT_DIRECTORY="${HOME}/dotfiles"
 
 
 ## === bash ===
-# ln -snfv ${DOT_DIRECTORY}/.bash_profile ${HOME}/.bash_profile
-# ln -snfv ${DOT_DIRECTORY}/.bashrc ${HOME}/.bashrc
-# ln -snfv ${DOT_DIRECTORY}/.inputrc ${HOME}/.inputrc
+# ln -snfv ${DOT_DIRECTORY}/bash/.bash_profile ${HOME}/.bash_profile
+# ln -snfv ${DOT_DIRECTORY}/bash/.bashrc ${HOME}/.bashrc
+# ln -snfv ${DOT_DIRECTORY}/bash/.inputrc ${HOME}/.inputrc
 
 
 ## === git ===
