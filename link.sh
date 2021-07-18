@@ -3,8 +3,8 @@
 DOT_DIRECTORY="${HOME}/dotfiles"
 
 ## === zsh ===
-# ln -snfv ${DOT_DIRECTORY}/.zshrc ${HOME}/.zshrc
-# ln -snfv ${DOT_DIRECTORY}/.zprofile ${HOME}/.zprofile
+# ln -snfv ${DOT_DIRECTORY}/zsh/.zshrc ${HOME}/.zshrc
+# ln -snfv ${DOT_DIRECTORY}/zsh/.zprofile ${HOME}/.zprofile
 
 
 ## === bash ===
