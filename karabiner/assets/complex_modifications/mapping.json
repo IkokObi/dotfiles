@@ -4,483 +4,653 @@
     {
       "description": "set vk2 is 1 when command is down",
       "manipulators": [
-	{
-	  "type": "basic",
-	  "from": {
-	    "key_code": "left_gui",
-	    "modifiers": {
-	      "optional": [
-		"any"
-	      ]
-	    }
-	  },
-	  "to": [
-	    {
-	      "set_variable": {"name": "vk2", "value": 1}
-	    }
-	  ],
-	  "to_after_key_up": [
-	    {
-	      "set_variable": {"name": "vk2", "value": 0}
-	    }
-	  ],
-	  "to_if_alone": [
-	    {
-	      "key_code": "left_gui"
-	    }
-	  ]
-	}
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_gui",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "vk2",
+                "value": 1
+              }
+            }
+          ],
+          "to_after_key_up": [
+            {
+              "set_variable": {
+                "name": "vk2",
+                "value": 0
+              }
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "left_gui"
+            }
+          ]
+        }
       ]
     },
     {
       "description": "set vk2 is 1 when lang2 is down",
       "manipulators": [
-	{
-	  "type": "basic",
-	  "from": {
-	    "key_code": "lang2",
-	    "modifiers": {
-	      "optional": [
-		"any"
-	      ]
-	    }
-	  },
-	  "to": [
-	    {
-	      "set_variable": {"name": "vk2", "value": 1}
-	    }
-	  ],
-	  "to_after_key_up": [
-	    {
-	      "set_variable": {"name": "vk2", "value": 0}
-	    }
-	  ],
-	  "to_if_alone": [
-	    {
-	      "key_code": "lang2"
-	    }
-	  ]
-	}
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "lang2",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "vk2",
+                "value": 1
+              }
+            }
+          ],
+          "to_after_key_up": [
+            {
+              "set_variable": {
+                "name": "vk2",
+                "value": 0
+              }
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "lang2"
+            }
+          ]
+        }
       ]
     },
     {
       "description": "set h to left when vk2 is 1",
       "manipulators": [
-	{
-	  "type": "basic",
-	  "conditions": [
-	    {
-	      "type": "variable_if", "name": "vk2", "value": 1
-	    }
-	  ],
-	  "from": {
-	    "key_code": "h",
-	    "modifiers": {
-	      "optional": [
-		"any"
-	      ]
-	    }
-	  },
-	  "to": [
-	    {
-	      "key_code": "left_arrow"
-	    }
-	  ]
-	}
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "vk2",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow"
+            }
+          ]
+        }
       ]
     },
     {
       "description": "set j to down when vk2 is 1",
       "manipulators": [
-	{
-	  "type": "basic",
-	  "conditions": [
-	    {
-	      "type": "variable_if", "name": "vk2", "value": 1
-	    }
-	  ],
-	  "from": {
-	    "key_code": "j",
-	    "modifiers": {
-	      "optional": [
-		"any"
-	      ]
-	    }
-	  },
-	  "to": [
-	    {
-	      "key_code": "down_arrow"
-	    }
-	  ]
-	}
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "vk2",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "down_arrow"
+            }
+          ]
+        }
       ]
     },
     {
       "description": "set k to up when vk2 is 1",
       "manipulators": [
-	{
-	  "type": "basic",
-	  "conditions": [
-	    {
-	      "type": "variable_if", "name": "vk2", "value": 1
-	    }
-	  ],
-	  "from": {
-	    "key_code": "k",
-	    "modifiers": {
-	      "optional": [
-		"any"
-	      ]
-	    }
-	  },
-	  "to": [
-	    {
-	      "key_code": "up_arrow"
-	    }
-	  ]
-	}
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "vk2",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow"
+            }
+          ]
+        }
       ]
     },
     {
       "description": "set l to right when vk2 is 1",
       "manipulators": [
-	{
-	  "type": "basic",
-	  "conditions": [
-	    {
-	      "type": "variable_if", "name": "vk2", "value": 1
-	    }
-	  ],
-	  "from": {
-	    "key_code": "l",
-	    "modifiers": {
-	      "optional": [
-		"any"
-	      ]
-	    }
-	  },
-	  "to": [
-	    {
-	      "key_code": "right_arrow"
-	    }
-	  ]
-	}
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "vk2",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow"
+            }
+          ]
+        }
       ]
     },
     {
       "description": "command+h to left",
       "manipulators": [
-	{
-	  "type": "basic",
-	  "from": {
-	    "key_code": "h",
-	    "modifiers": {
-	      "mandatory": [
-		"left_gui"
-	      ]
-	    }
-	  },
-	  "to": [
-	    {
-	      "key_code": "left_arrow"
-	    }
-	  ]
-	}
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "left_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow"
+            }
+          ]
+        }
       ]
     },
     {
       "description": "command+j to left",
       "manipulators": [
-	{
-	  "type": "basic",
-	  "from": {
-	    "key_code": "j",
-	    "modifiers": {
-	      "mandatory": [
-		"left_gui"
-	      ]
-	    }
-	  },
-	  "to": [
-	    {
-	      "key_code": "down_arrow"
-	    }
-	  ]
-	}
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "left_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "down_arrow"
+            }
+          ]
+        }
       ]
     },
     {
       "description": "command+k to left",
       "manipulators": [
-	{
-	  "type": "basic",
-	  "from": {
-	    "key_code": "k",
-	    "modifiers": {
-	      "mandatory": [
-		"left_gui"
-	      ]
-	    }
-	  },
-	  "to": [
-	    {
-	      "key_code": "up_arrow"
-	    }
-	  ]
-	}
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": [
+                "left_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow"
+            }
+          ]
+        }
       ]
     },
     {
       "description": "command+l to left",
       "manipulators": [
-	{
-	  "type": "basic",
-	  "from": {
-	    "key_code": "l",
-	    "modifiers": {
-	      "mandatory": [
-		"left_gui"
-	      ]
-	    }
-	  },
-	  "to": [
-	    {
-	      "key_code": "right_arrow"
-	    }
-	  ]
-	}
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": [
+                "left_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow"
+            }
+          ]
+        }
       ]
     },
     {
       "description": "control+command to command",
       "manipulators": [
-	{
-	  "type": "basic",
-	  "from": {
-	    "key_code": "left_gui",
-	    "modifiers": {
-	      "mandatory": [
-		"control"
-	      ]
-	    }
-	  },
-	  "to": [
-	    {
-	      "key_code": "left_gui"
-	    }
-	  ]
-	}
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_gui",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_gui"
+            }
+          ]
+        }
       ]
     },
     {
       "description": "control+space to command",
       "manipulators": [
-	{
-	  "type": "basic",
-	  "from": {
-	    "key_code": "spacebar",
-	    "modifiers": {
-	      "mandatory": [
-		"control"
-	      ]
-	    }
-	  },
-	  "to": [
-	    {
-	      "key_code": "left_gui"
-	    }
-	  ]
-	}
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_gui"
+            }
+          ]
+        }
       ]
     },
     {
       "description": "yen symbol to backslach",
       "manipulators": [
-	{
-	  "type": "basic",
-	  "from": {
-	    "key_code": "international3"
-	  },
-	  "to": [
-	    {
-	      "key_code": "international3",
-	      "modifiers": [
-		"option"
-	      ]
-	    }
-	  ]
-	}
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "international3"
+          },
+          "to": [
+            {
+              "key_code": "international3",
+              "modifiers": [
+                "option"
+              ]
+            }
+          ]
+        }
       ]
     },
     {
       "description": "backslach to yen mark",
       "manipulators": [
-	{
-	  "type": "basic",
-	  "from": {
-	    "key_code": "international3",
-	    "modifiers": {
-	      "mandatory": [
-		"option"
-	      ]
-	    }
-	  },
-	  "to": [
-	    {
-	      "key_code": "international3"
-	    }
-	  ]
-	}
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "international3",
+            "modifiers": {
+              "mandatory": [
+                "option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "international3"
+            }
+          ]
+        }
       ]
     },
     {
       "description": "emacs keybind in skype & office",
       "manipulators": [
-	{
-	  "conditions": [
-	    {
-	      "bundle_identifiers": [
-		"^com\\.skype\\.skype$",
-		"^com\\.microsoft\\."
-	      ],
-	      "type": "frontmost_application_if"
-	    }
-	  ],
-	  "from": {
-	    "key_code": "h",
-	    "modifiers": {
-	      "mandatory": [
-		"control"
-	      ]
-	    }
-	  },
-	  "to": [
-	    {
-	      "key_code": "delete_or_backspace"
-	    }
-	  ],
-	  "type": "basic"
-	},
-	{
-	  "conditions": [
-	    {
-	      "bundle_identifiers": [
-		"^com\\.microsoft\\."
-	      ],
-	      "type": "frontmost_application_if"
-	    }
-	  ],
-	  "from": {
-	    "key_code": "d",
-	    "modifiers": {
-	      "mandatory": [
-		"control"
-	      ]
-	    }
-	  },
-	  "to": [
-	    {
-	      "key_code": "delete_forward"
-	    }
-	  ],
-	  "type": "basic"
-	},
-	{
-	  "conditions": [
-	    {
-	      "bundle_identifiers": [
-		"^com\\.microsoft\\."
-	      ],
-	      "type": "frontmost_application_if"
-	    }
-	  ],
-	  "from": {
-	    "key_code": "f",
-	    "modifiers": {
-	      "mandatory": [
-		"control"
-	      ]
-	    }
-	  },
-	  "to": [
-	    {
-	      "key_code": "right_arrow"
-	    }
-	  ],
-	  "type": "basic"
-	},
-	{
-	  "conditions": [
-	    {
-	      "bundle_identifiers": [
-		"^com\\.microsoft\\."
-	      ],
-	      "type": "frontmost_application_if"
-	    }
-	  ],
-	  "from": {
-	    "key_code": "b",
-	    "modifiers": {
-	      "mandatory": [
-		"control"
-	      ]
-	    }
-	  },
-	  "to": [
-	    {
-	      "key_code": "left_arrow"
-	    }
-	  ],
-	  "type": "basic"
-	},
-	{
-	  "conditions": [
-	    {
-	      "bundle_identifiers": [
-		"^com\\.microsoft\\."
-	      ],
-	      "type": "frontmost_application_if"
-	    }
-	  ],
-	  "from": {
-	    "key_code": "e",
-	    "modifiers": {
-	      "mandatory": [
-		"control"
-	      ]
-	    }
-	  },
-	  "to": [
-	    {
-	      "key_code": "end"
-	    }
-	  ],
-	  "type": "basic"
-	},
-	{
-	  "conditions": [
-	    {
-	      "bundle_identifiers": [
-		"^com\\.microsoft\\."
-	      ],
-	      "type": "frontmost_application_if"
-	    }
-	  ],
-	  "from": {
-	    "key_code": "a",
-	    "modifiers": {
-	      "mandatory": [
-		"control"
-	      ]
-	    }
-	  },
-	  "to": [
-	    {
-	      "key_code": "home"
-	    }
-	  ],
-	  "type": "basic"
-	}
+        {
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "^com\\.skype\\.skype$",
+                "^com\\.microsoft\\."
+              ],
+              "type": "frontmost_application_if"
+            }
+          ],
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_or_backspace"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "^com\\.microsoft\\."
+              ],
+              "type": "frontmost_application_if"
+            }
+          ],
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_forward"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "^com\\.microsoft\\."
+              ],
+              "type": "frontmost_application_if"
+            }
+          ],
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "^com\\.microsoft\\."
+              ],
+              "type": "frontmost_application_if"
+            }
+          ],
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "^com\\.microsoft\\."
+              ],
+              "type": "frontmost_application_if"
+            }
+          ],
+          "from": {
+            "key_code": "e",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "end"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "^com\\.microsoft\\."
+              ],
+              "type": "frontmost_application_if"
+            }
+          ],
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "home"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "control+k in anyplace",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "end",
+              "modifiers": [
+                "shift"
+              ]
+            },
+            {
+              "key_code": "x",
+              "modifiers": [
+                "command"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "control+y in anyplace",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "y",
+            "modifiers": {
+              "mandatory": [
+                "control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "v",
+              "modifiers": [
+                "command"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "next application tab",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "semicolon",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f1",
+              "modifiers": [
+                "command"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "previous application tab",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "quote",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f1",
+              "modifiers": [
+                "command",
+                "shift"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "ctrl-semicolon to esc",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "semicolon",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "escape"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "zenkaku-l to ime-off",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "input_source_if",
+              "input_sources": [
+                {
+                  "language": "ja"
+                }
+              ]
+            }
+          ],
+          "from": {
+            "key_code": "l"
+          },
+          "to": [
+            {
+              "key_code": "lang2"
+            }
+          ]
+        }
       ]
     }
   ]
