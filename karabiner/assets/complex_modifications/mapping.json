@@ -416,6 +416,41 @@
       ]
     },
     {
+      "description": "right shift to underscore (US keyboard)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 65261,
+                  "product_id": 0
+                }
+              ]
+            }
+          ],
+          "from": {
+            "key_code": "right_shift"
+          },
+          "to": [
+            {
+              "key_code": "right_shift"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "hyphen",
+              "modifiers": [
+                  "left_shift"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "emacs keybind in skype & office",
       "manipulators": [
         {
