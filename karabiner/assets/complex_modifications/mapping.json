@@ -365,6 +365,10 @@
                 {
                   "vendor_id": 1452,
                   "product_id": 615
+                },
+                {
+                  "vendor_id": 76,
+                  "product_id": 615
                 }
               ]
             }
@@ -392,6 +396,10 @@
                 {
                   "vendor_id": 1452,
                   "product_id": 615
+                },
+                {
+                  "vendor_id": 76,
+                  "product_id": 615
                 }
               ]
             }
@@ -402,6 +410,84 @@
           "to": [
             {
               "key_code": "semicolon"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "shift-semicolon to shift-colon (JIS keyboard)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1452,
+                  "product_id": 615
+                },
+                {
+                  "vendor_id": 76,
+                  "product_id": 615
+                }
+              ]
+            }
+          ],
+          "from": {
+            "key_code": "semicolon",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "quote",
+              "modifiers": [
+                "shift"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "shift-colon to shift-semicolon (JIS keyboard)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1452,
+                  "product_id": 615
+                },
+                {
+                  "vendor_id": 76,
+                  "product_id": 615
+                }
+              ]
+            }
+          ],
+          "from": {
+            "key_code": "quote",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "semicolon",
+              "modifiers": [
+                "shift"
+              ]
             }
           ]
         }
@@ -835,7 +921,6 @@
             "modifiers": {
               "optional": [
                 "any"
-
               ]
             }
           },
@@ -876,7 +961,6 @@
             "modifiers": {
               "optional": [
                 "any"
-
               ]
             }
           },
@@ -912,12 +996,11 @@
           "from": {
             "key_code": "semicolon",
             "modifiers": {
-	      "mandatory": [
-		"left_shift"
-	      ],
+              "mandatory": [
+                "left_shift"
+              ],
               "optional": [
                 "any"
-
               ]
             }
           },
@@ -958,7 +1041,6 @@
             "modifiers": {
               "optional": [
                 "any"
-
               ]
             }
           },

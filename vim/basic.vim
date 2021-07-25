@@ -65,6 +65,8 @@ nnoremap <Up>   gk
 " ^, $のキーマッピング
 nnoremap <Space>h  ^
 nnoremap <Space>l  $
+vnoremap <Space>h  ^
+vnoremap <Space>l  $
 nnoremap c_ ct_
 nnoremap d_ dt_
 set timeoutlen=1000 ttimeoutlen=0
