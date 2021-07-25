@@ -63,8 +63,8 @@ nnoremap k gk
 nnoremap <Down> gj
 nnoremap <Up>   gk
 " ^, $のキーマッピング
-noremap <Space>h  ^
-noremap <Space>l  $
+nnoremap <Space>h  ^
+nnoremap <Space>l  $
 nnoremap c_ ct_
 nnoremap d_ dt_
 set timeoutlen=1000 ttimeoutlen=0
