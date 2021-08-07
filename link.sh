@@ -24,6 +24,7 @@ DOT_DIRECTORY="${HOME}/dotfiles"
 # ln -snfv ${DOT_DIRECTORY}/tex/.latexmkrc ${HOME}/.latexmkrc
 # ln -snfv ${DOT_DIRECTORY}/vim/.vimrc ${HOME}/.vimrc
 # ln -snfv ${DOT_DIRECTORY}/vim/ftplugin ${HOME}/.vim/ftplugin
+# ln -snfv ${DOT_DIRECTORY}/vim/ftdetect ${HOME}/.vim/ftdetect
 # ln -snfv ${DOT_DIRECTORY}/karabiner/karabiner.json ${HOME}/.config/karabiner/karabiner.json
 # ln -snfv ${DOT_DIRECTORY}/karabiner/assets/complex_modifications/mapping.json ${HOME}/.config/karabiner/assets/complex_modifications/mapping.json
 
