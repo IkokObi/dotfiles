@@ -1,8 +1,3 @@
-" ===== MarkDown =====
-autocmd BufRead,BufNewFile *.mkd  set filetype=markdown
-autocmd BufRead,BufNewFile *.md  set filetype=markdown
-autocmd Filetype markdown source <sfile>:h/ftplugins/markdown.vim
-
 " ===== JavaScriptの設定 =====
 " autocmd FileType html setlocal indentexpr=""
 " autocmd FileType javascript setl autoindent 
