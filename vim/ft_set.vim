@@ -21,10 +21,6 @@ autocmd FileType html set softtabstop=2
 autocmd FileType html set shiftwidth=2
 
 
-" ===== Python =====
-autocmd Filetype python source <sfile>:h/ftplugins/python.vim
-
-
 " ===== C++ =====
 autocmd FileType cpp set softtabstop=4 
 autocmd FileType cpp set shiftwidth=4

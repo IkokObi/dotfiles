@@ -31,8 +31,6 @@ hi Constant ctermfg=208
 hi Special ctermfg=208
 hi ModeMsg ctermfg=208
 hi Function ctermfg=208
-let &colorcolumn=join(range(80,999),",")
-hi ColorColumn ctermbg=234
 
 " インサート時に行ハイライト
 autocmd InsertEnter * highlight CursorLine ctermbg=17 
