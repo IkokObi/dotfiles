@@ -38,11 +38,6 @@ autocmd BufRead,BufNewFile *.tex set shiftwidth=2
 autocmd BufRead,BufNewFile *.tex let g:tex_comment_nospell=1
 autocmd BufRead,BufNewFile *.tex let g:tex_conceal=''
 
-" ===== JSON =====
-autocmd Filetype json source <sfile>:h/ftplugins/json.vim
-
-" ===== yaml =====
-autocmd Filetype yaml source <sfile>:h/ftplugins/yaml.vim
 
 " ===== CSV =====
 autocmd BufRead,BufNewFile *.csv  set filetype=csv

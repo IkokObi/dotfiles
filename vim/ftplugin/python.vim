@@ -1,7 +1,6 @@
-" Key mapping
-inoremap <Leader>c """  """<Left><Left><Left><Left>
-set softtabstop=4 "タブが置き換わるスペースの数
-set shiftwidth=4 "自動的に入力されたインデントの空白を4つ分に設定
+" Basic settings
+setlocal softtabstop=4 "タブが置き換わるスペースの数
+setlocal shiftwidth=4 "自動的に入力されたインデントの空白を4つ分に設定
 setlocal completeopt-=preview " docstringは表示しない
 
 
@@ -10,9 +9,11 @@ execute 'setlocal colorcolumn=' . join(range(80,200), ",")
 hi ColorColumn ctermbg=234
 
 
+" Key mappings
+inoremap <Leader>c """  """<Left><Left><Left><Left>
+
 
 " === Plugin settings ===
-
 " lsp setting
 if executable('pyls')
     au User lsp_setup call lsp#register_server({
