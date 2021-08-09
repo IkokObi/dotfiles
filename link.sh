@@ -21,6 +21,7 @@ DOT_DIRECTORY="${HOME}/dotfiles"
 
 ## === vim ===
 # ln -snfv ${DOT_DIRECTORY}/vim/.vimrc ${HOME}/.vimrc
+# mkdir -p ${HOME}/.vim
 # ln -snfv ${DOT_DIRECTORY}/vim/ftplugin ${HOME}/.vim/ftplugin
 # ln -snfv ${DOT_DIRECTORY}/vim/ftdetect ${HOME}/.vim/ftdetect
 
