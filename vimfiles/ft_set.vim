@@ -30,21 +30,8 @@ autocmd FileType cpp set shiftwidth=4
 
 
 " ===== TeX =====
-autocmd BufRead,BufNewFile *.tex  set filetype=tex
-autocmd BufRead,BufNewFile *.tex set spell
-autocmd BufRead,BufNewFile *.tex set spelllang=en,cjk
-" 移動に時間がかかるのでcursorlineをoffにする
-" autocmd BufRead,BufNewFile *.tex set nocursorline
-" autocmd InsertEnter * set cursorline
-" autocmd InsertEnter * hi clear CursorLine
-" autocmd InsertEnter * highlight CursorLine ctermbg=233 
-" autocmd InsertLeave * set nocursorline
-autocmd BufRead,BufNewFile *.tex
-	    \ let g:AutoClosePairs = "() {} [] $ \" \'"
-autocmd BufRead,BufNewFile *.tex set softtabstop=2
-autocmd BufRead,BufNewFile *.tex set shiftwidth=2
-autocmd BufRead,BufNewFile *.tex let g:tex_comment_nospell=1
-autocmd BufRead,BufNewFile *.tex let g:tex_conceal=''
+autocmd BufRead,BufNewFile *.tex set filetype=tex
+autocmd BufRead,BufNewFile *.tex source <sfile>:h/ftplugins/tex.vim
 
 " ===== JSON =====
 autocmd Filetype json source <sfile>:h/ftplugins/json.vim

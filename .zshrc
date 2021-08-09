@@ -18,6 +18,9 @@ WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 ## path for vim
 export PATH="/usr/local/bin:$PATH"
 
+## path for tex
+export PATH="/Users/obi-research/Settings/tex/latexmk-script:$PATH"
+
 ## pyenv settings
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
@@ -25,6 +28,7 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
+export PIPENV_IGNORE_VIRTUALENVS=1
 
 # Prompt
 ## cf: show all colors
