@@ -218,6 +218,7 @@ let g:indentLine_color_term = 111
 let g:indentLine_char = '¦'
 
 autocmd BufRead,BufNewFile *.md let g:indentLine_conceallevel = 0
+autocmd BufRead,BufNewFile *.tex let g:indentLine_conceallevel = 0
 '''
 
 
