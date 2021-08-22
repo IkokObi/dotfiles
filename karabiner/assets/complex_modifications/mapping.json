@@ -188,6 +188,70 @@
       ]
     },
     {
+      "description": "set d to open Chrome developer tools when vk2 is 1",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "vk2",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "i",
+              "modifiers": [
+                "left_command",
+                "left_option"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "set s to screenshot when vk2 is 1",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "vk2",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "5",
+              "modifiers": [
+                "left_command",
+                "shift"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "command+h to left",
       "manipulators": [
         {
@@ -354,29 +418,10 @@
       ]
     },
     {
-      "description": "semicolon to colon (JIS keyboard)",
+      "description": "semicolon to colon (Any keyboard)",
       "manipulators": [
         {
           "type": "basic",
-          "conditions": [
-            {
-              "type": "device_if",
-              "identifiers": [
-                {
-                  "vendor_id": 1452,
-                  "product_id": 615
-                },
-                {
-                  "vendor_id": 1452,
-                  "product_id": 635
-                },
-                {
-                  "vendor_id": 76,
-                  "product_id": 615
-                }
-              ]
-            }
-          ],
           "from": {
             "key_code": "semicolon"
           },
@@ -389,29 +434,10 @@
       ]
     },
     {
-      "description": "colon to semicolon (JIS keyboard)",
+      "description": "colon to semicolon (Any keyboard)",
       "manipulators": [
         {
           "type": "basic",
-          "conditions": [
-            {
-              "type": "device_if",
-              "identifiers": [
-                {
-                  "vendor_id": 1452,
-                  "product_id": 615
-                },
-                {
-                  "vendor_id": 1452,
-                  "product_id": 635
-                },
-                {
-                  "vendor_id": 76,
-                  "product_id": 615
-                }
-              ]
-            }
-          ],
           "from": {
             "key_code": "quote"
           },
@@ -424,29 +450,10 @@
       ]
     },
     {
-      "description": "shift-semicolon to shift-colon (JIS keyboard)",
+      "description": "shift-semicolon to shift-colon (Any keyboard)",
       "manipulators": [
         {
           "type": "basic",
-          "conditions": [
-            {
-              "type": "device_if",
-              "identifiers": [
-                {
-                  "vendor_id": 1452,
-                  "product_id": 615
-                },
-                {
-                  "vendor_id": 1452,
-                  "product_id": 635
-                },
-                {
-                  "vendor_id": 76,
-                  "product_id": 615
-                }
-              ]
-            }
-          ],
           "from": {
             "key_code": "semicolon",
             "modifiers": {
@@ -467,29 +474,10 @@
       ]
     },
     {
-      "description": "shift-colon to shift-semicolon (JIS keyboard)",
+      "description": "shift-colon to shift-semicolon (Any keyboard)",
       "manipulators": [
         {
           "type": "basic",
-          "conditions": [
-            {
-              "type": "device_if",
-              "identifiers": [
-                {
-                  "vendor_id": 1452,
-                  "product_id": 615
-                },
-                {
-                  "vendor_id": 1452,
-                  "product_id": 635
-                },
-                {
-                  "vendor_id": 76,
-                  "product_id": 615
-                }
-              ]
-            }
-          ],
           "from": {
             "key_code": "quote",
             "modifiers": {
