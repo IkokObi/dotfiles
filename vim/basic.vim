@@ -115,6 +115,7 @@ vnoremap $ di$$<esc><left>p
 vnoremap " di""<esc><left>p
 vnoremap ' di''<esc><left>p
 vnoremap ` di``<esc><left>p
+" onoremap <silent> il :<C-U>normal! ^v$h<CR> " カーソル行をオペレータ対象とする
 
 " pwdをクリップボードにコピー
 noremap <silent> <Space>p :!pwd\|pbcopy<Enter><Enter>

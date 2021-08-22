@@ -1,5 +1,6 @@
 # vim
-export PATH="/usr/local/bin:$PATH"
+# 下記不要？
+# export PATH="/usr/local/bin:$PATH"
 
 # pyenv  => .zprofile
 
