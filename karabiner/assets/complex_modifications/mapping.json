@@ -476,6 +476,38 @@
       ]
     },
     {
+      "description": "set q to window lock when vk2 is 1",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "vk2",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "q",
+              "modifiers": [
+                "command",
+                "control"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "command+h to left",
       "manipulators": [
         {
