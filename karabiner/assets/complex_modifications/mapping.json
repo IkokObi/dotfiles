@@ -476,7 +476,7 @@
       ]
     },
     {
-      "description": "set q to window lock when vk2 is 1",
+      "description": "set b to window lock when vk2 is 1",
       "manipulators": [
         {
           "type": "basic",
@@ -488,7 +488,7 @@
             }
           ],
           "from": {
-            "key_code": "q",
+            "key_code": "b",
             "modifiers": {
               "optional": [
                 "any"
