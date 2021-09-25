@@ -2,9 +2,12 @@ alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
 
-alias ls='ls -FG'
+alias l='ls -FG'
+# alias ls='ls -FG'
 alias la='ls -aFG'
 alias ll='ls -l'
+
+alias so='source'
 
 ### how to use: u2s (-c) spam.csv > spam-cp.csv
 alias u2s='iconv -f UTF-8 -t cp932 ' # UTF-8 --> cp932(Microsoft Shift_JIS)
