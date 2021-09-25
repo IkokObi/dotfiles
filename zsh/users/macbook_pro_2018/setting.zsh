@@ -14,3 +14,6 @@ export PIPENV_IGNORE_VIRTUALENVS=1
 
 # misc
 curl "wttr.in/Tokyo?lang=ja&format=v2"
+
+# zsh-syntax-highlighting
+# source /Users/ikokpro/Settings/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
