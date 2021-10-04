@@ -958,7 +958,7 @@
       ]
     },
     {
-      "description": "next application tab",
+      "description": "set command-semicolon to next application tab",
       "manipulators": [
         {
           "type": "basic",
@@ -982,7 +982,7 @@
       ]
     },
     {
-      "description": "previous application tab",
+      "description": "set command-quote to previous application tab",
       "manipulators": [
         {
           "type": "basic",
