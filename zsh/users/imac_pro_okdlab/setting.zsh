@@ -1,5 +1,5 @@
 # TeX
-export PATH="/Users/obi-research/Settings/tex/latexmk-script:$PATH"
+export PATH="/Users/obinata-okadalab/Settings/tex/latexmk-script:$PATH"
 
 
 # Python
