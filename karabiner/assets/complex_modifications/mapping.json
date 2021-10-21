@@ -1052,6 +1052,60 @@
           ]
         }
       ]
+    },
+    {
+      "description": "up_arrow to shift (HHKB)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1278,
+                  "product_id": 34
+                }
+              ]
+            }
+          ],
+          "from": {
+            "key_code": "up_arrow"
+          },
+          "to": [
+            {
+              "key_code": "right_shift"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "shift to up_arrow (HHKB)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1278,
+                  "product_id": 34
+                }
+              ]
+            }
+          ],
+          "from": {
+            "key_code": "right_shift"
+          },
+          "to": [
+            {
+              "key_code": "up_arrow"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
