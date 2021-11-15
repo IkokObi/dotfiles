@@ -15,7 +15,11 @@ let g:tex_conceal=''
 
 " 保存時にコンパイル
 " vimtex側でも実行されるはずだが，実行（経緯思い出し次第追記予定）
-autocmd BufWritePost * :silent !latexmk %:p > .latexmk_log 2>&1 &
+" === コマンドの説明 ===
+" %:t ファイル名（拡張子付き）
+" %:p ファイルのフルパス
+" %:p:h ファイルのあるディレクトリのフルパス
+autocmd BufWritePost * :silent !(cd %:p:h && latexmk %:t) > .latexmk_log 2>&1 &
 
 
 " === Plugin settings ===
@@ -24,7 +28,7 @@ let g:AutoClosePairs = "() {} [] $ \" \'"
 
 
 " lsp setting
-let s:texlab_path = '~/Settings/tex/texlab'
+let s:texlab_path = '~/Settings/SetupFiles/tex/texlab'
 if executable(expand(s:texlab_path))
    au User lsp_setup call lsp#register_server({
       \ 'name': 'texlab',
