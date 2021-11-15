@@ -12,6 +12,9 @@ export PATH="$HOME/.poetry/bin:$PATH"
 source ~/Settings/python/envs/default/bin/activate
 export PIPENV_IGNORE_VIRTUALENVS=1
 
+# TeX
+export PATH="/Users/ikokpro/Settings/SetupFiles/tex:$PATH"
+
 # misc
 curl "wttr.in/Tokyo?lang=ja&format=v2"
 
