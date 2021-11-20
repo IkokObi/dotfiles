@@ -5,7 +5,7 @@ alias cp='cp -i'
 alias l='ls -FG'
 # alias ls='ls -FG'
 alias la='ls -aFG'
-alias ll='ls -l'
+alias ll='ls -lFG'
 
 alias so='source'
 
