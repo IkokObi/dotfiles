@@ -22,28 +22,6 @@ language messages en_IE.UTF-8 " メッセージの表示言語
 " set listchars=tab:»-,trail:-,extends:»,precedes:«,nbsp:% " 不可視文字の可視化設定 eol:↲,
 " set listchars=tab:>-,space:-
 
-" 全角スペースの背景を白に変更
-autocmd Colorscheme * highlight FullWidthSpace ctermbg=white
-autocmd VimEnter * match FullWidthSpace /　/
-
-" インサート時に行ハイライト
-autocmd InsertEnter * highlight CursorLine ctermbg=17 
-autocmd InsertLeave * hi clear CursorLine
-
-syntax on " コードに色をつける
-
-" カラースキーム, 行番号の色等
-autocmd ColorScheme * highlight LineNr ctermfg=211
-colorscheme slate
-set background=dark
-set cursorline " カーソルラインを表示
-hi clear CursorLine " 下線を消去, ここと直上の2行はこの位置に
-hi CursorLineNr term=bold cterm=bold ctermfg=0 ctermbg=15
-hi Constant ctermfg=208
-hi Special ctermfg=208
-hi ModeMsg ctermfg=208
-hi Function ctermfg=208
-
 " カーソル表示設定
 let &t_ti.="\e[1 q"
 let &t_SI.="\e[6 q"
@@ -82,3 +60,25 @@ set timeoutlen=1000 ttimeoutlen=0 " 遅延関連の設定
 set whichwrap=b,s,h,l,<,>,[,],~ " 行頭、行末で行のカーソル移動を可能にする
 set virtualedit=onemore "カーソルを行末の一つ先まで移動可能にする
 set backspace=indent,eol,start " バックスペースでの行移動を可能にする
+
+" カラースキーム系
+" 全角スペースの背景を白に変更
+autocmd Colorscheme * highlight FullWidthSpace ctermbg=white
+autocmd VimEnter * match FullWidthSpace /　/
+
+" インサート時に行ハイライト
+autocmd InsertEnter * highlight CursorLine ctermbg=17 
+autocmd InsertLeave * hi clear CursorLine
+
+" カラースキーム, 行番号の色等
+syntax on " コードに色をつける
+autocmd ColorScheme * highlight LineNr ctermfg=211
+colorscheme slate
+set background=dark
+set cursorline " カーソルラインを表示
+hi clear CursorLine " 下線を消去, ここと直上の2行はこの位置に
+hi CursorLineNr term=bold cterm=bold ctermfg=0 ctermbg=15
+hi Constant ctermfg=208
+hi Special ctermfg=208
+hi ModeMsg ctermfg=208
+hi Function ctermfg=208
