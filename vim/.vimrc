@@ -1,3 +1,3 @@
-" source ~/dotfiles/vim/neobundle.vim " for plugin install
-source ~/dotfiles/vim/basic.vim " for basic settings
-source ~/dotfiles/vim/dein.vim " for dein install
+source ~/dotfiles/vim/basic.vim
+source ~/dotfiles/vim/mapping.vim
+source ~/dotfiles/vim/dein.vim
