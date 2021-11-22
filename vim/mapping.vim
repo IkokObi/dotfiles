@@ -5,8 +5,9 @@ nnoremap <Down> gj
 nnoremap <Up>   gk
 
 " ^, $（文頭, 文末）のキーマッピング
-nnoremap <Space>h  ^
-nnoremap <Space>l  $
+" あらゆるモード時に有効化する（visual-modeでも使いたい）
+noremap <Space>h  ^
+noremap <Space>l  $
 
 " アンダースコアの手前まで削除
 nnoremap c_ ct_
