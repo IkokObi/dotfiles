@@ -22,3 +22,7 @@ tags
 
 ### Config ###
 config/config.sh
+
+### fonts ###
+fonts/*
+!fonts/*.sh
