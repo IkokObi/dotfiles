@@ -208,7 +208,6 @@ let g:airline_theme = 'jellybeans'
 
 [[plugins]]
 repo = 'tpope/vim-fugitive'
-# vim-airlineのために残す
 
 
 [[plugins]]
@@ -249,7 +248,7 @@ repo = 'liuchengxu/vista.vim'
 depends = ['lightline.vim']
 hook_add = '''
 let g:vista_default_executive = 'vim_lsp'
-let g:vista#renderer#enable_icon = 1 " フォントがアイコンに対応していない
+let g:vista#renderer#enable_icon = 1 " nerd-fontを入れる必要がある
 '''
 # 
 # [[plugins]]
