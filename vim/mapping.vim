@@ -6,7 +6,7 @@ nnoremap <Down> gj
 nnoremap <Up>   gk
 
 " ## ^, $（文頭, 文末）のキーマッピング
-" nnoremap <Space>h  ^
+nnoremap <Space>h  ^
 nnoremap <Space>l  $
 
 
