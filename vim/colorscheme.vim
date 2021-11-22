@@ -1,9 +1,10 @@
 " 全角スペースの背景を白に変更
+" ref. https://qiita.com/okateim/items/bc48d9b178e955eb12cb
 autocmd Colorscheme * highlight FullWidthSpace ctermbg=white
 autocmd VimEnter * match FullWidthSpace /　/
 
 " インサート時に行ハイライト
-autocmd InsertEnter * highlight CursorLine ctermbg=17 
+autocmd InsertEnter * highlight CursorLine ctermbg=17
 autocmd InsertLeave * hi clear CursorLine
 
 " カラースキーム, 行番号の色等
