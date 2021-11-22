@@ -110,6 +110,7 @@ vmap gl <Plug>(openbrowser-smart-search)
 # let g:autodate_format="%Y/%m/%d %H:%M:%S %Z"
 # '''
 
+
 [[plugins]]
 repo = 'Townk/vim-autoclose'
 hook_add='''
@@ -205,6 +206,7 @@ repo = 'mattn/benchvimrc-vim'
 [[plugins]]
 repo = 'kamykn/spelunker.vim'
 
+
 [[plugins]]
 repo = 'liuchengxu/vista.vim'
 depends = ['lightline.vim']
@@ -212,6 +214,7 @@ hook_add = '''
 let g:vista_default_executive = 'vim_lsp'
 let g:vista#renderer#enable_icon = 1 " nerd-fontを入れる必要がある
 '''
-# 
+
+
 # [[plugins]]
 # repo = 'lightline.vim'
