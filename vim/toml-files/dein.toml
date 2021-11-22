@@ -249,7 +249,7 @@ repo = 'liuchengxu/vista.vim'
 depends = ['lightline.vim']
 hook_add = '''
 let g:vista_default_executive = 'vim_lsp'
-let g:vista#renderer#enable_icon = 0 " フォントがアイコンに対応していない
+let g:vista#renderer#enable_icon = 1 " フォントがアイコンに対応していない
 '''
 # 
 # [[plugins]]
