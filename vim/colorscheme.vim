@@ -28,8 +28,10 @@ augroup END
 " hi LineNr ctermfg=211
 
 
-" ** jellybeans: returnとかの予約語が薄い
+" ** jellybeans: returnとかの予約語が薄い。
 colorscheme jellybeans
+" 検索のハイライトがちょっと弱いので個別設定。
+hi Search ctermfg=98 ctermbg=217
 
 
 " ** hybrid: 少し薄いのと黄色っぽさがしっくりこない
