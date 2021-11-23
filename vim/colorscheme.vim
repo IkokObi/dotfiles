@@ -32,6 +32,7 @@ augroup END
 colorscheme jellybeans
 " 検索のハイライトがちょっと弱いので個別設定。
 hi Search ctermfg=98 ctermbg=217
+hi IncSearch cterm=NONE ctermfg=11 ctermbg=40
 
 
 " ** hybrid: 少し薄いのと黄色っぽさがしっくりこない
