@@ -54,7 +54,7 @@ hi Visual ctermbg=240
 hi CursorLineNr term=bold cterm=bold ctermfg=0 ctermbg=15
 
 " インサート時に行ハイライト（set cursorlineが必要）
-autocmd InsertEnter * highlight CursorLine ctermbg=17
+autocmd InsertEnter * highlight CursorLine ctermbg=235
 autocmd InsertLeave * hi clear CursorLine
 
 " 全角スペースを白で強調表示
