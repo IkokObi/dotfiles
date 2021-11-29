@@ -34,6 +34,7 @@ colorscheme jellybeans
 hi Search ctermfg=98 ctermbg=217
 hi IncSearch cterm=NONE ctermfg=11 ctermbg=40
 hi Visual ctermbg=240
+hi Statement ctermfg=140 
 hi link ALEError ErrorMsg
 
 
@@ -55,7 +56,7 @@ hi link ALEError ErrorMsg
 hi CursorLineNr term=bold cterm=bold ctermfg=0 ctermbg=15
 
 " インサート時に行ハイライト（set cursorlineが必要）
-autocmd InsertEnter * highlight CursorLine ctermbg=17
+autocmd InsertEnter * highlight CursorLine ctermbg=235
 autocmd InsertLeave * hi clear CursorLine
 
 " 全角スペースを白で強調表示
