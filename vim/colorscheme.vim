@@ -34,6 +34,7 @@ colorscheme jellybeans
 hi Search ctermfg=98 ctermbg=217
 hi IncSearch cterm=NONE ctermfg=11 ctermbg=40
 hi Visual ctermbg=240
+hi link ALEError ErrorMsg
 
 
 " ** hybrid: 少し薄いのと黄色っぽさがしっくりこない
