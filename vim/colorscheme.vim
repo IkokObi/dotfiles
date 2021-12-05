@@ -35,6 +35,7 @@ hi Search ctermfg=98 ctermbg=217
 hi IncSearch cterm=NONE ctermfg=11 ctermbg=40
 hi Visual ctermbg=240
 hi Statement ctermfg=140 
+hi Comment ctermfg=95 
 hi link ALEError ErrorMsg
 
 
