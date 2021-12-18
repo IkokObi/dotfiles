@@ -3,6 +3,8 @@
 # export PATH="/usr/local/bin:$PATH"
 
 # pyenv  => .zprofile
+# 2021/12/18 pyenvの更新で下記が必要になった
+eval "$(pyenv init -)"
 
 # git completion
 fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
