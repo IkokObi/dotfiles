@@ -1,0 +1,8 @@
+[core]
+	excludesfile = /Users/(user)/.gitignore_global
+	ignorecase = false
+[commit]
+	template = /Users/(user)/.git_commit_template
+[user]
+	name = Koki Obinata
+	email = (mail)@gmail.com
