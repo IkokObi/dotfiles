@@ -104,13 +104,6 @@ vmap gl <Plug>(openbrowser-smart-search)
 '''
 
 
-# [[plugins]]
-# repo = 'vim-scripts/autodate.vim'
-# hook_add = '''
-# let g:autodate_format="%Y/%m/%d %H:%M:%S %Z"
-# '''
-
-
 [[plugins]]
 repo = 'Townk/vim-autoclose'
 hook_add='''

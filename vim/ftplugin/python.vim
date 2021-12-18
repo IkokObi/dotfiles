@@ -31,9 +31,3 @@ let g:ale_python_black_executable = 'black'
 let g:ale_python_flake8_options = '--max-line-length 88 --ignore=E203,W503'
 let g:ale_python_isort_options = '-l 88 --multi-line 3 --trailing-comma'
 let g:ale_python_black_options = '-l 88'
-
-
-" " autodate setting
-" autocmd BufNewFile *.py 0r !sed -e
-"	\ "s;CREATED_DATE;`date +'\%Y/\%m/\%d \%H:\%M:\%S \%Z'`;"
-"	\ ~/dotfiles/vim/template/python.txt 
