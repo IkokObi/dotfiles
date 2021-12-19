@@ -29,7 +29,8 @@ pyknp
 gensim
 mecab-python3
 sentencepiece
-SudachiPy
+sudachipy
+sudachidict_core
 
 # Images
 pillow
