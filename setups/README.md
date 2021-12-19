@@ -4,7 +4,7 @@
 1. App StoreからXcodeをインストール（最新の情報を要参照）
 1. Homebrewをインストール
 	- [公式のインストール方法](https://brew.sh/index_ja)に従う
-1. [Homebrewで各種インストール](Homebrewによる各種ツールのインストール)
+1. [Homebrewで各種インストール](#Homebrewによる各種ツールのインストール)
 1. dotfilesリポジトリをclone
 	- `git clone https://github.com/IkokObi/dotfiles.git`
 1. [フォントをインストール](#フォントのインストール)
