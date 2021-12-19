@@ -1,0 +1,64 @@
+# Standard Libraries
+numpy
+scipy
+numba
+pandas
+matplotlib
+seaborn
+
+# linter, formatter, editor
+flake8
+black
+isort
+mypy
+pydantic
+python-language-server
+jupyter
+jupyter_contrib_nbextensions
+
+# Machine Learning
+scikit-learn
+xgboost
+lightgbm
+umap-learn
+# hdbscan
+
+# NLP
+mojimoji
+pyknp
+gensim
+mecab-python3
+sentencepiece
+SudachiPy
+
+# Images
+pillow
+
+# EXCEL
+xlrd
+xlwt
+openpyxl
+
+# WORD
+python-docx
+
+# Server
+uvicorn
+fastapi
+starlette 
+aiofiles
+python-multipart
+injector
+authlib
+
+# Others
+pipenv
+tqdm
+pytz
+requests
+beautifulsoup4
+lxml
+elasticsearch
+awscli
+google-cloud-datastore
+google-cloud-storage
