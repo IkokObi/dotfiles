@@ -10,8 +10,8 @@
 1. [フォントのインストール](#フォントのインストール)
 1. Karabiner Elementsをインストール
 	- [公式ページ](https://karabiner-elements.pqrs.org/)からOSに対応したバージョンをインストール
-1. dotfilesのシンボリックリンクを設定
-	- `dotfiles/link.sh`を実行
+1. dotfilesを設定
+	- `dotfiles/README.md`を見て`dotfiles/link.sh`を実行する
 	- vimでwakatimeのキーを入力
 1. Karabinerのcomplex modificationsを設定
 1. その他のアプリケーションのインストール
@@ -24,20 +24,38 @@
 ## Homebrewによる各種ツールのインストール
 `homebrew-install.sh`を実行し、必要なツールをHomebrewでインストールする。
 
+
 ## フォントのインストール
 `install-fonts.sh`を実行することでvimやターミナルに必要なフォントをインストールする。
 ```
 source install-fonts.sh
 ```
 
+
 ## Python環境の構築
-- pyenvのインストール
-  - 設定方法の変更が度々発生するので[公式ドキュメント](https://github.com/pyenv/pyenv)を読む
-  - 大抵はpyenvのリポジトリのcloneとzshrc, zprofileへの設定を行う
-- pythonのインストールに必要な外部ツールのインストール
-  - [pyenvのwiki](https://github.com/pyenv/pyenv/wiki#suggested-build-environment)などを参照
-- pythonのインストール
-- venv環境の構築
+### pyenvのインストール
+設定方法の変更が度々発生するので[公式ドキュメント](https://github.com/pyenv/pyenv)を読む。大抵はpyenvのリポジトリのcloneとzshrc, zprofileへの設定を行う。
+
+### pythonのインストールに必要な外部ツールのインストール
+[pyenvのwiki](https://github.com/pyenv/pyenv/wiki#suggested-build-environment)などを参照する。
+
+### pythonのインストール
+```
+pyenv install 3.x.y
+```
+
+### venv環境の構築
+`dotfiles/setups/python`にて下記を実行してvenv環境を構築する。
+```
+source ./create.sh env-name
+```
+
+### venv環境の削除
+`dotfiles/setups/python`にて下記を実行してvenv環境を削除する。
+```
+source ./delete.sh env-name
+```
+
 
 ## TeX環境の構築
 `dotfiles/setups/tex`へ移動する。
