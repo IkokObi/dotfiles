@@ -24,10 +24,10 @@
 
 # セットアップ手順詳細
 ## Homebrewによる各種ツールのインストール
-`homebrew-install.sh`を実行し、必要なツールをHomebrewでインストールします。
+`homebrew-install.sh`を実行し、必要なツールをHomebrewでインストールする。
 
 ## フォントのインストール
-`install-fonts.sh`を実行することでvimやターミナルに必要なフォントをインストールすることが出来ます。
+`install-fonts.sh`を実行することでvimやターミナルに必要なフォントをインストールする。
 ```
 source install-fonts.sh
 ```
@@ -43,7 +43,7 @@ source install-fonts.sh
 
 
 ## TeX環境の構築
-`dotfiles/setups/tex`へ移動してmakeコマンドを実行する。
+`dotfiles/setups/tex`へ移動する。
 ### DockerによるTeX環境の構築
 ```
 make build
@@ -54,10 +54,10 @@ texlabのリポジトリからコンパイル済みのmac用バイナリをイ�
 ダウンロードした圧縮ファイル及び実行バイナリは`dotfiles/setups/tex/`配下に置いておけばgitignoreの対象になる。
 
 ### TeXファイルのコンパイル方法
+latexmkをzshrcなどにエイリアスを設定している場合はパス指定なしでOK。`.latexmkrc`は`~/dotfiles/tex/.latexmkrc`を参照している。
 ```
 ~/dotfiles/setups/tex/latexmk file.tex
 ```
-latexmkをzshrcなどにエイリアスを設定している場合はパス指定なしでOK。`.latexmkrc`は`~/dotfiles/tex/.latexmkrc`を参照している。
 
 
 # その他の環境セットアップ（備忘録）
