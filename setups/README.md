@@ -27,7 +27,7 @@
 `homebrew-install.sh`を実行し、必要なツールをHomebrewでインストールします。
 
 ## フォントのインストール
-`install-fonts.sh`を実行するだけです。これでvimやターミナルに必要なフォントをインストールすることが出来ます。
+`install-fonts.sh`を実行することでvimやターミナルに必要なフォントをインストールすることが出来ます。
 ```
 source install-fonts.sh
 ```
