@@ -24,7 +24,7 @@
 
 # セットアップ手順詳細
 ## Homebrewによる各種ツールのインストール
-- `brew install git vim fzf the_silver_searcher`
+`homebrew-install.sh`を実行し、必要なツールをHomebrewでインストールします。
 
 ## フォントのインストール
 `install-fonts.sh`を実行するだけです。これでvimやターミナルに必要なフォントをインストールすることが出来ます。
@@ -39,9 +39,25 @@ source install-fonts.sh
 - pythonのインストールに必要な外部ツールのインストール
   - [pyenvのwiki](https://github.com/pyenv/pyenv/wiki#suggested-build-environment)などを参照
 - pythonのインストール
+- venv環境の構築
 
 
 ## TeX環境の構築
+`dotfiles/setups/tex`へ移動してmakeコマンドを実行する。
+### DockerによるTeX環境の構築
+```
+make build
+```
+
+### texlabのインストール（vim-lsp用）
+texlabのリポジトリからコンパイル済みのmac用バイナリをインストールする。インストールは[releasesから](https://github.com/latex-lsp/texlab/releases)行える。
+ダウンロードした圧縮ファイル及び実行バイナリは`dotfiles/setups/tex/`配下に置いておけばgitignoreの対象になる。
+
+### TeXファイルのコンパイル方法
+```
+~/dotfiles/setups/tex/latexmk file.tex
+```
+latexmkをzshrcなどにエイリアスを設定している場合はパス指定なしでOK。`.latexmkrc`は`~/dotfiles/tex/.latexmkrc`を参照している。
 
 
 # その他の環境セットアップ（備忘録）
