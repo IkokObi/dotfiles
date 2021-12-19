@@ -4,11 +4,10 @@
 1. App StoreからXcodeをインストール（最新の情報を要参照）
 1. Homebrewをインストール
 	- [公式のインストール方法](https://brew.sh/index_ja)に従う
-1. Homebrewで各種インストール
+1. [Homebrewで各種インストール](Homebrewによる各種ツールのインストール)
 1. dotfilesリポジトリをclone
 	- `git clone https://github.com/IkokObi/dotfiles.git`
-1. フォントをインストール
-	- `dotfiles/setups/install-fonts.sh`を実行する
+1. [フォントをインストール](#フォントのインストール)
 1. Karabiner Elementsをインストール
 	- [公式ページ](https://karabiner-elements.pqrs.org/)からOSに対応したバージョンをインストール
 1. dotfilesのシンボリックリンクを設定
@@ -19,7 +18,6 @@
 	- Docker (for Mac)
 1. [Python環境の構築](#Python環境の構築)
 1. [Tex環境の構築](#TeX環境の構築)
-
 
 
 # セットアップ手順詳細
@@ -40,7 +38,6 @@ source install-fonts.sh
   - [pyenvのwiki](https://github.com/pyenv/pyenv/wiki#suggested-build-environment)などを参照
 - pythonのインストール
 - venv環境の構築
-
 
 ## TeX環境の構築
 `dotfiles/setups/tex`へ移動する。
