@@ -1,19 +1,11 @@
 # dotfiles
+これは個人用に開発環境を整えるためのリポジトリです。汎用的に使えるようには考えていませんので、そのままの利用は推奨しません。
+This is a repository to set up a development environment for personal use. It is not intended to be used generally, and is not recommended applying this repository to your environment as it is.
 
-## 設定の適用手順
-### 1. リポジトリのクローン
-ホームディレクトリ直下にこのdotfilesディレクトリを配置してください。
+## 環境の構築手順
+[setupsディレクトリ](./setups/README.md)に手順を記載
 
-### 2. configの設定
-`config/_config.sh`を`config/config.sh`という名前でコピーし、ファイル内の`DOTFILES_USER="xxx"`の`xxx`を端末のユーザー名に変更してください。
-
-### 3. シンボリックリンクの適用
-`link.sh`の中からコメントを外して各種シンボリックリンクを適用します。
-```sh
-$ source link.sh
-```
-
-## 管理されているアプリケーション一覧
+## 設定が管理されているアプリケーション一覧
 - zsh
 - vim
 - git
@@ -21,4 +13,4 @@ $ source link.sh
 - karabiner
 
 ## 使われなくなった設定
-- bash
+- bash: macのOSアップデートに伴いzshに移行したため
