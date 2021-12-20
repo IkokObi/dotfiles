@@ -1,0 +1,41 @@
+\documentclass{jsarticle}
+\和暦
+\usepackage[top=25truemm,bottom=25truemm,left=25truemm,right=25truemm]{geometry}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{bm}
+\usepackage{here}
+\usepackage{color}
+
+\begin{document}
+
+\title{\huge TeXコンパイルの最小機能確認}
+\author{田中 太郎}
+\date{\today}
+\maketitle
+
+いくつかの例でコンパイルが出来るか確認します．
+自動コンパイル出来ますかね．
+
+\section{番号なしリスト}
+\begin{itemize}
+  \item アイテム1
+  \item 項目2
+  \item 列挙3
+\end{itemize}
+
+\section{番号付きリスト}
+\begin{enumerate}
+  \item 国語
+  \item 数学
+  \item 英語
+\end{enumerate}
+
+\section{数式の例}
+単回帰の式は次で表される．
+\begin{equation}
+  y = ax + b \label{regression}
+\end{equation}
+式\eqref{regression}は基本的な式です．
+
+\end{document}

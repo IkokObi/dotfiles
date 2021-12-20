@@ -1,0 +1,82 @@
+# 環境セットアップ
+
+# 開発環境セットアップ手順(mac用)
+1. App StoreからXcodeをインストール（最新の情報を要参照）
+1. Homebrewをインストール
+	- [公式のインストール方法](https://brew.sh/index_ja)に従う
+1. [Homebrewによる各種ツールのインストール](#Homebrewによる各種ツールのインストール)
+1. dotfilesリポジトリをclone
+	- `git clone https://github.com/IkokObi/dotfiles.git`
+1. [フォントのインストール](#フォントのインストール)
+1. Karabiner Elementsをインストール
+	- [公式ページ](https://karabiner-elements.pqrs.org/)からOSに対応したバージョンをインストール
+1. dotfilesを設定
+	- `dotfiles/README.md`を見て`dotfiles/link.sh`を実行する
+	- vimでwakatimeのキーを入力
+1. Karabinerのcomplex modificationsを設定
+1. その他のアプリケーションのインストール
+	- Docker (for Mac)
+1. [Python環境の構築](#Python環境の構築)
+1. [Tex環境の構築](#TeX環境の構築)
+
+
+# セットアップ手順詳細
+## Homebrewによる各種ツールのインストール
+`homebrew-install.sh`を実行し、必要なツールをHomebrewでインストールする。
+
+
+## フォントのインストール
+`install-fonts.sh`を実行することでvimやターミナルに必要なフォントをインストールする。
+```
+source install-fonts.sh
+```
+
+
+## Python環境の構築
+### pyenvのインストール
+設定方法の変更が度々発生するので[公式ドキュメント](https://github.com/pyenv/pyenv)を読む。大抵はpyenvのリポジトリのcloneとzshrc, zprofileへの設定を行う。
+
+### pythonのインストールに必要な外部ツールのインストール
+[pyenvのwiki](https://github.com/pyenv/pyenv/wiki#suggested-build-environment)などを参照する。
+
+### pythonのインストール
+```
+pyenv install 3.x.y
+```
+
+### venv環境の構築
+`dotfiles/setups/python`にて下記を実行してvenv環境を構築する。
+```
+source ./create.sh env-name
+```
+
+### venv環境の削除
+`dotfiles/setups/python`にて下記を実行してvenv環境を削除する。
+```
+source ./delete.sh env-name
+```
+
+
+## TeX環境の構築
+`dotfiles/setups/tex`へ移動する。
+### DockerによるTeX環境の構築
+```
+make build
+```
+
+### texlabのインストール（vim-lsp用）
+texlabのリポジトリからコンパイル済みのmac用バイナリをインストールする。インストールは[releasesから](https://github.com/latex-lsp/texlab/releases)行える。
+ダウンロードした圧縮ファイル及び実行バイナリは`dotfiles/setups/tex/`配下に置いておけばgitignoreの対象になる。
+
+### TeXファイルのコンパイル方法
+latexmkをzshrcなどにエイリアスを設定している場合はパス指定なしでOK。`.latexmkrc`は`~/dotfiles/tex/.latexmkrc`を参照している。
+```
+~/dotfiles/setups/tex/latexmk file.tex
+```
+
+
+# その他の環境セットアップ（備忘録）
+- Googleアカウント
+- Slack
+- Google IME
+- Dropbox
