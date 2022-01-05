@@ -1,5 +1,6 @@
-# pyenv  => .zprofile
-# 2021/12/18 pyenvの更新で下記が必要になった
+# pyenv
+# コマンドは.zprofileへ
+# 2021/12/18 pyenvの更新で下記が.zshrcに必要になった
 eval "$(pyenv init -)"
 
 # git completion
