@@ -36,6 +36,7 @@ hi IncSearch cterm=NONE ctermfg=11 ctermbg=40
 hi Visual ctermbg=240
 hi Statement ctermfg=140 
 hi Comment ctermfg=95 
+hi SpellCap term=reverse cterm=NONE ctermbg=20
 hi link ALEError ErrorMsg
 
 
