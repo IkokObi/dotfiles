@@ -19,3 +19,13 @@ alias gil='git log'
 alias jopen='jupyter-notebook > .jupyterlog 2>&1 &'
 alias pcp="pwd | tr -d '\n' | pbcopy"
 alias note="vim `date +%Y%m%d`.md"
+
+# fzf-extras
+function __zz() {
+  _zz
+  zle reset-prompt
+  return 0
+}
+
+zle -N __zz
+bindkey '^O' __zz
