@@ -23,6 +23,7 @@ alias note="vim `date +%Y%m%d`.md"
 # fzf-extras
 function __zz() {
   _zz
+  precmd # used in prompt.zsh
   zle reset-prompt
   return 0
 }
