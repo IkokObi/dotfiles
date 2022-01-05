@@ -7,6 +7,7 @@ source ${DOTFILES}/zsh/basic.zsh
 source ${DOTFILES}/zsh/prompt.zsh
 source ${DOTFILES}/zsh/alias.zsh
 source ${DOTFILES}/zsh/application.zsh
+source ${DOTFILES}/zsh/function.zsh
 
 # read user-dependent setting
 source ${DOTFILES}/zsh/users/${DOTFILES_USER}/setting.zsh

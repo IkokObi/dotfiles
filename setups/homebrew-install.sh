@@ -1,7 +1,8 @@
 #!/bin/sh
  
 brew install git
-brew install vim fzf the_silver_searcher
+brew install vim
+brew install fzf the_silver_searcher fasd
 brew install jq
 brew install htop
 brew install pwgen
