@@ -235,3 +235,7 @@ repo = 'cocopon/iceberg.vim'
 
 [[plugins]]
 repo = 'joshdick/onedark.vim'
+
+
+[[plugins]]
+repo = '4513ECHO/vim-colors-hatsunemiku'

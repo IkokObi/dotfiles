@@ -51,6 +51,10 @@ hi link ALEError ErrorMsg
 
 " ** onedark: ちょっとしっくりこない色系統
 " colorscheme onedark
+
+
+" " ** hatsunemiku: 結構使いやすい！bold多めに感じる。
+" colorscheme hatsunemiku
 " === END ===
 
 
