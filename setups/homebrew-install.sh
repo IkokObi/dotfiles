@@ -6,3 +6,4 @@ brew install fzf the_silver_searcher fasd
 brew install jq
 brew install htop
 brew install pwgen
+brew install skim --cask
