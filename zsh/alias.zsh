@@ -30,3 +30,5 @@ function __zz() {
 
 zle -N __zz
 bindkey '^O' __zz
+alias e='fez' # Edit from frecency files
+alias j='_zz' # Jump to frecency directory
