@@ -18,7 +18,7 @@ alias gil='git log'
 
 alias jopen='jupyter-notebook > .jupyterlog 2>&1 &'
 alias pcp="pwd | tr -d '\n' | pbcopy"
-alias note="vim `date +%Y%m%d`.md"
+alias note="vim notes-`date +%Y%m%d`.md"
 
 # fzf-extras
 function __zz() {
