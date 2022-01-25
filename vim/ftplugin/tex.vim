@@ -2,6 +2,7 @@
 setlocal spell
 setlocal spelllang=en,cjk
 setlocal softtabstop=2
+setlocal tabstop=2
 setlocal shiftwidth=2
 let g:tex_comment_nospell=1
 let g:tex_conceal=''
