@@ -3,6 +3,7 @@
 file=$1
 
 docker run --rm \
+  --name tex \
   -v $PWD:/workdir \
   -v ~/dotfiles/tex/.latexmkrc:/root/.latexmkrc \
   local/tex:latest \
