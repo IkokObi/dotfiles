@@ -29,15 +29,15 @@ augroup END
 
 
 " ** jellybeans: returnとかの予約語が薄い。
-colorscheme jellybeans
-" 検索のハイライトがちょっと弱いので個別設定。
-hi Search ctermfg=98 ctermbg=217
-hi IncSearch cterm=NONE ctermfg=11 ctermbg=40
-hi Visual ctermbg=240
-hi Statement ctermfg=140 
-hi Comment ctermfg=95 
-hi SpellCap term=reverse cterm=NONE ctermbg=20
-hi link ALEError ErrorMsg
+" colorscheme jellybeans
+" " 検索のハイライトがちょっと弱いので個別設定。
+" hi Search ctermfg=98 ctermbg=217
+" hi IncSearch cterm=NONE ctermfg=11 ctermbg=40
+" hi Visual ctermbg=240
+" hi Statement ctermfg=140
+" hi Comment ctermfg=95
+" hi SpellCap term=reverse cterm=NONE ctermbg=20
+" hi link ALEError ErrorMsg
 
 
 " ** hybrid: 少し薄いのと黄色っぽさがしっくりこない
@@ -54,7 +54,8 @@ hi link ALEError ErrorMsg
 
 
 " " ** hatsunemiku: 結構使いやすい！bold多めに感じる。
-" colorscheme hatsunemiku
+colorscheme hatsunemiku
+hi ColorColumn ctermfg=NONE ctermbg=234
 " === END ===
 
 
