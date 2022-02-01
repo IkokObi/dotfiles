@@ -16,6 +16,8 @@ pydantic
 python-language-server
 jupyter
 jupyter_contrib_nbextensions
+# jupyterの拡張機能の設定が必要
+# jupyter contrib nbextension install --user
 
 # Machine Learning
 scikit-learn
