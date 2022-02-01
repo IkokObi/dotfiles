@@ -7,10 +7,11 @@ matplotlib
 seaborn
 
 # linter, formatter, editor
-flake8
 black
 isort
+flake8
 mypy
+pytest
 pydantic
 python-language-server
 jupyter
