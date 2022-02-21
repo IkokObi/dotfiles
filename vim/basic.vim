@@ -9,6 +9,7 @@ set laststatus=2 " ステータスを表示
 set ruler " カーソル位置を表示
 set ambiwidth=double  " 全角記号を全角で表示
 set pumheight=10 " 変換候補で一度に表示される数
+set wildoptions=pum
 " set completeopt=menuone " 補完対象が1件の場合でも補完ウィンドウを表示する
 set cmdheight=1 " メッセージ表示欄の行数
 set termwinsize=7x0 " vimのterminalの表示サイズ設定
