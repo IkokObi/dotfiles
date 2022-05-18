@@ -37,3 +37,5 @@ if executable(expand(s:texlab_path))
       \ 'whitelist': ['tex', 'bib', 'sty'],
       \ })
 endif
+
+let g:asyncomplete_min_chars = 2
