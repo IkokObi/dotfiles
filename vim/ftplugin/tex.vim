@@ -38,4 +38,4 @@ if executable(expand(s:texlab_path))
       \ })
 endif
 
-let g:asyncomplete_min_chars = 2
+let g:asyncomplete_min_chars = 1
