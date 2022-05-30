@@ -1,7 +1,10 @@
 *~
 .DS_Store
+
 *_todo.md
-.jupyterlog*
 notes*.md
-.python-version
 /private-works
+
+.jupyterlog*
+.python-version
+.venv-name

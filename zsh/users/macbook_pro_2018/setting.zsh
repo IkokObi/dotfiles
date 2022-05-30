@@ -12,6 +12,9 @@ export PATH="$HOME/.poetry/bin:$PATH"
 source ~/dotfiles/setups/python/envs/default/bin/activate
 export PIPENV_IGNORE_VIRTUALENVS=1
 
+# ログインシェル時にvenvチェックを実行するため
+auto_venv_activate
+
 # TeX
 export PATH="/Users/ikokpro/dotfiles/setups/tex:$PATH"
 

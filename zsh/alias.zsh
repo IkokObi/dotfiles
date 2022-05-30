@@ -20,6 +20,13 @@ alias jopen='jupyter-notebook > .jupyterlog 2>&1 &'
 alias pcp="pwd | tr -d '\n' | pbcopy"
 alias note="vim notes-`date +%Y%m%d`.md"
 
+function _venv_create() {
+	python -m venv .venv --prompt "$@"
+	source ./.venv/bin/activate
+	pip install --upgrade pip
+}
+alias venv-create=_venv_create
+
 # fzf-extras
 function __zz() {
   _zz
