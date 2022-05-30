@@ -10,6 +10,11 @@ function auto_venv_activate {
 	if [[ -d ./.venv ]] ; then
 		. ./.venv/bin/activate
 	fi
+
+	if [[ -f ./.venv-name ]] ; then
+		name=$(cat ./.venv-name)
+		. ~/dotfiles/setups/python/envs/${name}/bin/activate
+	fi
 }
 
 function cd() {

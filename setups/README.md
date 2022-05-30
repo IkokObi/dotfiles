@@ -82,6 +82,8 @@ venv環境は下記コマンド（自作関数）で作成可能。
 venv-create (env-name)
 ```
 
+また、`.venv-name`ファイルがある場合、そのファイルに記載の環境(`(env-name)`)に対して`~/dotfiles/setups/python/envs/(env-name)`が有効化される。
+
 
 ## TeX環境の構築
 `dotfiles/setups/tex`へ移動する。
