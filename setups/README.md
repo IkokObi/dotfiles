@@ -74,6 +74,14 @@ source ./create.sh env-name
 source ./delete.sh env-name
 ```
 
+### 6. プロジェクトごとのvenv環境
+`cd`で移動した際、カレントディレクトリ直下に`.venv`がある場合は自動で有効化される。
+
+venv環境は下記コマンド（自作関数）で作成可能。
+```sh
+venv-create (env-name)
+```
+
 
 ## TeX環境の構築
 `dotfiles/setups/tex`へ移動する。
