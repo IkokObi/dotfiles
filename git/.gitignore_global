@@ -4,3 +4,4 @@
 .jupyterlog*
 notes*.md
 .python-version
+/private-works
