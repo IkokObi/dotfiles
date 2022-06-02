@@ -7,6 +7,7 @@ cd "${PWD}/envs"
 
 python -m venv ${env}
 source ${ENV_DIR}/bin/activate
+pip install --upgrade pip
 touch ${ENV_DIR}/requirements.txt
 
 cd ${ENV_DIR}
