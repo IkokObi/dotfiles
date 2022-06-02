@@ -7,8 +7,8 @@ eval "$(pyenv init -)"
 # python venv
 # Python venv 環境をディレクトリ直下に見つけたら自動で有効化する
 function auto_venv_activate {
-	if [[ -d ./.venv ]] ; then
-		. ./.venv/bin/activate
+	if [[ -d ./.venv_private ]] ; then
+		. ./.venv_private/bin/activate
 	fi
 
 	if [[ -f ./.venv-name ]] ; then

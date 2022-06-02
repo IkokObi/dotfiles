@@ -8,3 +8,4 @@ notes*.md
 .jupyterlog*
 .python-version
 .venv-name
+.venv_private

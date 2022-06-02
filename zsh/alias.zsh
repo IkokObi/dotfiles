@@ -21,8 +21,8 @@ alias pcp="pwd | tr -d '\n' | pbcopy"
 alias note="vim notes-`date +%Y%m%d`.md"
 
 function _venv_create() {
-	python -m venv .venv --prompt "$@"
-	source ./.venv/bin/activate
+	python -m venv .venv_private --prompt "$@"
+	source ./.venv_private/bin/activate
 	pip install --upgrade pip
 }
 alias venv-create=_venv_create
