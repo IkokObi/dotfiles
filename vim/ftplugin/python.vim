@@ -14,16 +14,6 @@ inoremap <Leader>c """  """<Left><Left><Left><Left>
 
 
 " === Plugin settings ===
-" lsp setting
-if executable('pyls')
-    au User lsp_setup call lsp#register_server({
-  \ 'name': 'pyls',
-  \ 'cmd': {server_info->['pyls']},
-  \ 'whitelist': ['python']
-  \ })
-endif
-
-
 " ale setting
 let g:ale_python_flake8_executable = 'flake8'
 let g:ale_python_isort_executable = 'isort'
