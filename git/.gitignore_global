@@ -3,7 +3,7 @@
 
 *_todo.md
 notes*.md
-/private-works
+private-works
 
 .jupyterlog*
 .python-version
