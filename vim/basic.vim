@@ -32,7 +32,7 @@ let &t_te.="\e[0 q"
 " タブ, インデント設定
 set smartindent " ブロックに応じてインデントを自動で調整
 set smarttab " 行頭でタブを入力すると，shiftwidthの数だけ空白を挿入する．
-set noexpandtab " タブを空白に置き換える/ない．
+set expandtab " タブを空白に置き換える/ない．
 set tabstop=4 " この個数分のスペースを1つのタブとして扱う．
 set shiftwidth=0 " インデントをした際に，この個数分の空白を挿入する．0の場合，tabstopに従う．
 set softtabstop=-1 " タブを入力した際に，この個数分の空白を挿入する．負数の場合，shiftwidthに従う．
