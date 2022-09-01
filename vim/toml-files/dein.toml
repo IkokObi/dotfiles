@@ -214,6 +214,19 @@ let g:vista#renderer#enable_icon = 1 " nerd-fontを入れる必要がある
 
 
 [[plugins]]
+repo = 'github/copilot.vim'
+hook_add = '''
+" cf: https://github.com/community/community/discussions/8105
+" g:copilot_assume_mapped = v:true が要るらしい
+let g:copilot_assume_mapped = v:true
+imap <silent><script><expr> <C-L> copilot#Accept("\<CR>")
+let g:copilot_no_tab_map = v:true
+'''
+
+
+# ===== color schemes ======
+
+[[plugins]]
 repo = 'ayu-theme/ayu-vim'
 
 
