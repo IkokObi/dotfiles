@@ -223,27 +223,7 @@ let g:copilot_no_tab_map = v:true
 # ===== color schemes ======
 
 [[plugins]]
-repo = 'ayu-theme/ayu-vim'
-
-
-[[plugins]]
-repo = 'tyrannicaltoucan/vim-deep-space'
-
-
-[[plugins]]
 repo = 'nanotech/jellybeans.vim'
-
-
-[[plugins]]
-repo = 'w0ng/vim-hybrid'
-
-
-[[plugins]]
-repo = 'cocopon/iceberg.vim'
-
-
-[[plugins]]
-repo = 'joshdick/onedark.vim'
 
 
 [[plugins]]

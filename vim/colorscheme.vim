@@ -40,19 +40,6 @@ augroup END
 " hi link ALEError ErrorMsg
 
 
-" ** hybrid: 少し薄いのと黄色っぽさがしっくりこない
-" set background=dark
-" colorscheme hybrid
-
-
-" ** iceberg: pythonの文字列が同じ色で判別しづらい
-" colorscheme iceberg
-
-
-" ** onedark: ちょっとしっくりこない色系統
-" colorscheme onedark
-
-
 " " ** hatsunemiku: 結構使いやすい！bold多めに感じる。
 colorscheme hatsunemiku
 hi ColorColumn ctermfg=NONE ctermbg=234
