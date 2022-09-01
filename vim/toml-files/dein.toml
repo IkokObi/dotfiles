@@ -209,10 +209,6 @@ let g:vista#renderer#enable_icon = 1 " nerd-fontを入れる必要がある
 '''
 
 
-# [[plugins]]
-# repo = 'lightline.vim'
-
-
 [[plugins]]
 repo = 'github/copilot.vim'
 hook_add = '''
