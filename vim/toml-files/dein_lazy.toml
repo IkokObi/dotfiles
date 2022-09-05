@@ -39,19 +39,8 @@ hook_add = '''
 " Shift-o でinsertモードに入ったときに自動インデントしない
 let g:vim_markdown_new_list_item_indent = 0
 let g:vim_markdown_conceal = 0
+let g:vim_markdown_folding_disabled = 1
 '''
-
-
-[[plugins]]
-repo = 'kannokanno/previm'
-on_ft = ['md', 'markdown']
-hook_add = '''
-nnoremap <silent> <C-o> :PrevimOpen<CR> " Ctrl-oでプレビュー
-" 自動で折りたたまないようにする
-let g:vim_markdown_folding_disabled=1
-let g:previm_enable_realtime = 1
-'''
-# 数式を表示するためにソースに追加書き込みが必要
 
 
 [[plugins]]
