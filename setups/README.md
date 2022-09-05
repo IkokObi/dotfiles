@@ -17,6 +17,7 @@
 	- Docker (for Mac)
 1. [Python環境の構築](#Python環境の構築)
 1. [Tex環境の構築](#TeX環境の構築)
+1. [Node.js環境の構築](#Node.js環境の構築)
 
 
 # セットアップ手順詳細
@@ -100,6 +101,28 @@ texlabのリポジトリからコンパイル済みのmac用バイナリをイ�
 latexmkをzshrcなどにエイリアスを設定している場合はパス指定なしでOK。`.latexmkrc`は`~/dotfiles/tex/.latexmkrc`を参照している。
 ```
 ~/dotfiles/setups/tex/latexmk file.tex
+```
+
+
+## Node.js環境の構築
+### 初期化処理
+Homebrewでnodebrewをインストールしてあるので，初期化処理を実行する．
+```sh
+nodebrew setup
+```
+
+### nodeのインストール
+1. インストール可能なバージョンの一覧取得
+```sh
+nodebrew ls-remote
+```
+1. インストール
+```sh
+nodebrew install-binary v.x.y.z
+```
+1. 有効化
+```sh
+nodebrew use v.x.y.z
 ```
 
 

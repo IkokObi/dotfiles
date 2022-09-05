@@ -7,3 +7,4 @@ brew install jq
 brew install htop
 brew install pwgen
 brew install skim --cask
+brew install nodebrew
