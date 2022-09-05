@@ -9,3 +9,4 @@ setlocal conceallevel=0
 " Key mapping
 inoremap <silent> <buffer> <Tab> <C-t>
 inoremap <silent> <buffer> <S-Tab> <C-d>
+nnoremap <silent> <C-o> :!open -a "Google Chrome" %<Enter><Enter>
