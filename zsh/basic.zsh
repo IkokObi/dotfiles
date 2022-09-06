@@ -19,3 +19,5 @@ SAVEHIST=10000
 setopt append_history
 setopt share_history
 setopt hist_ignore_all_dups
+
+# setopt nonomatch # curl時に?を入れてもエラーにならないようにする
