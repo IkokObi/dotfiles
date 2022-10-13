@@ -4,7 +4,7 @@ build:
 
 .PHONY: enter
 enter:
-	docker run --rm -it -v $PWD:/workdir -v ~/dotfiles/tex/.latexmkrc:/root/.latexmkrc local/tex:latest
+	docker run --rm -it -v ${PWD}:/workdir -v ~/dotfiles/tex/.latexmkrc:/root/.latexmkrc local/tex:latest
 
 .PHONY: install-texlab
 install-texlab:
