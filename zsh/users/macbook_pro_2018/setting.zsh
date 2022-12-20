@@ -7,6 +7,9 @@ if [ -f '/Users/ikokpro/Settings/gcloud/google-cloud-sdk/completion.zsh.inc' ]; 
 # Istio
 export PATH=$PATH:$HOME/.istioctl/bin
 
+# tfenv
+export PATH="$HOME/.tfenv/bin:$PATH"
+
 # Python
 export PATH="$HOME/.poetry/bin:$PATH"
 source ~/dotfiles/setups/python/envs/default/bin/activate

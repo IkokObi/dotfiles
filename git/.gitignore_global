@@ -9,3 +9,4 @@ private-works
 .python-version
 .venv-name
 .venv_private
+.terraform-version
