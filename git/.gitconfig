@@ -1,6 +1,7 @@
 [core]
 	excludesfile = /Users/(user)/.gitignore_global
 	ignorecase = false
+	quotepath = false
 [commit]
 	template = /Users/(user)/.git_commit_template
 [user]
