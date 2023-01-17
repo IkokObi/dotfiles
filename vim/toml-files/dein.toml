@@ -131,6 +131,7 @@ let g:ale_fix_on_save = 1
 nnoremap <silent> <Space>m :ALEPrevious<CR>
 nnoremap <silent> <Space>n :ALENext<CR>
 let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
+let g:ale_virtualtext_cursor = 'current'
 '''
 
 
