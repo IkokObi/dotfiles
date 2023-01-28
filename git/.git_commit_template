@@ -2,36 +2,33 @@
 
 
 
-# ===== Messages =====
-#
 # ===== Format =====
-# Message: Subject
+# <type>: <subject>
 #
-# Commit body...
+# <body>
 #
-# ===== Message list =====
-# add    新規 ファイル・機能 追加
-# update 機能修正・改善（バグではない)
-# fix    バグ修正
-# clean  リファクタリング
-# chore  他に影響を与えない簡単な修正
-# remove 削除
-# rename ファイル名変更
-
-
-
-# ===== Emojis =====
+# ===== Type list =====
+# feat: 新機能の追加
+# fix: バグ修正
+# chore: ソースコードやテストファイルを変更しないその他の変更
+# test: テストの追加や既存のテストの修正
+# refactor: バグ修正も機能追加も行わないコード変更
+# docs: ドキュメントのみの変更
+# style: コードの意味に影響を与えない変更 (white-space, formatting, missing semi-colons, etc)
+# ci: CIの設定ファイルやスクリプトに関する変更
+# build: ビルドシステムや外部依存関係に影響を与える変更
+# perf: パフォーマンスを改善するコード変更
+# revert: 以前のコミットの取り消し
 #
-# ===== Format =====
-# :emoji: Subject
+#   ref. https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines
+#   ref. https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional
 #
-# Commit body...
 #
 # ===== Emoji list =====
 # 🎉  :tada: 初めてのコミット（Initial Commit）
 # 💫  :dizzy: 新機能（New Feature）
 # ✨  :sparkles: 機能改善（Feature Improvements）
-# 🐛  :bug: バグ修正（Bagfix）
+# 🐛  :bug: バグ修正（Bag fix）
 # 🔧  :wrench: 些末な修正 (Minor Fix)
 # 🎨  :art: リファクタリング (Refactoring)
 # 📚  :books: ドキュメント（Documentation）
@@ -42,4 +39,4 @@
 # 🔖  :bookmark: バージョンタグ（Version Tag）
 # 🚨  :rotating_light: テスト（Tests）
 # 💩  :hankey: 非推奨追加（Deprecation）
-
+# 🎸  :guitar: 機能追加
