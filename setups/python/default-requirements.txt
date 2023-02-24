@@ -34,6 +34,7 @@ mecab-python3
 sentencepiece
 sudachipy
 sudachidict_core
+rapidfuzz
 
 # Images
 pillow
