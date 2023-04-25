@@ -7,5 +7,5 @@ brew install jq
 brew install htop
 brew install pwgen
 brew install skim --cask
-brew install nodebrew
+brew install fnm
 brew install kustomize

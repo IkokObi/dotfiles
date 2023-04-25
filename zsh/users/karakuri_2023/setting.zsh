@@ -12,5 +12,8 @@ export PIPENV_IGNORE_VIRTUALENVS=1
 # ログインシェル時にvenvチェックを実行する
 auto_venv_activate
 
+# node
+eval "$(fnm env --use-on-cd)"
+
 # misc
 curl "wttr.in/Tokyo?lang=ja&format=v2"
