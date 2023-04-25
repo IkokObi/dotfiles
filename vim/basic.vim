@@ -46,7 +46,7 @@ set incsearch " インクリメンタルサーチを有効にする
 
 " マウス設定
 set mouse=a " マウス操作を可能にする
-set ttymouse=xterm2 " ドラッグを可能にする
+set ttymouse=sgr " マウスサポート
 
 " undoの永続化
 if has("persistent_undo")
