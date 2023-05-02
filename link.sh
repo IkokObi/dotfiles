@@ -9,7 +9,8 @@ DOT_DIRECTORY="${HOME}/dotfiles"
 ## === vim ===
 # ln -snfv ${DOT_DIRECTORY}/vim/.vimrc ${HOME}/.vimrc
 # mkdir -p ${HOME}/.vim
-# ln -snfv ${DOT_DIRECTORY}/vim/ftplugin ${HOME}/.vim/ftplugin
+# mkdir -p ${HOME}/.vim/after
+# ln -snfv ${DOT_DIRECTORY}/vim/after/ftplugin ${HOME}/.vim/after/ftplugin
 # ln -snfv ${DOT_DIRECTORY}/vim/ftdetect ${HOME}/.vim/ftdetect
 
 ## === git ===
