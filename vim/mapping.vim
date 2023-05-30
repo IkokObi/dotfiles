@@ -21,8 +21,7 @@ inoremap <silent> <C-b> <left>
 inoremap <silent> <C-t><C-t> <C-t>
 inoremap <silent> <C-t><C-d> <C-d>
 inoremap <silent> <C-d> <Del>
-inoremap <silent> <C-k> <Esc><right>d$i
-inoremap <silent> <C-u> <Esc><right>d^i
+inoremap <silent> <C-k> <C-O>D
 " inoremap <silent> <C-y> <C-r>" " 補完の決定と競合するので除外
 " inoremap <silent> <C-l> <C-t>
 " inoremap <silent> <C-j> <C-d>
