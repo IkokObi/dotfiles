@@ -8,7 +8,7 @@ if [ -f '/Users/k.obinata/dotfiles/setups/gcloud/google-cloud-sdk/completion.zsh
 eval "$(fnm env --use-on-cd)"
 
 # Python
-# export PATH="$HOME/.poetry/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 source ~/dotfiles/setups/python/envs/default/bin/activate
 export PIPENV_IGNORE_VIRTUALENVS=1
 
