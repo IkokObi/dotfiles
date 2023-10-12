@@ -21,20 +21,20 @@ jupyter_contrib_nbextensions
 
 # Machine Learning
 scikit-learn
-xgboost
-lightgbm
-umap-learn
+# xgboost
+# lightgbm
+# umap-learn
 # hdbscan
 
 # NLP
 mojimoji
-pyknp
-gensim
-mecab-python3
+# pyknp
+# gensim
+# mecab-python3
 sentencepiece
 sudachipy
 sudachidict_core
-rapidfuzz
+# rapidfuzz
 
 # Images
 pillow
@@ -55,6 +55,7 @@ aiofiles
 python-multipart
 injector
 authlib
+streamlit
 
 # Others
 pipenv
