@@ -11,4 +11,6 @@ private-works
 .venv_private
 .terraform-version
 
+.venv
+
 *.swp
