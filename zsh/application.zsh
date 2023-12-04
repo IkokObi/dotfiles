@@ -32,7 +32,7 @@ export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
 # fasd
 eval "$(fasd --init auto)"
 
-# fzf-extras
+# fzf-extras(fasd依存)
 export OPENER=open
 [[ -e "$HOME/.fzf-extras/fzf-extras.zsh" ]] \
   && source "$HOME/.fzf-extras/fzf-extras.zsh"
