@@ -9,3 +9,4 @@ brew install pwgen
 brew install skim --cask
 brew install fnm
 brew install kustomize
+brew install pipx
