@@ -26,3 +26,5 @@ config/config.sh
 
 ### Private dir ###
 private-*/
+
+/setups/fasd
