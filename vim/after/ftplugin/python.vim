@@ -15,12 +15,13 @@ inoremap <Leader>c """  """<Left><Left><Left><Left>
 
 " === Plugin settings ===
 " ale setting
+let g:python_max_line_length = 88
 let g:ale_python_flake8_executable = 'flake8'
 let g:ale_python_isort_executable = 'isort'
 let g:ale_python_black_executable = 'black'
-let g:ale_python_flake8_options = '--max-line-length 88 --ignore=E203,W503'
-let g:ale_python_isort_options = '-l 88 --multi-line 3 --trailing-comma'
-let g:ale_python_black_options = '-l 88'
+let g:ale_python_flake8_options = '--max-line-length ' . g:python_max_line_length . ' --ignore=E203,W503'
+let g:ale_python_isort_options = '-l ' . g:python_max_line_length . ' --multi-line 3 --trailing-comma'
+let g:ale_python_black_options = '-l ' . g:python_max_line_length
 
 " indentLine setting
 let b:indentLine_enabled = 1
