@@ -7,6 +7,14 @@ if executable('pyls')
         \ })
 endif
 
+if executable('jedi-language-server')
+  au User lsp_setup call lsp#register_server({
+        \ 'name': 'jedi-language-server',
+        \ 'cmd': {server_info->['jedi-language-server']},
+        \ 'whitelist': ['python']
+        \ })
+endif
+
 " TeX
 let s:texlab_path = '~/dotfiles/setups/tex/texlab'
 if executable(expand(s:texlab_path))
