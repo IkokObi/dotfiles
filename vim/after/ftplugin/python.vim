@@ -22,6 +22,7 @@ let g:ale_python_black_executable = 'black'
 let g:ale_python_flake8_options = '--max-line-length ' . g:python_max_line_length . ' --ignore=E203,W503'
 let g:ale_python_isort_options = '-l ' . g:python_max_line_length . ' --multi-line 3 --trailing-comma'
 let g:ale_python_black_options = '-l ' . g:python_max_line_length
+let g:ale_python_ruff_options = '--fixable I' " isortに関するlintのみ自動で修正する
 
 " indentLine setting
 let b:indentLine_enabled = 1
