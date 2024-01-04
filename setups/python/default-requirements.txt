@@ -65,6 +65,5 @@ requests
 beautifulsoup4
 lxml
 elasticsearch
-awscli
 google-cloud-datastore
 google-cloud-storage
