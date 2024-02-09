@@ -1,4 +1,36 @@
-# Standard Libraries
+### Linter, Formatter, Editor etc. ###
+ruff
+black
+isort
+flake8
+mypy
+pytest
+pydantic
+# python-language-server
+jedi-language-server
+jupyter
+jupyter_contrib_nbextensions
+# jupyterの拡張機能の設定が必要
+# jupyter contrib nbextension install --user
+
+### General ###
+tqdm
+# pipenv
+# injector
+requests
+httpx
+# beautifulsoup4
+# lxml
+
+### Web ###
+uvicorn
+fastapi
+starlette 
+aiofiles
+python-multipart
+streamlit
+
+### Data Analysis ###
 numpy
 scipy
 numba
@@ -6,64 +38,19 @@ pandas
 matplotlib
 seaborn
 
-# linter, formatter, editor
-black
-isort
-flake8
-mypy
-pytest
-pydantic
-python-language-server
-jupyter
-jupyter_contrib_nbextensions
-# jupyterの拡張機能の設定が必要
-# jupyter contrib nbextension install --user
-
-# Machine Learning
-scikit-learn
+### Machine Learning ###
+# scikit-learn
 # xgboost
 # lightgbm
 # umap-learn
 # hdbscan
 
-# NLP
-mojimoji
-# pyknp
-# gensim
-# mecab-python3
-sentencepiece
-sudachipy
-sudachidict_core
-# rapidfuzz
+### NLP ###
+# mojimoji
+# sudachipy
+# sudachidict_core
 
-# Images
-pillow
-
-# EXCEL
-xlrd
-xlwt
-openpyxl
-
-# WORD
-python-docx
-
-# Server
-uvicorn
-fastapi
-starlette 
-aiofiles
-python-multipart
-injector
-authlib
-streamlit
-
-# Others
-pipenv
-tqdm
-pytz
-requests
-beautifulsoup4
-lxml
-elasticsearch
-google-cloud-datastore
-google-cloud-storage
+### EXCEL ###
+# xlrd
+# xlwt
+# openpyxl
