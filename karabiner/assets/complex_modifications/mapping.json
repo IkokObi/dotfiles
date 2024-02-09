@@ -2,43 +2,6 @@
   "title": "custom",
   "rules": [
     {
-      "description": "set vk2 is 1 when command is down",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "left_gui",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "set_variable": {
-                "name": "vk2",
-                "value": 1
-              }
-            }
-          ],
-          "to_after_key_up": [
-            {
-              "set_variable": {
-                "name": "vk2",
-                "value": 0
-              }
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "left_gui"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "set vk2 is 1 when lang2 is down",
       "manipulators": [
         {
@@ -315,6 +278,70 @@
       ]
     },
     {
+      "description": "set f to full/small window when vk2 is 1",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "vk2",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f",
+              "modifiers": [
+                "control",
+                "command"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "set b to window lock when vk2 is 1",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "vk2",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "q",
+              "modifiers": [
+                "command",
+                "control"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "set semicolon to next application tab when vk2 is 1",
       "manipulators": [
         {
@@ -336,9 +363,9 @@
           },
           "to": [
             {
-              "key_code": "f1",
+              "key_code": "semicolon",
               "modifiers": [
-                "command"
+                "control"
               ]
             }
           ]
@@ -367,42 +394,10 @@
           },
           "to": [
             {
-              "key_code": "f1",
+              "key_code": "semicolon",
               "modifiers": [
                 "shift",
-                "command"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "set f to full/small window when vk2 is 1",
-      "manipulators": [
-        {
-          "type": "basic",
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "vk2",
-              "value": 1
-            }
-          ],
-          "from": {
-            "key_code": "f",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f",
-              "modifiers": [
-                "control",
-                "command"
+                "control"
               ]
             }
           ]
@@ -476,288 +471,6 @@
       ]
     },
     {
-      "description": "set b to window lock when vk2 is 1",
-      "manipulators": [
-        {
-          "type": "basic",
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "vk2",
-              "value": 1
-            }
-          ],
-          "from": {
-            "key_code": "b",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "q",
-              "modifiers": [
-                "command",
-                "control"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "set c to Command-c when vk2 is 1",
-      "manipulators": [
-        {
-          "type": "basic",
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "vk2",
-              "value": 1
-            }
-          ],
-          "from": {
-            "key_code": "c",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "c",
-              "modifiers": [
-                "command"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "set v to Command-v when vk2 is 1",
-      "manipulators": [
-        {
-          "type": "basic",
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "vk2",
-              "value": 1
-            }
-          ],
-          "from": {
-            "key_code": "v",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "v",
-              "modifiers": [
-                "command"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "set x to Command-x when vk2 is 1",
-      "manipulators": [
-        {
-          "type": "basic",
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "vk2",
-              "value": 1
-            }
-          ],
-          "from": {
-            "key_code": "x",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "x",
-              "modifiers": [
-                "command"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "set z to Command-z when vk2 is 1",
-      "manipulators": [
-        {
-          "type": "basic",
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "vk2",
-              "value": 1
-            }
-          ],
-          "from": {
-            "key_code": "z",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "z",
-              "modifiers": [
-                "command"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "command+h to left",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "left_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "left_arrow"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "command+j to left",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "j",
-            "modifiers": {
-              "mandatory": [
-                "left_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "down_arrow"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "command+k to left",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "k",
-            "modifiers": {
-              "mandatory": [
-                "left_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "up_arrow"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "command+l to left",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "l",
-            "modifiers": {
-              "mandatory": [
-                "left_gui"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "right_arrow"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "control+command to command",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "left_gui",
-            "modifiers": {
-              "mandatory": [
-                "control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "left_gui"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "control+space to command",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "spacebar",
-            "modifiers": {
-              "mandatory": [
-                "control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "left_gui"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "yen symbol to backslach",
       "manipulators": [
         {
@@ -771,27 +484,6 @@
               "modifiers": [
                 "option"
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "backslach to yen mark",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "international3",
-            "modifiers": {
-              "mandatory": [
-                "option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "international3"
             }
           ]
         }
@@ -824,54 +516,6 @@
           "to": [
             {
               "key_code": "semicolon"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "shift-semicolon to shift-colon (Any keyboard)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "semicolon",
-            "modifiers": {
-              "mandatory": [
-                "shift"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "quote",
-              "modifiers": [
-                "shift"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "shift-colon to shift-semicolon (Any keyboard)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "quote",
-            "modifiers": {
-              "mandatory": [
-                "shift"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "semicolon",
-              "modifiers": [
-                "shift"
-              ]
             }
           ]
         }
@@ -1024,264 +668,6 @@
             }
           ],
           "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "control+k in anyplace",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "k",
-            "modifiers": {
-              "mandatory": [
-                "control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "end",
-              "modifiers": [
-                "shift"
-              ]
-            },
-            {
-              "key_code": "x",
-              "modifiers": [
-                "command"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "control+y in anyplace",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "y",
-            "modifiers": {
-              "mandatory": [
-                "control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "v",
-              "modifiers": [
-                "command"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "set command-semicolon to next application tab",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "semicolon",
-            "modifiers": {
-              "mandatory": [
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f1",
-              "modifiers": [
-                "command"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "set command-quote to previous application tab",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "quote",
-            "modifiers": {
-              "mandatory": [
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f1",
-              "modifiers": [
-                "command",
-                "shift"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "ctrl-semicolon to esc",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "semicolon",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "escape"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "zenkaku-l to ime-off",
-      "manipulators": [
-        {
-          "type": "basic",
-          "conditions": [
-            {
-              "type": "input_source_if",
-              "input_sources": [
-                {
-                  "language": "ja"
-                }
-              ]
-            }
-          ],
-          "from": {
-            "key_code": "l"
-          },
-          "to": [
-            {
-              "key_code": "lang2"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "up_arrow to shift (HHKB)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "conditions": [
-            {
-              "type": "device_if",
-              "identifiers": [
-                {
-                  "vendor_id": 1278,
-                  "product_id": 34
-                }
-              ]
-            }
-          ],
-          "from": {
-            "key_code": "up_arrow"
-          },
-          "to": [
-            {
-              "key_code": "right_shift"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "shift to up_arrow (HHKB)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "conditions": [
-            {
-              "type": "device_if",
-              "identifiers": [
-                {
-                  "vendor_id": 1278,
-                  "product_id": 34
-                }
-              ]
-            }
-          ],
-          "from": {
-            "key_code": "right_shift"
-          },
-          "to": [
-            {
-              "key_code": "up_arrow"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "right_command to kana (HHKB)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "conditions": [
-            {
-              "type": "device_if",
-              "identifiers": [
-                {
-                  "vendor_id": 1278,
-                  "product_id": 34
-                }
-              ]
-            }
-          ],
-          "from": {
-            "key_code": "right_command"
-          },
-          "to": [
-            {
-              "key_code": "lang1"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "right_option to right_command (HHKB)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "conditions": [
-            {
-              "type": "device_if",
-              "identifiers": [
-                {
-                  "vendor_id": 1278,
-                  "product_id": 34
-                }
-              ]
-            }
-          ],
-          "from": {
-            "key_code": "right_option"
-          },
-          "to": [
-            {
-              "key_code": "right_command"
-            }
-          ]
         }
       ]
     }
