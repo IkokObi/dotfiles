@@ -16,4 +16,4 @@ export PIPENV_IGNORE_VIRTUALENVS=1
 auto_venv_activate
 
 # misc
-curl "wttr.in/Tokyo?lang=ja&format=v2"
+# curl "wttr.in/Tokyo?lang=ja&format=v2"
