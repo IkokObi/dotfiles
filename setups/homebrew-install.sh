@@ -1,12 +1,4 @@
 #!/bin/sh
  
-brew install git
-brew install vim
-brew install fzf the_silver_searcher fasd
-brew install jq
-brew install htop
-brew install pwgen
-brew install skim --cask
-brew install fnm
-brew install kustomize
-brew install pipx
+brew install git vim
+brew install the_silver_searcher jq htop pwgen fnm kustomize pipx
