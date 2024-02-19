@@ -11,7 +11,7 @@ eval "$(fnm env --use-on-cd)"
 # pyenv settings
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
 
 export PATH="$HOME/.local/bin:$PATH" # Poetry
 export PIPENV_IGNORE_VIRTUALENVS=1 # venvを無視してpipenvを使う
