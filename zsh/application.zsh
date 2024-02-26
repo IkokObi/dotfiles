@@ -1,9 +1,3 @@
-# pyenv
-# コマンドは.zprofileへ
-# 2021/12/18 pyenvの更新で下記が.zshrcに必要になった
-eval "$(pyenv init -)"
-
-
 # python venv
 # Python venv 環境をディレクトリ直下に見つけたら自動で有効化する
 function auto_venv_activate {
