@@ -49,4 +49,4 @@ vnoremap ' di''<esc><left>p
 vnoremap ` di``<esc><left>p
 
 " pwdをクリップボードにコピー
-nnoremap <silent> <Space>p :!pwd\|pbcopy<Enter><Enter>
+nnoremap <silent> <Space>w :!pwd\|pbcopy<Enter><Enter>
