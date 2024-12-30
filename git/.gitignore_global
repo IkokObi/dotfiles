@@ -6,7 +6,7 @@ notes*.md
 private-works
 
 .jupyterlog*
-.python-version
+# .python-version
 .venv-name
 .venv_private
 .terraform-version
