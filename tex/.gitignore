@@ -1,0 +1,7 @@
+## compiled files
+/output
+
+
+## texlab files
+*.tar.gz
+texlab

@@ -28,4 +28,3 @@ config/config.sh
 private-*/
 
 /setups/fasd
-/setups/python/.python-version

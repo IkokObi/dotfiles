@@ -1,8 +1,0 @@
-### compiled files
-/examples/*
-!/examples/minimum.tex
-
-
-### texlab files
-*.tar.gz
-texlab
