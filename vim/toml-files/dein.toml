@@ -197,10 +197,6 @@ depends = ['fzf']
 
 
 [[plugins]]
-repo = 'wakatime/vim-wakatime'
-
-
-[[plugins]]
 repo = 'mattn/benchvimrc-vim'
 
 
