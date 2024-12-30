@@ -1,14 +1,14 @@
-#!/bin/sh -eu
+#!/bin/sh -eux
 
 env=$1
+echo "[info] Create virtual environment: ${env}"
 
-ENV_DIR="${PWD}/envs/${env}"
-cd "${PWD}/envs"
-
+mkdir -p envs
+cd envs
 python -m venv ${env}
-source ${ENV_DIR}/bin/activate
+cd ${env}
+touch requirements.txt
+source bin/activate
 pip install --upgrade pip
-touch ${ENV_DIR}/requirements.txt
 
-cd ${ENV_DIR}
-echo "インストールするパッケージを requirements.txt に記載して、パッケージをインストールしてください。"
+echo "[info] Add packages to requirements.txt and install them by 'pip install -r requirements.txt'."
