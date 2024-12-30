@@ -16,7 +16,7 @@ eval "$(pyenv init -)"
 export PATH="$HOME/.local/bin:$PATH" # Poetry
 export PIPENV_IGNORE_VIRTUALENVS=1 # venvを無視してpipenvを使う
 
-source ~/dotfiles/setups/python/envs/default/bin/activate
+source ~/dotfiles/python/envs/default/bin/activate
 auto_venv_activate # ログインシェル時にvenvチェックを実行する
 # === End of Python settings ===
 

@@ -7,7 +7,7 @@ function auto_venv_activate {
 
 	if [[ -f ./.venv-name ]] ; then
 		name=$(cat ./.venv-name)
-		. ~/dotfiles/setups/python/envs/${name}/bin/activate
+		. ~/dotfiles/python/envs/${name}/bin/activate
 	fi
 }
 
