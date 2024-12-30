@@ -16,7 +16,7 @@ if executable('jedi-language-server')
 endif
 
 " TeX
-let s:texlab_path = '~/dotfiles/setups/tex/texlab'
+let s:texlab_path = '~/dotfiles/tex/texlab'
 if executable(expand(s:texlab_path))
   au User lsp_setup call lsp#register_server({
         \ 'name': 'texlab',
