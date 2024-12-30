@@ -200,9 +200,9 @@ depends = ['fzf']
 repo = 'mattn/benchvimrc-vim'
 
 
-[[plugins]]
-repo = 'kamykn/spelunker.vim'
-# ZN/ZPでミススペルを移動
+# [[plugins]]
+# repo = 'kamykn/spelunker.vim'
+# # ZN/ZPでミススペルを移動
 
 
 [[plugins]]
