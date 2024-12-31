@@ -3,7 +3,7 @@ if executable('pyls')
   au User lsp_setup call lsp#register_server({
         \ 'name': 'pyls',
         \ 'cmd': {server_info->['pyls']},
-        \ 'whitelist': ['python']
+        \ 'allowlist': ['python']
         \ })
 endif
 
@@ -11,7 +11,7 @@ if executable('jedi-language-server')
   au User lsp_setup call lsp#register_server({
         \ 'name': 'jedi-language-server',
         \ 'cmd': {server_info->['jedi-language-server']},
-        \ 'whitelist': ['python']
+        \ 'allowlist': ['python']
         \ })
 endif
 
@@ -21,7 +21,7 @@ if executable(expand(s:texlab_path))
   au User lsp_setup call lsp#register_server({
         \ 'name': 'texlab',
         \ 'cmd': {server_info->[expand(s:texlab_path)]},
-        \ 'whitelist': ['tex', 'bib', 'sty'],
+        \ 'allowlist': ['tex', 'bib', 'sty'],
         \ })
 endif
 
@@ -33,7 +33,7 @@ if executable('typescript-language-server')
         \ 'cmd': {server_info->[&shell, &shellcmdflag, 'typescript-language-server --stdio']},
         \ 'root_uri':{server_info->lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), 'package.json'))},
         "\ 'root_uri':{server_info->lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), 'tsconfig.json'))},
-        \ 'whitelist': ['typescript', 'typescript.tsx', 'javascript', 'javascript.jsx'],
+        \ 'allowlist': ['typescript', 'typescript.tsx', 'javascript', 'javascript.jsx'],
         \ })
 endif
 
@@ -44,6 +44,6 @@ if executable('typescript-language-server')
         \ 'cmd': {server_info->[&shell, &shellcmdflag, 'typescript-language-server --stdio']},
         \ 'root_uri':{server_info->lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), 'package.json'))},
         "\ 'root_uri':{server_info->lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), 'tsconfig.json'))},
-        \ 'whitelist': ['typescript', 'typescript.tsx', 'javascript', 'javascript.jsx'],
+        \ 'allowlist': ['typescript', 'typescript.tsx', 'javascript', 'javascript.jsx'],
         \ })
 endif
