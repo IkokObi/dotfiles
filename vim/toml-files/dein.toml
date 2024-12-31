@@ -200,9 +200,15 @@ depends = ['fzf']
 repo = 'mattn/benchvimrc-vim'
 
 
-# [[plugins]]
-# repo = 'kamykn/spelunker.vim'
-# # ZN/ZPでミススペルを移動
+[[plugins]]
+repo = 'kamykn/spelunker.vim'
+hook_add = '''
+" Turn off Vim's spell as it highlights the same words.
+set nospell
+set spellfile=~/.vim/spell/en.utf-8.add
+'''
+# ZN/ZPでミススペルを移動
+# ハイライト設定はcolorscheme.vimに記載
 
 
 [[plugins]]

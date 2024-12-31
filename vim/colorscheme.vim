@@ -61,3 +61,6 @@ autocmd InsertLeave * hi clear CursorLine
 " Colorscheme設定の後に記述して様子を見る
 hi FullWidthSpace ctermbg=white
 match FullWidthSpace /　/
+
+highlight SpelunkerSpellBad cterm=underline ctermfg=140 gui=underline guifg=#bc7fd2
+highlight SpelunkerComplexOrCompoundWord cterm=underline ctermfg=140 gui=underline guifg=#bc7fd2
