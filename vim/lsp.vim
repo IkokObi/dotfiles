@@ -1,3 +1,13 @@
+" CSpell
+if executable('efm-langserver')
+  au User lsp_setup call lsp#register_server({
+      \ 'name': 'efm-langserver',
+      \ 'cmd': {server_info->['efm-langserver', '-c', expand('~/dotfiles/setups/efm-langserver-config.yaml')]},
+      \ 'allowlist': ['*'],
+      \ 'blocklist': [],
+      \ })
+endif
+
 " Python
 if executable('pyls')
   au User lsp_setup call lsp#register_server({

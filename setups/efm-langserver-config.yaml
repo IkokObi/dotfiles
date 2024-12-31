@@ -1,0 +1,15 @@
+version: 2
+tools:
+  cspell: &cspell
+    lint-command: 'cspell lint --no-color --no-progress --no-summary ${INPUT}'
+    lint-ignore-exit-code: true
+    lint-formats:
+      - '%f:%l:%c - %m'
+      - '%f:%l:%c %m'
+    root-markers:
+      - cspell.json
+      - cspell.config.yaml
+
+languages:
+  =:
+    - <<: *cspell
