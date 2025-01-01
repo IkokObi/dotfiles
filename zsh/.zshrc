@@ -1,6 +1,5 @@
-# set variables
 DOTFILES=${HOME}/dotfiles
-source ${DOTFILES}/config/config.sh
+source ${DOTFILES}/config/config.sh # Set DOTFILES_USER variables
 
 # read user-dependent pre-setting
 if [ -f ${DOTFILES}/users/${DOTFILES_USER}/pre-setting.zsh ]; then
