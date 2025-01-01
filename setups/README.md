@@ -7,7 +7,6 @@
 1. dotfilesリポジトリをclone
 	- `git clone --recursive git@github.com:IkokObi/dotfiles.git`
 1. [フォントのインストール](#フォントのインストール)
-1. [fzf-extrasのインストール](#fzf-extrasのインストール)
 1. Karabiner Elementsをインストール
 	- [公式ページ](https://karabiner-elements.pqrs.org/)からOSに対応したバージョンをインストール
 1. [dotfilesの設定](#dotfilesの設定)
@@ -26,12 +25,6 @@
 `install-fonts.sh`を実行することでvimやターミナルに必要なフォントをインストールする。
 ```sh
 source install-fonts.sh
-```
-
-## fzf-extrasのインストール
-`install-fzf-extras.sh`を実行することでfzfを使った拡張コマンドの設定をします。
-```sh
-source install-fzf-extras.sh
 ```
 
 ## dotfilesの設定
