@@ -1,16 +1,16 @@
+# General
 *~
 .DS_Store
 
-*_todo.md
-notes*.md
-private-works
-
-.jupyterlog*
-# .python-version
+# Python
+.venv
 .venv-name
 .venv_private
-.terraform-version
+.jupyterlog*
 
-.venv
-
+# Vim
 *.swp
+
+# Private rules
+private-works
+notes*.md
