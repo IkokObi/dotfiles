@@ -1,12 +1,11 @@
-# 環境セットアップ
-
-# 開発環境セットアップ手順(mac用)
+# 開発環境セットアップ手順
 1. App StoreからXcodeをインストール（最新の情報を要参照）
 1. Homebrewをインストール
 	- [公式のインストール方法](https://brew.sh/index_ja)に従う
 1. [Homebrewによる各種ツールのインストール](#Homebrewによる各種ツールのインストール)
+1. GitHubの認証設定
 1. dotfilesリポジトリをclone
-	- `git clone https://github.com/IkokObi/dotfiles.git`
+	- `git clone --recursive git@github.com:IkokObi/dotfiles.git`
 1. [フォントのインストール](#フォントのインストール)
 1. [fzf-extrasのインストール](#fzf-extrasのインストール)
 1. Karabiner Elementsをインストール
@@ -15,9 +14,7 @@
 1. Karabinerのcomplex modificationsを設定
 1. その他のアプリケーションのインストール
 	- Docker (for Mac)
-1. [Python環境の構築](#Python環境の構築)
-1. [Tex環境の構築](#TeX環境の構築)
-1. [Node.js環境の構築](#Node.js環境の構築)
+1.  [Node.js環境の構築](#Node.js環境の構築)
 
 
 # セットアップ手順詳細
@@ -27,13 +24,13 @@
 
 ## フォントのインストール
 `install-fonts.sh`を実行することでvimやターミナルに必要なフォントをインストールする。
-```
+```sh
 source install-fonts.sh
 ```
 
 ## fzf-extrasのインストール
 `install-fzf-extras.sh`を実行することでfzfを使った拡張コマンドの設定をします。
-```
+```sh
 source install-fzf-extras.sh
 ```
 
@@ -42,92 +39,23 @@ source install-fzf-extras.sh
 `config/_config.sh`を`config/config.sh`という名前でコピーし、ファイル内の`DOTFILES_USER="xxx"`の`xxx`を端末のユーザー名に変更する。
 
 ### 2. シンボリックリンクの適用
-`link.sh`の中からコメントを外して各種シンボリックリンクを適用する。
+`init.sh`の中からコメントを外して各種シンボリックリンクを適用する。
 ```sh
-$ source link.sh
+source init.sh
 ```
-
-### 3. vimのwakatime設定
-コーディング状況を可視化するWakaTimeを有効化するため、トークンを設定する。[ユーザー設定画面](https://wakatime.com/settings/account)からSecret API Keyをコピーし、vim起動時に入力する。
-
-
-## Python環境の構築
-### 1. pyenvのインストール
-設定方法の変更が度々発生するので[公式ドキュメント](https://github.com/pyenv/pyenv)を読む。大抵はpyenvのリポジトリのcloneとzshrc, zprofileへの設定を行う。
-
-### 2. pythonのインストールに必要な外部ツールのインストール
-[pyenvのwiki](https://github.com/pyenv/pyenv/wiki#suggested-build-environment)などを参照する。
-
-### 3. pythonのインストール
-```
-pyenv install 3.x.y
-```
-
-### 4. venv環境の構築
-`dotfiles/setups/python`にて下記を実行してvenv環境を構築する。
-```
-source ./create.sh env-name
-```
-
-### 5. venv環境の削除
-`dotfiles/setups/python`にて下記を実行してvenv環境を削除する。
-```
-source ./delete.sh env-name
-```
-
-### 6. プロジェクトごとのvenv環境
-`cd`で移動した際、カレントディレクトリ直下に`.venv`がある場合は自動で有効化される。
-
-venv環境は下記コマンド（自作関数）で作成可能。
-```sh
-venv-create (env-name)
-```
-
-また、`.venv-name`ファイルがある場合、そのファイルに記載の環境(`(env-name)`)に対して`~/dotfiles/setups/python/envs/(env-name)`が有効化される。
-
-
-## TeX環境の構築
-`dotfiles/setups/tex`へ移動する。
-### 1. DockerによるTeX環境の構築
-```
-make build
-```
-
-### 2. texlabのインストール（vim-lsp用）
-texlabのリポジトリからコンパイル済みのmac用バイナリをインストールする。インストールは[releasesから](https://github.com/latex-lsp/texlab/releases)行える。
-ダウンロードした圧縮ファイル及び実行バイナリは`dotfiles/setups/tex/`配下に置いておけばgitignoreの対象になる。
-
-### 3. TeXファイルのコンパイル方法
-latexmkをzshrcなどにエイリアスを設定している場合はパス指定なしでOK。`.latexmkrc`は`~/dotfiles/tex/.latexmkrc`を参照している。
-```
-~/dotfiles/setups/tex/latexmk file.tex
-```
-
 
 ## Node.js環境の構築
-### 初期化処理
-Homebrewでnodebrewをインストールしてあるので，初期化処理を実行する．
+Homebrewでfnmをインストールしておく。
 ```sh
-nodebrew setup
-```
+# インストール可能なバージョンの一覧取得
+fnm ls-remote
 
-### nodeのインストール
-1. インストール可能なバージョンの一覧取得
-```sh
-nodebrew ls-remote
-```
-1. インストール
-```sh
-nodebrew install-binary v.x.y.z
-```
-1. 有効化
-```sh
-nodebrew use v.x.y.z
-```
+# インストール
+fnm install v.x.y.z
 
+# 有効化
+fnm use v.x.y.z
 
-# その他の環境セットアップ（備忘録）
-- Googleアカウント
-- Slack
-- Google IME
-- Dropbox
+# インストールしたバージョンの一覧取得
+fnm ls
+```

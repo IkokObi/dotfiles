@@ -28,13 +28,8 @@ This is a repository to set up a development environment for personal use. It is
 ## 主な開発環境
 - Python
   - pyenv + venv による環境管理
-  - ruff, black等による自動フォーマット
   - jedi-language-serverによる補完
 - Node.js
   - fnmによるバージョン管理
 - TeX
   - Dockerによる環境構築
-  - latexmkによるビルド
-
-## 使われなくなった設定
-- bash: macのOSアップデートに伴いzshに移行したため
