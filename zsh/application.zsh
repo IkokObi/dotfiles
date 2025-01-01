@@ -28,5 +28,5 @@ eval "$(fasd --init auto)"
 
 # fzf-extras(fasd依存)
 export OPENER=open
-[[ -e "$HOME/.fzf-extras/fzf-extras.zsh" ]] \
-  && source "$HOME/.fzf-extras/fzf-extras.zsh"
+[[ -e ${HOME}/dotfiles/zsh/plugins/fzf-extras/fzf-extras.zsh ]] \
+    && source ${HOME}/dotfiles/zsh/plugins/fzf-extras/fzf-extras.zsh

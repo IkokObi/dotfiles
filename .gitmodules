@@ -1,3 +1,9 @@
 [submodule "users"]
 	path = users
 	url = git@github.com:IkokObi/dotfiles-users.git
+[submodule "zsh/plugins/fasd"]
+	path = zsh/plugins/fasd
+	url = git@github.com:IkokObi/fasd.git
+[submodule "zsh/plugins/fzf-extras"]
+	path = zsh/plugins/fzf-extras
+	url = git@github.com:IkokObi/fzf-extras.git
