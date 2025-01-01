@@ -1,18 +1,14 @@
-# git
+# git環境の構築
 
-## ファイル構成
-```
-.git_commit_template
-.gitconfig
-.gitignore_global
-```
+## gitの設定
+`dotfiles/users/{user_name}/.gitconfig.user`にnameとemailを設定し、`init.sh`を実行する。
 
 ## ファイルの説明
-### .git_commit_template
-commitのメッセージ編集画面のテンプレートファイル。
-
 ### .gitconfig
-gitのconfigファイル。端末のユーザー名とメールアドレスを適切に設定する。
+git全般の設定ファイル。
+
+### .git_commit_template
+commit時のメッセージ編集画面のテンプレートファイル。
 
 ### .gitignore_global
 作業リポジトリによらずignoreする設定ファイル。
